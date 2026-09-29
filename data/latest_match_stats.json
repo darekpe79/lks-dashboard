@@ -29,14 +29,14 @@
     "awayTeamScore": 0
   },
   "rapidapi": {
-    "endpoint": "/football-get-match-all-stats",
+    "endpoint": "/football-get-match-event-all-stats",
     "params": {
       "eventid": "5861931"
     },
     "status_code": 200,
     "limit": "100",
-    "remaining": "94",
-    "reset": "2067349",
+    "remaining": "93",
+    "reset": "2067203",
     "content_type": "application/json; charset=utf-8"
   },
   "payload": {
