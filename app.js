@@ -100,7 +100,7 @@ function renderSummary(data) {
   document.getElementById("summary-cards").innerHTML = [
     statCard("Miejsce", `${s.position}.`, "w tabeli"),
     statCard("Punkty", s.points, `${s.points_per_match} / mecz`),
-    statCard("Bilans", `${s.wins}-${s.draws}-${s.losses}`, "W-R-P"),
+    statCard("Bilans", `${s.wins}-${s.draws}-${s.losses}`, "Z-R-P"),
     statCard("Bramki", `${s.goals_for}:${s.goals_against}`, `${s.goal_difference >= 0 ? "+" : ""}${s.goal_difference}`),
     statCard("Czyste konta", s.clean_sheets, `z ${s.played} spotkań`),
     statCard("Bez gola", s.failed_to_score, `z ${s.played} spotkań`)
@@ -110,7 +110,7 @@ function renderSummary(data) {
 function renderForm(data) {
   document.getElementById("form-row").innerHTML = data.form.map(item => `
     <div class="form-item">
-      <div class="form-badge ${item.result}">${item.result === "W" ? "W" : item.result === "D" ? "R" : "P"}</div>
+      <div class="form-badge ${item.result}">${item.result === "W" ? "Z" : item.result === "D" ? "R" : "P"}</div>
       <div>
         <div class="form-opponent">${escapeHtml(item.opponent)}</div>
         <div class="form-score">${fmtDate(item.date, false)}</div>
@@ -128,8 +128,8 @@ function renderDeepStats(data) {
   const homeStanding = data.team?.home_standing;
   const awayStanding = data.team?.away_standing;
   const blocks = [
-    ["U siebie", `${h.wins}W · ${h.draws}R · ${h.losses}P · ${h.gf}:${h.ga}`],
-    ["Na wyjeździe", `${a.wins}W · ${a.draws}R · ${a.losses}P · ${a.gf}:${a.ga}`],
+    ["U siebie", `${h.wins}Z · ${h.draws}R · ${h.losses}P · ${h.gf}:${h.ga}`],
+    ["Na wyjeździe", `${a.wins}Z · ${a.draws}R · ${a.losses}P · ${a.gf}:${a.ga}`],
     ["Tabela domowa", homeStanding ? `${homeStanding.position}. miejsce · ${homeStanding.points} pkt` : "—"],
     ["Tabela wyjazdowa", awayStanding ? `${awayStanding.position}. miejsce · ${awayStanding.points} pkt` : "—"],
     ["Najwyższe zwycięstwo", best ? `${best.score} · ${best.homeTeamName} – ${best.awayTeamName}` : "—"],
@@ -290,17 +290,57 @@ function renderUpcoming(data) {
 }
 
 function renderStandings(data) {
-  document.getElementById("table-meta").textContent = `${data.summary.played} kolejek ŁKS`;
-  document.getElementById("standings-body").innerHTML = data.standings.map(row => `
-    <tr class="${row.id === LKS_ID ? "lks" : ""}">
-      <td class="pos"><span class="zone" style="background:${row.qualColor || "transparent"}"></span>${row.position}</td>
-      <td class="team-cell">${escapeHtml(row.name)}</td>
-      <td>${row.played}</td>
-      <td>${escapeHtml(row.goals)}</td>
-      <td>${row.goal_difference > 0 ? "+" : ""}${row.goal_difference}</td>
-      <td class="pts">${row.points}</td>
-    </tr>
-  `).join("");
+  const tabs = document.getElementById("table-tabs");
+  const body = document.getElementById("standings-body");
+  const meta = document.getElementById("table-meta");
+
+  const configs = {
+    all: {
+      rows: data.standings || [],
+      label: `${data.summary.played} meczów ŁKS`,
+    },
+    home: {
+      rows: data.standings_home || [],
+      label: data.team?.home_standing
+        ? `${data.team.home_standing.played} mecze ŁKS u siebie`
+        : "Tabela domowa",
+    },
+    away: {
+      rows: data.standings_away || [],
+      label: data.team?.away_standing
+        ? `${data.team.away_standing.played} meczów ŁKS na wyjeździe`
+        : "Tabela wyjazdowa",
+    },
+  };
+
+  const renderMode = (mode) => {
+    const config = configs[mode] || configs.all;
+    meta.textContent = config.label;
+
+    body.innerHTML = config.rows.map(row => `
+      <tr class="${String(row.id) === String(LKS_ID) ? "lks" : ""}">
+        <td class="pos"><span class="zone" style="background:${row.qualColor || "transparent"}"></span>${row.position}</td>
+        <td class="team-cell">${escapeHtml(row.name)}</td>
+        <td>${row.played}</td>
+        <td>${row.wins}</td>
+        <td>${row.draws}</td>
+        <td>${row.losses}</td>
+        <td>${escapeHtml(row.goals)}</td>
+        <td>${row.goal_difference > 0 ? "+" : ""}${row.goal_difference}</td>
+        <td class="pts">${row.points}</td>
+      </tr>
+    `).join("");
+
+    tabs?.querySelectorAll(".table-tab").forEach(button => {
+      button.classList.toggle("active", button.dataset.tableMode === mode);
+    });
+  };
+
+  tabs?.querySelectorAll(".table-tab").forEach(button => {
+    button.addEventListener("click", () => renderMode(button.dataset.tableMode));
+  });
+
+  renderMode("all");
 }
 
 function renderLeagueLeaders(data) {
