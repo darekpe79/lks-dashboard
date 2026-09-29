@@ -19,6 +19,15 @@ const fmtMatchDate = (iso) => {
   }).format(new Date(iso));
 };
 
+const fmtH2HDate = (iso) => {
+  if (!iso) return "—";
+  return new Intl.DateTimeFormat("pl-PL", {
+    day: "numeric",
+    month: "short",
+    year: "numeric",
+  }).format(new Date(iso));
+};
+
 const fmtFixtureDate = (iso) => {
   if (!iso) return { weekday: "—", date: "—", time: "—" };
   const d = new Date(iso);
@@ -225,7 +234,7 @@ function renderNextOpponent(data) {
       <div class="h2h-title">Ostatnie mecze ŁKS – ${escapeHtml(o.name)}</div>
       ${h2h.map(match => `
         <div class="h2h-row">
-          <span>${fmtDate(match.date, false)}</span>
+          <span>${fmtH2HDate(match.date)}</span>
           <strong>${escapeHtml(match.home_name)} ${escapeHtml(match.score || "—")} ${escapeHtml(match.away_name)}</strong>
         </div>
       `).join("")}
