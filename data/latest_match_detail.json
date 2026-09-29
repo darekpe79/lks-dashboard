@@ -1,0 +1,89 @@
+{
+  "event_id": "5861931",
+  "source_match": {
+    "type": "match",
+    "id": "5861931",
+    "score": -70,
+    "leagueId": 197,
+    "leagueName": "I Liga",
+    "matchDate": "2026-09-19T13:30:00Z",
+    "status": {
+      "utcTime": "2026-09-19T13:30:00Z",
+      "finished": true,
+      "started": true,
+      "cancelled": false,
+      "awarded": false,
+      "scoreStr": "2 - 0",
+      "reason": {
+        "short": "FT",
+        "shortKey": "fulltime_short",
+        "long": "Full-Time",
+        "longKey": "finished"
+      }
+    },
+    "homeTeamId": "585593",
+    "homeTeamName": "Pogoń Grodzisk Mazowiecki",
+    "homeTeamScore": 2,
+    "awayTeamId": "8244",
+    "awayTeamName": "ŁKS Łódź",
+    "awayTeamScore": 0
+  },
+  "rapidapi": {
+    "endpoint": "/football-get-match-detail",
+    "params": {
+      "eventid": "5861931"
+    },
+    "status_code": 200,
+    "limit": "100",
+    "remaining": "95",
+    "reset": "2067574",
+    "content_type": "application/json; charset=utf-8"
+  },
+  "payload": {
+    "status": "success",
+    "response": {
+      "detail": {
+        "matchId": "5861931",
+        "matchName": "Pogoń Grodzisk Mazowiecki-vs-ŁKS Łódź_Sat, Sep 19, 2026, 13:30 UTC",
+        "matchRound": "9",
+        "teamColors": {
+          "darkMode": {
+            "home": "#DDDDDD",
+            "away": "#E40020"
+          },
+          "lightMode": {
+            "home": "#333333",
+            "away": "#a8000e"
+          },
+          "fontDarkMode": {
+            "home": "rgba(29, 29, 29, 1.0)",
+            "away": "rgba(255, 255, 255, 1.0)"
+          },
+          "fontLightMode": {
+            "home": "rgba(255, 255, 255, 1.0)",
+            "away": "rgba(255, 255, 255, 1.0)"
+          }
+        },
+        "leagueId": 197,
+        "leagueName": "I Liga",
+        "leagueRoundName": "9",
+        "parentLeagueId": 197,
+        "countryCode": "POL",
+        "homeTeam": {
+          "name": "Pogoń Grodzisk Mazowiecki",
+          "id": 585593
+        },
+        "awayTeam": {
+          "name": "ŁKS Łódź",
+          "id": 8244
+        },
+        "coverageLevel": "lower",
+        "matchTimeUTC": "Sat, Sep 19, 2026, 13:30 UTC",
+        "matchTimeUTCDate": "2026-09-19T13:30:00.000Z",
+        "started": true,
+        "finished": true,
+        "gender": "male"
+      }
+    }
+  }
+}
