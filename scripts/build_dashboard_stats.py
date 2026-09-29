@@ -7,6 +7,7 @@ LKS_ID = 8244
 STANDINGS_FILE = REPO_ROOT / "data" / "i_liga_standing.json"
 SEASON_FILE = REPO_ROOT / "data" / "lks_current_season.json"
 OUTPUT = REPO_ROOT / "data" / "dashboard.json"
+CONTEXT_FILE = REPO_ROOT / "data" / "context.json"
 
 
 def result_for_lks(match):
@@ -47,6 +48,11 @@ def longest_unbeaten(results):
 def main():
     standings_doc = json.loads(STANDINGS_FILE.read_text(encoding="utf-8"))
     season_doc = json.loads(SEASON_FILE.read_text(encoding="utf-8"))
+    context_doc = (
+        json.loads(CONTEXT_FILE.read_text(encoding="utf-8"))
+        if CONTEXT_FILE.exists()
+        else {}
+    )
 
     standings = standings_doc["payload"]["response"]["standing"]
     matches = season_doc["matches"]
@@ -193,9 +199,29 @@ def main():
                 ),
             }
 
+            if str(context_doc.get("opponent_id")) == str(opponent_id):
+                next_opponent["profile"] = context_doc.get("opponent_profile")
+                next_opponent["home_standing"] = (
+                    context_doc.get("home_standing", {}).get("opponent")
+                )
+                next_opponent["away_standing"] = (
+                    context_doc.get("away_standing", {}).get("opponent")
+                )
+                next_opponent["h2h"] = context_doc.get("h2h", [])
+
+    team_context = {
+        "id": LKS_ID,
+        "name": "ŁKS Łódź",
+        "league": "I Liga",
+        "season": "2026/27",
+        "profile": context_doc.get("lks_profile"),
+        "home_standing": context_doc.get("home_standing", {}).get("lks"),
+        "away_standing": context_doc.get("away_standing", {}).get("lks"),
+    }
+
     dashboard = {
         "generated_at_utc": datetime.now(timezone.utc).isoformat(),
-        "team": {"id": LKS_ID, "name": "ŁKS Łódź", "league": "I Liga", "season": "2026/27"},
+        "team": team_context,
         "summary": {
             "position": lks["idx"],
             "points": lks["pts"],
