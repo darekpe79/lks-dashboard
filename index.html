@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20260929-5">
+  <link rel="stylesheet" href="styles.css?v=20260929-7">
 </head>
 <body>
   <div class="page-shell">
@@ -54,7 +54,7 @@
                 <h2>Forma ŁKS</h2>
               </div>
               <div class="form-legend">
-                <span><i class="dot win"></i>W</span>
+                <span><i class="dot win"></i>Z</span>
                 <span><i class="dot draw"></i>R</span>
                 <span><i class="dot loss"></i>P</span>
               </div>
@@ -113,10 +113,15 @@
               </div>
               <span id="table-meta" class="muted"></span>
             </div>
+            <div class="table-tabs" id="table-tabs" role="group" aria-label="Rodzaj tabeli">
+              <button type="button" class="table-tab active" data-table-mode="all">Ogólna</button>
+              <button type="button" class="table-tab" data-table-mode="home">U siebie</button>
+              <button type="button" class="table-tab" data-table-mode="away">Na wyjeździe</button>
+            </div>
             <div class="table-wrap">
               <table>
                 <thead>
-                  <tr><th>#</th><th>Drużyna</th><th>M</th><th>BR</th><th>+/-</th><th>PKT</th></tr>
+                  <tr><th>#</th><th>Drużyna</th><th>M</th><th>Z</th><th>R</th><th>P</th><th>BR</th><th>+/-</th><th>PKT</th></tr>
                 </thead>
                 <tbody id="standings-body"></tbody>
               </table>
@@ -144,6 +149,6 @@
 
   <button id="back-to-top" class="back-to-top" type="button" aria-label="Wróć na górę">↑</button>
 
-  <script src="app.js?v=20260929-6"></script>
+  <script src="app.js?v=20260929-7"></script>
 </body>
 </html>
