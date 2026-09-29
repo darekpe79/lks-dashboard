@@ -1,0 +1,81 @@
+name: Refresh ŁKS dashboard data
+
+on:
+  schedule:
+    # Codzienny pełny refresh: tabela + terminarz.
+    # 06:17 UTC = 08:17 w Polsce latem / 07:17 zimą.
+    - cron: "17 6 * * *"
+
+    # Dodatkowy refresh terminarza po weekendowych dniach meczowych.
+    - cron: "17 19 * * 5,6,0"
+
+    # W poniedziałek wieczorem odświeżamy ponownie także tabelę.
+    - cron: "17 19 * * 1"
+
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "Zakres aktualizacji"
+        required: true
+        default: "full"
+        type: choice
+        options:
+          - full
+          - matches
+
+permissions:
+  contents: write
+
+concurrency:
+  group: lks-data-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Choose refresh mode
+        id: refresh_mode
+        shell: bash
+        run: |
+          MODE="full"
+
+          if [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
+            MODE="${{ inputs.mode }}"
+          elif [[ "${{ github.event.schedule }}" == "17 19 * * 5,6,0" ]]; then
+            MODE="matches"
+          fi
+
+          echo "mode=$MODE" >> "$GITHUB_OUTPUT"
+          echo "Wybrany tryb: $MODE"
+
+      - name: Refresh API data and rebuild dashboard
+        env:
+          RAPIDAPI_KEY: ${{ secrets.RAPIDAPI_KEY }}
+        run: python scripts/update_dashboard.py --mode "${{ steps.refresh_mode.outputs.mode }}"
+
+      - name: Commit refreshed data
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add             data/i_liga_standing.json             data/lks_match_search.json             data/lks_current_season.json             data/dashboard.json
+
+          if git diff --cached --quiet; then
+            echo "Brak zmian do zapisania."
+            exit 0
+          fi
+
+          git commit -m "Refresh LKS dashboard data"
+          git pull --rebase origin main
+          git push
