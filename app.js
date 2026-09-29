@@ -256,3 +256,17 @@ async function boot() {
 }
 
 boot();
+
+
+const backToTop = document.getElementById("back-to-top");
+if (backToTop) {
+  const toggleBackToTop = () => {
+    backToTop.classList.toggle("visible", window.scrollY > 500);
+  };
+
+  window.addEventListener("scroll", toggleBackToTop, { passive: true });
+  backToTop.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+  toggleBackToTop();
+}
