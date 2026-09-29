@@ -213,8 +213,7 @@ function renderUpcoming(data) {
       <div class="fixture">
         <div class="fixture-date">
           <strong>${escapeHtml(when.weekday)}</strong>
-          <span>${escapeHtml(when.date)}</span>
-          <span>${escapeHtml(when.time)}</span>
+          <span>${escapeHtml(when.date)} · ${escapeHtml(when.time)}</span>
         </div>
         <div class="fixture-teams">${isHome ? "ŁKS" : escapeHtml(opponent)} <span class="muted">—</span> ${isHome ? escapeHtml(opponent) : "ŁKS"}</div>
         <div class="fixture-tag">${isHome ? "DOM" : "WYJAZD"}</div>
