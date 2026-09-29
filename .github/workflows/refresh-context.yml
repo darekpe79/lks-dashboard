@@ -1,14 +1,8 @@
 name: Refresh ŁKS context data
 
 on:
-  push:
-    branches: [main]
-    paths:
-      - ".github/workflows/refresh-context.yml"
-      - "scripts/update_context.py"
-
   schedule:
-    # Raz w tygodniu, 30 minut po poniedziałkowym porannym refreshu.
+    # Raz w tygodniu, 30 minut po poniedziałkowym pełnym refreshu.
     - cron: "47 6 * * 1"
 
   workflow_dispatch:
@@ -16,8 +10,9 @@ on:
 permissions:
   contents: write
 
+# Ta sama kolejka co główny refresh: tylko jeden workflow naraz zapisuje do main.
 concurrency:
-  group: lks-context-refresh
+  group: lks-repo-writes
   cancel-in-progress: false
 
 jobs:
@@ -52,5 +47,15 @@ jobs:
           fi
 
           git commit -m "Refresh LKS context data"
-          git pull --rebase origin main
-          git push
+
+          # Retry dotyczy wyłącznie zapisu do GitHuba — NIE wykonuje ponownie requestów API.
+          for attempt in 1 2 3; do
+            git pull --rebase origin main
+            if git push; then
+              exit 0
+            fi
+            echo "Push nie udał się (próba $attempt/3); ponawiam bez odpytywania API."
+            sleep 2
+          done
+
+          exit 1
