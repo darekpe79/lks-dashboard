@@ -77,21 +77,31 @@ def extract_profile(payload):
     }
 
 
-def get_standing(payload, team_id):
+def normalize_standings(payload):
     rows = payload.get("response", {}).get("standing", [])
-    row = next((x for x in rows if str(x.get("id")) == str(team_id)), None)
-    if not row:
-        return None
-    return {
-        "position": row.get("idx"),
-        "played": row.get("played"),
-        "wins": row.get("wins"),
-        "draws": row.get("draws"),
-        "losses": row.get("losses"),
-        "goals": row.get("scoresStr"),
-        "goal_difference": row.get("goalConDiff"),
-        "points": row.get("pts"),
-    }
+    return [
+        {
+            "position": row.get("idx"),
+            "id": row.get("id"),
+            "name": row.get("name"),
+            "played": row.get("played"),
+            "wins": row.get("wins"),
+            "draws": row.get("draws"),
+            "losses": row.get("losses"),
+            "goals": row.get("scoresStr"),
+            "goal_difference": row.get("goalConDiff"),
+            "points": row.get("pts"),
+            "qualColor": row.get("qualColor"),
+        }
+        for row in rows
+    ]
+
+
+def get_team_row(rows, team_id):
+    return next(
+        (row for row in rows if str(row.get("id")) == str(team_id)),
+        None,
+    )
 
 
 def extract_h2h(payload):
@@ -188,18 +198,22 @@ def main():
             "/football-get-standing-away", {"leagueid": LEAGUE_ID}
         )
         calls += 1
+        home_table = normalize_standings(home_payload)
+        away_table = normalize_standings(away_payload)
         home_standing = {
-            "lks": get_standing(home_payload, LKS_ID),
-            "opponent": get_standing(home_payload, opponent_id),
+            "lks": get_team_row(home_table, LKS_ID),
+            "opponent": get_team_row(home_table, opponent_id),
         }
         away_standing = {
-            "lks": get_standing(away_payload, LKS_ID),
-            "opponent": get_standing(away_payload, opponent_id),
+            "lks": get_team_row(away_table, LKS_ID),
+            "opponent": get_team_row(away_table, opponent_id),
         }
         home_away_updated_at_utc = now_utc().isoformat()
     else:
         home_standing = old.get("home_standing")
         away_standing = old.get("away_standing")
+        home_table = old.get("home_table", [])
+        away_table = old.get("away_table", [])
         home_away_updated_at_utc = old.get("home_away_updated_at_utc")
 
     lks_profile = old.get("lks_profile")
@@ -235,6 +249,8 @@ def main():
         "opponent_profile": opponent_profile,
         "home_standing": home_standing,
         "away_standing": away_standing,
+        "home_table": home_table,
+        "away_table": away_table,
         "h2h": h2h,
         "rapidapi_remaining": (
             last_meta.get("remaining") if last_meta else old.get("rapidapi_remaining")
