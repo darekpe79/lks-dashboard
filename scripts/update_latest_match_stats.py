@@ -4,7 +4,7 @@ from api_client import REPO_ROOT, call_api
 
 SOURCE = REPO_ROOT / "data" / "lks_current_season.json"
 OUTPUT = REPO_ROOT / "data" / "latest_match_stats.json"
-ENDPOINT = "/football-get-match-all-stats"
+ENDPOINT = "/football-get-match-event-all-stats"
 
 
 def main():
