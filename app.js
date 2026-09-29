@@ -66,6 +66,22 @@ function statCard(label, value, sub = "") {
   `;
 }
 
+function renderClubContext(data) {
+  const profile = data.team?.profile;
+  const crest = document.getElementById("club-crest");
+  const meta = document.getElementById("club-meta");
+
+  if (profile?.logo && crest) {
+    crest.innerHTML = `<img src="${escapeHtml(profile.logo)}" alt="Herb ŁKS Łódź">`;
+    crest.classList.add("has-logo");
+  }
+
+  if (meta && profile) {
+    const parts = [profile.stadium, profile.city].filter(Boolean);
+    meta.textContent = parts.join(" · ");
+  }
+}
+
 function renderSummary(data) {
   const s = data.summary;
   document.getElementById("summary-cards").innerHTML = [
@@ -96,9 +112,13 @@ function renderDeepStats(data) {
   const a = data.splits.away;
   const best = data.records.best_win;
   const worst = data.records.worst_loss;
+  const homeStanding = data.team?.home_standing;
+  const awayStanding = data.team?.away_standing;
   const blocks = [
     ["U siebie", `${h.wins}W · ${h.draws}R · ${h.losses}P · ${h.gf}:${h.ga}`],
     ["Na wyjeździe", `${a.wins}W · ${a.draws}R · ${a.losses}P · ${a.gf}:${a.ga}`],
+    ["Tabela domowa", homeStanding ? `${homeStanding.position}. miejsce · ${homeStanding.points} pkt` : "—"],
+    ["Tabela wyjazdowa", awayStanding ? `${awayStanding.position}. miejsce · ${awayStanding.points} pkt` : "—"],
     ["Najwyższe zwycięstwo", best ? `${best.score} · ${best.homeTeamName} – ${best.awayTeamName}` : "—"],
     ["Najwyższa porażka", worst ? `${worst.score} · ${worst.homeTeamName} – ${worst.awayTeamName}` : "—"],
     ["Mecze ze zdobytym golem", `${data.summary.matches_scored_in} / ${data.summary.played}`],
@@ -167,6 +187,12 @@ function renderNextOpponent(data) {
   }
 
   document.getElementById("opponent-title").textContent = o.name;
+  const opponentLogo = document.getElementById("opponent-logo");
+  if (opponentLogo && o.profile?.logo) {
+    opponentLogo.src = o.profile.logo;
+    opponentLogo.alt = `Herb ${o.name}`;
+    opponentLogo.hidden = false;
+  }
   document.getElementById("opponent-venue").textContent =
     o.venue === "home" ? "mecz u siebie" : "mecz na wyjeździe";
 
@@ -175,6 +201,32 @@ function renderNextOpponent(data) {
     : o.points_gap_to_lks > 0
       ? `+${o.points_gap_to_lks} względem ŁKS`
       : `${o.points_gap_to_lks} względem ŁKS`;
+
+  const profile = o.profile || {};
+  const homeStanding = o.home_standing;
+  const awayStanding = o.away_standing;
+  const h2h = (o.h2h || []).slice(0, 3);
+
+  const extraStats = (homeStanding || awayStanding || profile.stadium) ? `
+    <div class="opponent-extra">
+      ${homeStanding ? `<div><span>Tabela domowa</span><strong>${homeStanding.position}. · ${homeStanding.points} pkt</strong></div>` : ""}
+      ${awayStanding ? `<div><span>Tabela wyjazdowa</span><strong>${awayStanding.position}. · ${awayStanding.points} pkt</strong></div>` : ""}
+      ${profile.stadium ? `<div><span>Stadion</span><strong>${escapeHtml(profile.stadium)}</strong></div>` : ""}
+      ${profile.capacity ? `<div><span>Pojemność</span><strong>${Number(profile.capacity).toLocaleString("pl-PL")}</strong></div>` : ""}
+    </div>
+  ` : "";
+
+  const h2hHtml = h2h.length ? `
+    <div class="h2h-box">
+      <div class="h2h-title">Ostatnie mecze ŁKS – ${escapeHtml(o.name)}</div>
+      ${h2h.map(match => `
+        <div class="h2h-row">
+          <span>${fmtDate(match.date, false)}</span>
+          <strong>${escapeHtml(match.home_name)} ${escapeHtml(match.score || "—")} ${escapeHtml(match.away_name)}</strong>
+        </div>
+      `).join("")}
+    </div>
+  ` : "";
 
   box.innerHTML = `
     <div class="opponent-hero">
@@ -201,6 +253,8 @@ function renderNextOpponent(data) {
       <div class="compare-row"><span>Bramki</span><b>${data.summary.goals_for}:${data.summary.goals_against}</b><i>${o.goals_for}:${o.goals_against}</i></div>
       <div class="compare-row"><span>Bilans</span><b>${data.summary.wins}-${data.summary.draws}-${data.summary.losses}</b><i>${o.wins}-${o.draws}-${o.losses}</i></div>
     </div>
+    ${extraStats}
+    ${h2hHtml}
   `;
 }
 
@@ -258,6 +312,7 @@ async function boot() {
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const data = await response.json();
 
+    renderClubContext(data);
     renderMatch("previous-match", data.previous_match, true);
     renderMatch("next-match", data.next_match, false);
     renderSummary(data);
