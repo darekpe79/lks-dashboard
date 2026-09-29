@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#b20d18">
+  <title>ŁKS Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="topbar">
+      <div class="brand">
+        <div class="crest" aria-hidden="true">ŁKS</div>
+        <div>
+          <p class="eyebrow">SEZON 2026/27</p>
+          <h1>ŁKS Łódź</h1>
+        </div>
+      </div>
+      <div class="league-chip">I Liga</div>
+    </header>
+
+    <main>
+      <section class="hero-grid">
+        <article class="match-card previous">
+          <div class="section-kicker">Ostatni mecz</div>
+          <div id="previous-match"></div>
+        </article>
+
+        <article class="match-card next">
+          <div class="section-kicker">Następny mecz</div>
+          <div id="next-match"></div>
+        </article>
+      </section>
+
+      <section class="stats-grid" id="summary-cards"></section>
+
+      <section class="content-grid">
+        <div class="stack">
+          <article class="panel">
+            <div class="panel-head">
+              <div>
+                <p class="eyebrow">Ostatnie 5 spotkań</p>
+                <h2>Forma ŁKS</h2>
+              </div>
+              <div class="form-legend">
+                <span><i class="dot win"></i>W</span>
+                <span><i class="dot draw"></i>R</span>
+                <span><i class="dot loss"></i>P</span>
+              </div>
+            </div>
+            <div class="form-row" id="form-row"></div>
+          </article>
+
+          <article class="panel">
+            <div class="panel-head">
+              <div>
+                <p class="eyebrow">Sezon w liczbach</p>
+                <h2>ŁKS pod lupą</h2>
+              </div>
+            </div>
+            <div id="deep-stats" class="deep-stats"></div>
+          </article>
+
+          <article class="panel">
+            <div class="panel-head">
+              <div>
+                <p class="eyebrow">Najbliższe tygodnie</p>
+                <h2>Terminarz</h2>
+              </div>
+            </div>
+            <div id="upcoming" class="fixtures"></div>
+          </article>
+        </div>
+
+        <aside class="stack">
+          <article class="panel table-panel">
+            <div class="panel-head">
+              <div>
+                <p class="eyebrow">I Liga</p>
+                <h2>Tabela</h2>
+              </div>
+              <span id="table-meta" class="muted"></span>
+            </div>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr><th>#</th><th>Drużyna</th><th>M</th><th>BR</th><th>+/-</th><th>PKT</th></tr>
+                </thead>
+                <tbody id="standings-body"></tbody>
+              </table>
+            </div>
+          </article>
+
+          <article class="panel">
+            <div class="panel-head">
+              <div>
+                <p class="eyebrow">Na tle ligi</p>
+                <h2>Liderzy statystyk</h2>
+              </div>
+            </div>
+            <div id="league-leaders" class="leader-list"></div>
+          </article>
+        </aside>
+      </section>
+    </main>
+
+    <footer>
+      <span>Dane: Free API Live Football Data · cache lokalny/GitHub</span>
+      <span id="updated-at"></span>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
