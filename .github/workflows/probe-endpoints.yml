@@ -1,0 +1,58 @@
+name: Probe API endpoints
+
+on:
+  push:
+    paths:
+      - ".github/workflows/probe-endpoints.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Run selected endpoint probes
+        env:
+          RAPIDAPI_KEY: ${{ secrets.RAPIDAPI_KEY }}
+        shell: bash
+        run: |
+          set +e
+          mkdir -p api_tests
+
+          run_probe () {
+            mode="$1"
+            echo
+            echo "========== PROBE: $mode =========="
+            python scripts/probe_extras.py "$mode"
+            rc=$?
+            echo "========== END: $mode (exit=$rc) =========="
+            return 0
+          }
+
+          run_probe teaminfo
+          run_probe rounds
+          run_probe home
+          run_probe away
+          run_probe h2h
+          run_probe location
+          run_probe logo
+          run_probe matchdetail
+
+      - name: Upload probe results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: endpoint-probe-results
+          path: api_tests/
+          if-no-files-found: warn
+          retention-days: 7
