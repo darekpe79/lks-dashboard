@@ -154,6 +154,45 @@ def main():
             "date": match.get("matchDate"),
         })
 
+    next_match = season_doc.get("next_match")
+    next_opponent = None
+    if next_match:
+        opponent_id = (
+            next_match.get("awayTeamId")
+            if str(next_match.get("homeTeamId")) == str(LKS_ID)
+            else next_match.get("homeTeamId")
+        )
+        opponent_name = (
+            next_match.get("awayTeamName")
+            if str(next_match.get("homeTeamId")) == str(LKS_ID)
+            else next_match.get("homeTeamName")
+        )
+        opponent_row = next(
+            (row for row in parsed if str(row.get("id")) == str(opponent_id)),
+            None,
+        )
+        if opponent_row:
+            next_opponent = {
+                "id": opponent_row["id"],
+                "name": opponent_name,
+                "position": opponent_row["idx"],
+                "points": opponent_row["pts"],
+                "played": opponent_row["played"],
+                "wins": opponent_row["wins"],
+                "draws": opponent_row["draws"],
+                "losses": opponent_row["losses"],
+                "goals_for": opponent_row["gf"],
+                "goals_against": opponent_row["ga"],
+                "goal_difference": opponent_row["goalConDiff"],
+                "points_gap_to_lks": opponent_row["pts"] - lks["pts"],
+                "position_gap_to_lks": opponent_row["idx"] - lks["idx"],
+                "venue": (
+                    "home"
+                    if str(next_match.get("homeTeamId")) == str(LKS_ID)
+                    else "away"
+                ),
+            }
+
     dashboard = {
         "generated_at_utc": datetime.now(timezone.utc).isoformat(),
         "team": {"id": LKS_ID, "name": "ŁKS Łódź", "league": "I Liga", "season": "2026/27"},
@@ -191,7 +230,8 @@ def main():
             },
         },
         "previous_match": season_doc.get("previous_match"),
-        "next_match": season_doc.get("next_match"),
+        "next_match": next_match,
+        "next_opponent": next_opponent,
         "upcoming_matches": [
             m for m in matches if not (m.get("status") or {}).get("finished")
         ][:6],
