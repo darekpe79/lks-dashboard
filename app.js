@@ -1,0 +1,168 @@
+const LKS_ID = 8244;
+
+const fmtDate = (iso, withTime = true) => {
+  if (!iso) return "—";
+  const d = new Date(iso);
+  const opts = { day: "numeric", month: "long" };
+  if (withTime) Object.assign(opts, { hour: "2-digit", minute: "2-digit" });
+  return new Intl.DateTimeFormat("pl-PL", opts).format(d);
+};
+
+const escapeHtml = (value = "") => String(value)
+  .replaceAll("&", "&amp;")
+  .replaceAll("<", "&lt;")
+  .replaceAll(">", "&gt;")
+  .replaceAll('"', "&quot;")
+  .replaceAll("'", "&#039;");
+
+function renderMatch(targetId, match, isFinished) {
+  const el = document.getElementById(targetId);
+  if (!match) {
+    el.innerHTML = '<p class="loading">Brak danych o meczu.</p>';
+    return;
+  }
+
+  const score = isFinished
+    ? (match.status?.scoreStr || "—")
+    : '<span class="versus">VS</span>';
+
+  el.innerHTML = `
+    <div class="match-content">
+      <div class="match-date">${fmtDate(match.matchDate)}</div>
+      <div class="match-line">
+        <div class="team-name">${escapeHtml(match.homeTeamName)}</div>
+        <div class="score">${score}</div>
+        <div class="team-name away">${escapeHtml(match.awayTeamName)}</div>
+      </div>
+      <div class="match-meta">I Liga · event ${escapeHtml(match.id)}</div>
+    </div>
+  `;
+}
+
+function statCard(label, value, sub = "") {
+  return `
+    <article class="stat-card">
+      <div class="stat-label">${label}</div>
+      <div class="stat-value">${value}</div>
+      <div class="stat-sub">${sub}</div>
+    </article>
+  `;
+}
+
+function renderSummary(data) {
+  const s = data.summary;
+  document.getElementById("summary-cards").innerHTML = [
+    statCard("Miejsce", `${s.position}.`, "w tabeli"),
+    statCard("Punkty", s.points, `${s.points_per_match} / mecz`),
+    statCard("Bilans", `${s.wins}-${s.draws}-${s.losses}`, "W-R-P"),
+    statCard("Bramki", `${s.goals_for}:${s.goals_against}`, `${s.goal_difference >= 0 ? "+" : ""}${s.goal_difference}`),
+    statCard("Czyste konta", s.clean_sheets, `z ${s.played} spotkań`),
+    statCard("Gole / mecz", s.goals_for_per_match.toFixed(2), `stracone: ${s.goals_against_per_match.toFixed(2)}`)
+  ].join("");
+}
+
+function renderForm(data) {
+  document.getElementById("form-row").innerHTML = data.form.map(item => `
+    <div class="form-item">
+      <div class="form-badge ${item.result}">${item.result === "W" ? "W" : item.result === "D" ? "R" : "P"}</div>
+      <div>
+        <div class="form-opponent">${escapeHtml(item.opponent)}</div>
+        <div class="form-score">${fmtDate(item.date, false)}</div>
+      </div>
+      <div class="form-score">${escapeHtml(item.score)}</div>
+    </div>
+  `).join("");
+}
+
+function renderDeepStats(data) {
+  const h = data.splits.home;
+  const a = data.splits.away;
+  const best = data.records.best_win;
+  const worst = data.records.worst_loss;
+
+  const blocks = [
+    ["U siebie", `${h.wins}W · ${h.draws}R · ${h.losses}P · ${h.gf}:${h.ga}`],
+    ["Na wyjeździe", `${a.wins}W · ${a.draws}R · ${a.losses}P · ${a.gf}:${a.ga}`],
+    ["Najwyższe zwycięstwo", best ? `${best.score} · ${best.homeTeamName} – ${best.awayTeamName}` : "—"],
+    ["Najwyższa porażka", worst ? `${worst.score} · ${worst.homeTeamName} – ${worst.awayTeamName}` : "—"],
+    ["Mecze ze zdobytym golem", `${data.summary.matches_scored_in} / ${data.summary.played}`],
+    ["Bilans bramek", `${data.summary.goal_difference >= 0 ? "+" : ""}${data.summary.goal_difference}`]
+  ];
+
+  document.getElementById("deep-stats").innerHTML = blocks.map(([label, value]) => `
+    <div class="deep-stat"><strong>${escapeHtml(value)}</strong><span>${label}</span></div>
+  `).join("");
+}
+
+function renderUpcoming(data) {
+  document.getElementById("upcoming").innerHTML = data.upcoming_matches.map(m => {
+    const isHome = String(m.homeTeamId) === String(LKS_ID);
+    const opponent = isHome ? m.awayTeamName : m.homeTeamName;
+    return `
+      <div class="fixture">
+        <div class="fixture-date">${fmtDate(m.matchDate, false)}</div>
+        <div class="fixture-teams">${isHome ? "ŁKS" : escapeHtml(opponent)} <span class="muted">—</span> ${isHome ? escapeHtml(opponent) : "ŁKS"}</div>
+        <div class="fixture-tag">${isHome ? "DOM" : "WYJAZD"}</div>
+      </div>
+    `;
+  }).join("");
+}
+
+function renderStandings(data) {
+  document.getElementById("table-meta").textContent = `${data.summary.played} kolejek ŁKS`;
+  document.getElementById("standings-body").innerHTML = data.standings.map(row => `
+    <tr class="${row.id === LKS_ID ? "lks" : ""}">
+      <td class="pos"><span class="zone" style="background:${row.qualColor || "transparent"}"></span>${row.position}</td>
+      <td class="team-cell">${escapeHtml(row.name)}</td>
+      <td>${row.played}</td>
+      <td>${escapeHtml(row.goals)}</td>
+      <td>${row.goal_difference > 0 ? "+" : ""}${row.goal_difference}</td>
+      <td class="pts">${row.points}</td>
+    </tr>
+  `).join("");
+}
+
+function renderLeagueLeaders(data) {
+  const joinNames = items => items.map(x => x.name).join(" / ");
+  const value = items => items[0]?.value ?? "—";
+  const cards = [
+    ["Najwięcej goli", joinNames(data.league_leaders.best_attack), value(data.league_leaders.best_attack)],
+    ["Najmniej straconych", joinNames(data.league_leaders.best_defense), value(data.league_leaders.best_defense)],
+    ["Najwięcej straconych", joinNames(data.league_leaders.most_goals_conceded), value(data.league_leaders.most_goals_conceded)]
+  ];
+
+  document.getElementById("league-leaders").innerHTML = cards.map(([label, name, val]) => `
+    <div class="leader">
+      <div><div class="leader-label">${label}</div><div class="leader-name">${escapeHtml(name)}</div></div>
+      <div class="leader-value">${val}</div>
+    </div>
+  `).join("");
+}
+
+async function boot() {
+  try {
+    const response = await fetch("data/dashboard.json", { cache: "no-store" });
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    const data = await response.json();
+
+    renderMatch("previous-match", data.previous_match, true);
+    renderMatch("next-match", data.next_match, false);
+    renderSummary(data);
+    renderForm(data);
+    renderDeepStats(data);
+    renderUpcoming(data);
+    renderStandings(data);
+    renderLeagueLeaders(data);
+
+    document.getElementById("updated-at").textContent =
+      "Dashboard: " + new Intl.DateTimeFormat("pl-PL", {
+        day:"numeric", month:"short", hour:"2-digit", minute:"2-digit"
+      }).format(new Date(data.generated_at_utc));
+  } catch (error) {
+    document.querySelector("main").innerHTML =
+      '<div class="error-box">Nie udało się wczytać data/dashboard.json. Uruchom stronę przez lokalny serwer HTTP, nie bezpośrednio z pliku.</div>';
+    console.error(error);
+  }
+}
+
+boot();
