@@ -15,9 +15,6 @@ on:
     # Dodatkowy refresh terminarza po weekendowych dniach meczowych.
     - cron: "17 19 * * 5,6,0"
 
-    # W poniedziałek wieczorem odświeżamy ponownie także tabelę.
-    - cron: "17 19 * * 1"
-
   workflow_dispatch:
     inputs:
       mode:
