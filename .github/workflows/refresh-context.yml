@@ -2,9 +2,11 @@ name: Refresh ŁKS context data
 
 on:
   schedule:
-    # Kontrola raz w tygodniu. Jeżeli home/away były odświeżone
-    # przy zmianie rywala w ostatnich 5 dniach, koszt = 0 requestów.
-    - cron: "47 6 * * 2"
+    # Wtorkowa kontrola po porannym refreshu.
+    # Jeżeli home/away były odświeżone przy zmianie rywala
+    # w ostatnich 5 dniach, koszt = 0 requestów.
+    - cron: "47 7 * * 2"
+      timezone: "Europe/Warsaw"
 
   workflow_dispatch:
 
