@@ -1,6 +1,12 @@
 name: Refresh ŁKS dashboard data
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/refresh-data.yml"
+      - "scripts/update_dashboard.py"
+
   schedule:
     # Codzienny pełny refresh: tabela + terminarz.
     # 06:17 UTC = 08:17 w Polsce latem / 07:17 zimą.
