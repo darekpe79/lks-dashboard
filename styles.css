@@ -273,3 +273,36 @@ tbody tr.lks{box-shadow:inset 3px 0 0 var(--red)}
 @media (max-width:620px){
   .opponent-extra{grid-template-columns:1fr 1fr}
 }
+
+
+.table-tabs{
+  display:flex;
+  gap:6px;
+  margin:-4px 0 14px;
+  padding:4px;
+  width:max-content;
+  max-width:100%;
+  border:1px solid var(--line);
+  border-radius:999px;
+  background:#f7f7f8;
+}
+.table-tab{
+  border:0;
+  background:transparent;
+  color:var(--muted);
+  padding:7px 11px;
+  border-radius:999px;
+  font:800 11px/1 Inter,system-ui,sans-serif;
+  cursor:pointer;
+  white-space:nowrap;
+}
+.table-tab.active{
+  background:#fff;
+  color:var(--red);
+  box-shadow:0 3px 12px rgba(27,31,39,.08);
+}
+.table-panel table{min-width:690px}
+@media (max-width:620px){
+  .table-tabs{width:100%;display:grid;grid-template-columns:repeat(3,1fr)}
+  .table-tab{padding:8px 6px}
+}
