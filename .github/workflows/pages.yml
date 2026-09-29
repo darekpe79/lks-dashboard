@@ -10,7 +10,7 @@ on:
       - "data/dashboard.json"
       - ".github/workflows/pages.yml"
   workflow_run:
-    workflows: ["Refresh ŁKS dashboard data"]
+    workflows: ["Refresh ŁKS dashboard data", "Refresh ŁKS context data"]
     types: [completed]
 
   workflow_dispatch:
