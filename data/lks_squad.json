@@ -1,0 +1,25 @@
+{
+  "updated_at_utc": "2026-09-29T12:33:10.964578+00:00",
+  "endpoint": "/football-get-list-player",
+  "team_id": 8244,
+  "rapidapi": {
+    "endpoint": "/football-get-list-player",
+    "params": {
+      "teamid": 8244
+    },
+    "status_code": 200,
+    "limit": "100",
+    "remaining": "92",
+    "reset": "2064771",
+    "content_type": "application/json; charset=utf-8"
+  },
+  "payload": {
+    "status": "success",
+    "response": {
+      "list": {
+        "squad": null,
+        "isNationalTeam": false
+      }
+    }
+  }
+}
