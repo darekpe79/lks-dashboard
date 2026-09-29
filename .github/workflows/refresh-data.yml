@@ -1,16 +1,12 @@
 name: Refresh ŁKS dashboard data
 
 on:
-  push:
-    branches: [main]
-    paths:
-      - ".github/workflows/refresh-data.yml"
-      - "scripts/update_dashboard.py"
-
   schedule:
-    # Codzienny pełny refresh: tabela + terminarz.
-    # 06:17 UTC = 08:17 w Polsce latem / 07:17 zimą.
-    - cron: "17 6 * * *"
+    # Pełny refresh 4 razy w tygodniu: tabela + terminarz (2 requesty).
+    - cron: "17 6 * * 1,3,5,0"
+
+    # W pozostałe poranki: tylko terminarz (1 request).
+    - cron: "17 6 * * 2,4,6"
 
     # Dodatkowy refresh terminarza po weekendowych dniach meczowych.
     - cron: "17 19 * * 5,6,0"
@@ -29,8 +25,10 @@ on:
 permissions:
   contents: write
 
+# Wszystkie workflow zapisujące dane korzystają z jednej kolejki.
+# Dzięki temu nie ścigają się przy pushu do main.
 concurrency:
-  group: lks-data-refresh
+  group: lks-repo-writes
   cancel-in-progress: false
 
 jobs:
@@ -50,12 +48,12 @@ jobs:
         id: refresh_mode
         shell: bash
         run: |
-          MODE="full"
+          MODE="matches"
 
           if [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
             MODE="${{ inputs.mode }}"
-          elif [[ "${{ github.event.schedule }}" == "17 19 * * 5,6,0" ]]; then
-            MODE="matches"
+          elif [[ "${{ github.event.schedule }}" == "17 6 * * 1,3,5,0" ]]; then
+            MODE="full"
           fi
 
           echo "mode=$MODE" >> "$GITHUB_OUTPUT"
@@ -80,5 +78,15 @@ jobs:
           fi
 
           git commit -m "Refresh LKS dashboard data"
-          git pull --rebase origin main
-          git push
+
+          # Retry dotyczy wyłącznie zapisu do GitHuba — NIE wykonuje ponownie requestów API.
+          for attempt in 1 2 3; do
+            git pull --rebase origin main
+            if git push; then
+              exit 0
+            fi
+            echo "Push nie udał się (próba $attempt/3); ponawiam bez odpytywania API."
+            sleep 2
+          done
+
+          exit 1
