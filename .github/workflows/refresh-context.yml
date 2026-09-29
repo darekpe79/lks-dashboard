@@ -2,15 +2,15 @@ name: Refresh ŁKS context data
 
 on:
   schedule:
-    # Raz w tygodniu, 30 minut po poniedziałkowym pełnym refreshu.
-    - cron: "47 6 * * 1"
+    # Kontrola raz w tygodniu. Jeżeli home/away były odświeżone
+    # przy zmianie rywala w ostatnich 5 dniach, koszt = 0 requestów.
+    - cron: "47 6 * * 2"
 
   workflow_dispatch:
 
 permissions:
   contents: write
 
-# Ta sama kolejka co główny refresh: tylko jeden workflow naraz zapisuje do main.
 concurrency:
   group: lks-repo-writes
   cancel-in-progress: false
@@ -28,10 +28,10 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Refresh context data
+      - name: Refresh context data if stale
         env:
           RAPIDAPI_KEY: ${{ secrets.RAPIDAPI_KEY }}
-        run: python scripts/update_context.py
+        run: python scripts/update_context.py --mode weekly
 
       - name: Commit context data
         shell: bash
@@ -48,7 +48,6 @@ jobs:
 
           git commit -m "Refresh LKS context data"
 
-          # Retry dotyczy wyłącznie zapisu do GitHuba — NIE wykonuje ponownie requestów API.
           for attempt in 1 2 3; do
             git pull --rebase origin main
             if git push; then
