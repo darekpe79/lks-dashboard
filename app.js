@@ -250,7 +250,7 @@ async function boot() {
       }).format(new Date(data.generated_at_utc));
   } catch (error) {
     document.querySelector("main").innerHTML =
-      '<div class="error-box">Nie udało się wczytać data/dashboard.json. Uruchom stronę przez lokalny serwer HTTP, nie bezpośrednio z pliku.</div>';
+      '<div class="error-box">Nie udało się uruchomić dashboardu. Sprawdź konsolę przeglądarki lub poczekaj na zakończenie wdrożenia GitHub Pages.</div>';
     console.error(error);
   }
 }
