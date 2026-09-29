@@ -8,16 +8,16 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20260929-4">
+  <link rel="stylesheet" href="styles.css?v=20260929-5">
 </head>
 <body>
   <div class="page-shell">
     <header class="topbar">
       <div class="brand">
-        <div class="crest" aria-hidden="true">ŁKS</div>
+        <div class="crest" id="club-crest" aria-hidden="true">ŁKS</div>
         <div>
           <p class="eyebrow">SEZON 2026/27</p>
-          <h1>ŁKS Łódź</h1>
+          <h1>ŁKS Łódź</h1>\n          <p id="club-meta" class="club-meta"></p>
         </div>
       </div>
       <nav class="mini-nav" aria-label="Sekcje">
@@ -97,7 +97,7 @@
             <div class="panel-head">
               <div>
                 <p class="eyebrow">Najbliższy rywal</p>
-                <h2 id="opponent-title">Przeciwnik</h2>
+                <div class="opponent-title-row"><img id="opponent-logo" class="opponent-logo" alt="" hidden><h2 id="opponent-title">Przeciwnik</h2></div>
               </div>
               <span id="opponent-venue" class="muted"></span>
             </div>
@@ -143,6 +143,6 @@
 
   <button id="back-to-top" class="back-to-top" type="button" aria-label="Wróć na górę">↑</button>
 
-  <script src="app.js?v=20260929-4"></script>
+  <script src="app.js?v=20260929-5"></script>
 </body>
 </html>
