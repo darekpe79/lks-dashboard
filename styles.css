@@ -116,12 +116,12 @@ h2{font-size:22px;letter-spacing:-.5px}
 
 .fixtures{display:grid;gap:8px}
 .fixture{
-  display:grid;grid-template-columns:78px 1fr auto;gap:12px;align-items:center;
+  display:grid;grid-template-columns:132px 1fr auto;gap:14px;align-items:center;
   border:1px solid var(--line);border-radius:14px;padding:12px 14px
 }
-.fixture-date{font-size:11px;color:var(--muted);font-weight:700;line-height:1.15}
-.fixture-date strong{display:block;color:var(--ink);font-size:11px;text-transform:capitalize;margin-bottom:3px}
-.fixture-date span{display:block}
+.fixture-date{font-size:11px;color:var(--muted);font-weight:700;line-height:1.2}
+.fixture-date strong{display:block;color:var(--red);font-size:10px;text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px}
+.fixture-date span{display:block;color:var(--ink);font-size:12px;font-weight:800;white-space:nowrap}
 .fixture-teams{font-size:13px;font-weight:700}
 .fixture-tag{font-size:10px;font-weight:800;padding:5px 8px;border-radius:999px;background:#f3f3f4;color:var(--muted)}
 
@@ -166,7 +166,7 @@ footer{display:flex;justify-content:space-between;gap:20px;color:var(--muted);fo
   .form-badge{margin:0}
   .form-score{margin:0}
   .deep-stats{grid-template-columns:1fr}
-  .fixture{grid-template-columns:70px 1fr}
+  .fixture{grid-template-columns:108px 1fr}
   .fixture-tag{display:none}
   footer{flex-direction:column;gap:6px}
 }
