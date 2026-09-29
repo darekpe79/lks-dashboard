@@ -8,6 +8,27 @@ const fmtDate = (iso, withTime = true) => {
   return new Intl.DateTimeFormat("pl-PL", opts).format(d);
 };
 
+const fmtMatchDate = (iso) => {
+  if (!iso) return "—";
+  return new Intl.DateTimeFormat("pl-PL", {
+    weekday: "long",
+    day: "numeric",
+    month: "long",
+    hour: "2-digit",
+    minute: "2-digit",
+  }).format(new Date(iso));
+};
+
+const fmtFixtureDate = (iso) => {
+  if (!iso) return { weekday: "—", date: "—", time: "—" };
+  const d = new Date(iso);
+  return {
+    weekday: new Intl.DateTimeFormat("pl-PL", { weekday: "short" }).format(d),
+    date: new Intl.DateTimeFormat("pl-PL", { day: "numeric", month: "short" }).format(d),
+    time: new Intl.DateTimeFormat("pl-PL", { hour: "2-digit", minute: "2-digit" }).format(d),
+  };
+};
+
 const escapeHtml = (value = "") => String(value)
   .replaceAll("&", "&amp;")
   .replaceAll("<", "&lt;")
@@ -24,7 +45,7 @@ function renderMatch(targetId, match, isFinished) {
   const score = isFinished ? (match.status?.scoreStr || "—") : '<span class="versus">VS</span>';
   el.innerHTML = `
     <div class="match-content">
-      <div class="match-date">${fmtDate(match.matchDate)}</div>
+      <div class="match-date">${fmtMatchDate(match.matchDate)}</div>
       <div class="match-line">
         <div class="team-name">${escapeHtml(match.homeTeamName)}</div>
         <div class="score">${score}</div>
@@ -187,9 +208,14 @@ function renderUpcoming(data) {
   document.getElementById("upcoming").innerHTML = data.upcoming_matches.map(m => {
     const isHome = String(m.homeTeamId) === String(LKS_ID);
     const opponent = isHome ? m.awayTeamName : m.homeTeamName;
+    const when = fmtFixtureDate(m.matchDate);
     return `
       <div class="fixture">
-        <div class="fixture-date">${fmtDate(m.matchDate, false)}</div>
+        <div class="fixture-date">
+          <strong>${escapeHtml(when.weekday)}</strong>
+          <span>${escapeHtml(when.date)}</span>
+          <span>${escapeHtml(when.time)}</span>
+        </div>
         <div class="fixture-teams">${isHome ? "ŁKS" : escapeHtml(opponent)} <span class="muted">—</span> ${isHome ? escapeHtml(opponent) : "ŁKS"}</div>
         <div class="fixture-tag">${isHome ? "DOM" : "WYJAZD"}</div>
       </div>
