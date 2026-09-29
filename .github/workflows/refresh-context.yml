@@ -1,0 +1,56 @@
+name: Refresh ŁKS context data
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/refresh-context.yml"
+      - "scripts/update_context.py"
+
+  schedule:
+    # Raz w tygodniu, 30 minut po poniedziałkowym porannym refreshu.
+    - cron: "47 6 * * 1"
+
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: lks-context-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh-context:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Refresh context data
+        env:
+          RAPIDAPI_KEY: ${{ secrets.RAPIDAPI_KEY }}
+        run: python scripts/update_context.py
+
+      - name: Commit context data
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add data/context.json data/dashboard.json
+
+          if git diff --cached --quiet; then
+            echo "Brak zmian do zapisania."
+            exit 0
+          fi
+
+          git commit -m "Refresh LKS context data"
+          git pull --rebase origin main
+          git push
