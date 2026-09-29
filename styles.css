@@ -182,3 +182,25 @@ footer{display:flex;justify-content:space-between;gap:20px;color:var(--muted);fo
 .advanced-row span{font-size:11px;color:var(--muted)}
 .advanced-row strong{font-size:12px;text-align:right}
 @media (max-width:1050px){.mini-nav{display:none}.advanced-stats{grid-template-columns:1fr}}
+
+
+.opponent-panel{overflow:hidden}
+.opponent-hero{display:flex;align-items:end;justify-content:space-between;gap:18px;padding:4px 0 18px;border-bottom:1px solid var(--line)}
+.opponent-rank{font-size:46px;line-height:.9;font-weight:900;letter-spacing:-2px;color:var(--red)}
+.opponent-rank-label{display:block;margin-top:6px;font-size:11px;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:.08em}
+.opponent-points{text-align:right}
+.opponent-points strong{display:block;font-size:30px;line-height:1;font-weight:900}
+.opponent-points span{display:block;margin-top:6px;font-size:11px;color:var(--muted)}
+.opponent-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:14px}
+.opponent-grid>div{background:#f7f7f8;border:1px solid var(--line);border-radius:13px;padding:11px}
+.opponent-grid span{display:block;font-size:10px;color:var(--muted);text-transform:uppercase;font-weight:800;letter-spacing:.06em}
+.opponent-grid strong{display:block;margin-top:5px;font-size:16px}
+.opponent-compare{margin-top:14px;border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.compare-head,.compare-row{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:10px;padding:9px 12px}
+.compare-head{background:#f7f7f8;font-size:11px;font-weight:800}
+.compare-head span:last-child{text-align:right}
+.compare-row{border-top:1px solid var(--line);font-size:11px}
+.compare-row span{color:var(--muted);text-align:center;grid-column:2}
+.compare-row b{grid-column:1;grid-row:1;text-align:left;font-size:12px}
+.compare-row i{grid-column:3;grid-row:1;text-align:right;font-style:normal;font-weight:800;font-size:12px}
+@media (max-width:620px){.opponent-grid{grid-template-columns:repeat(2,1fr)}}
