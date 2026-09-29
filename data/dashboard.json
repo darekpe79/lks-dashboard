@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-29T12:43:33.242Z",
+  "generated_at_utc": "2026-09-29T13:36:51.643305+00:00",
   "team": {
     "id": 8244,
     "name": "ŁKS Łódź",
@@ -18,9 +18,10 @@
     "goal_difference": 4,
     "points_per_match": 1.67,
     "goals_for_per_match": 1.44,
-    "goals_against_per_match": 1,
+    "goals_against_per_match": 1.0,
     "clean_sheets": 2,
-    "matches_scored_in": 7
+    "matches_scored_in": 7,
+    "failed_to_score": 2
   },
   "form": [
     {
@@ -61,7 +62,15 @@
       "draws": 0,
       "losses": 1,
       "gf": 9,
-      "ga": 4
+      "ga": 4,
+      "clean_sheets": 1,
+      "failed_to_score": 0,
+      "max_gf": 4,
+      "max_ga": 2,
+      "biggest_win_margin": 4,
+      "biggest_loss_margin": 1,
+      "gf_avg": 2.25,
+      "ga_avg": 1.0
     },
     "away": {
       "played": 5,
@@ -69,7 +78,15 @@
       "draws": 3,
       "losses": 1,
       "gf": 4,
-      "ga": 5
+      "ga": 5,
+      "clean_sheets": 1,
+      "failed_to_score": 2,
+      "max_gf": 2,
+      "max_ga": 2,
+      "biggest_win_margin": 1,
+      "biggest_loss_margin": 2,
+      "gf_avg": 0.8,
+      "ga_avg": 1.0
     }
   },
   "records": {
@@ -88,6 +105,22 @@
       "awayTeamName": "ŁKS Łódź",
       "score": "2 - 0",
       "goalDiff": -2
+    },
+    "streaks": {
+      "wins": 2,
+      "draws": 2,
+      "losses": 1,
+      "unbeaten": 5
+    },
+    "biggest_goals": {
+      "for": {
+        "home": 4,
+        "away": 2
+      },
+      "against": {
+        "home": 2,
+        "away": 2
+      }
     }
   },
   "previous_match": {
@@ -135,6 +168,22 @@
     "homeTeamName": "ŁKS Łódź",
     "awayTeamId": "1601",
     "awayTeamName": "Ruch Chorzów"
+  },
+  "next_opponent": {
+    "id": 1601,
+    "name": "Ruch Chorzów",
+    "position": 11,
+    "points": 12,
+    "played": 9,
+    "wins": 3,
+    "draws": 3,
+    "losses": 3,
+    "goals_for": 9,
+    "goals_against": 11,
+    "goal_difference": -2,
+    "points_gap_to_lks": -3,
+    "position_gap_to_lks": 7,
+    "venue": "home"
   },
   "upcoming_matches": [
     {
