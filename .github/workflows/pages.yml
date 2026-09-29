@@ -35,6 +35,14 @@ jobs:
         with:
           enablement: true
 
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Build dashboard data
+        run: python scripts/build_dashboard_stats.py
+
       - name: Prepare static site
         shell: bash
         run: |
