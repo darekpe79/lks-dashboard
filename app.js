@@ -21,11 +21,7 @@ function renderMatch(targetId, match, isFinished) {
     el.innerHTML = '<p class="loading">Brak danych o meczu.</p>';
     return;
   }
-
-  const score = isFinished
-    ? (match.status?.scoreStr || "—")
-    : '<span class="versus">VS</span>';
-
+  const score = isFinished ? (match.status?.scoreStr || "—") : '<span class="versus">VS</span>';
   el.innerHTML = `
     <div class="match-content">
       <div class="match-date">${fmtDate(match.matchDate)}</div>
@@ -57,7 +53,7 @@ function renderSummary(data) {
     statCard("Bilans", `${s.wins}-${s.draws}-${s.losses}`, "W-R-P"),
     statCard("Bramki", `${s.goals_for}:${s.goals_against}`, `${s.goal_difference >= 0 ? "+" : ""}${s.goal_difference}`),
     statCard("Czyste konta", s.clean_sheets, `z ${s.played} spotkań`),
-    statCard("Gole / mecz", s.goals_for_per_match.toFixed(2), `stracone: ${s.goals_against_per_match.toFixed(2)}`)
+    statCard("Bez gola", s.failed_to_score, `z ${s.played} spotkań`)
   ].join("");
 }
 
@@ -79,18 +75,65 @@ function renderDeepStats(data) {
   const a = data.splits.away;
   const best = data.records.best_win;
   const worst = data.records.worst_loss;
-
   const blocks = [
     ["U siebie", `${h.wins}W · ${h.draws}R · ${h.losses}P · ${h.gf}:${h.ga}`],
     ["Na wyjeździe", `${a.wins}W · ${a.draws}R · ${a.losses}P · ${a.gf}:${a.ga}`],
     ["Najwyższe zwycięstwo", best ? `${best.score} · ${best.homeTeamName} – ${best.awayTeamName}` : "—"],
     ["Najwyższa porażka", worst ? `${worst.score} · ${worst.homeTeamName} – ${worst.awayTeamName}` : "—"],
     ["Mecze ze zdobytym golem", `${data.summary.matches_scored_in} / ${data.summary.played}`],
-    ["Bilans bramek", `${data.summary.goal_difference >= 0 ? "+" : ""}${data.summary.goal_difference}`]
+    ["Gole / mecz", `${data.summary.goals_for_per_match.toFixed(2)} · stracone ${data.summary.goals_against_per_match.toFixed(2)}`]
   ];
-
   document.getElementById("deep-stats").innerHTML = blocks.map(([label, value]) => `
     <div class="deep-stat"><strong>${escapeHtml(value)}</strong><span>${label}</span></div>
+  `).join("");
+}
+
+function renderAdvanced(data) {
+  const h = data.splits.home;
+  const a = data.splits.away;
+  const streaks = data.records.streaks;
+  const biggest = data.records.biggest_goals;
+
+  const groups = [
+    {
+      title: "Czyste konta / bez gola",
+      rows: [
+        ["Czyste konta", `${h.clean_sheets} dom · ${a.clean_sheets} wyjazd · ${data.summary.clean_sheets} razem`],
+        ["Bez zdobytej bramki", `${h.failed_to_score} dom · ${a.failed_to_score} wyjazd · ${data.summary.failed_to_score} razem`]
+      ]
+    },
+    {
+      title: "Bramki dom / wyjazd",
+      rows: [
+        ["Zdobyte", `${h.gf} (${h.gf_avg}/mecz) · ${a.gf} (${a.gf_avg}/mecz)`],
+        ["Stracone", `${h.ga} (${h.ga_avg}/mecz) · ${a.ga} (${a.ga_avg}/mecz)`],
+        ["Najwięcej zdobytych w meczu", `${biggest.for.home} dom · ${biggest.for.away} wyjazd`],
+        ["Najwięcej straconych w meczu", `${biggest.against.home} dom · ${biggest.against.away} wyjazd`]
+      ]
+    },
+    {
+      title: "Najdłuższe serie",
+      rows: [
+        ["Zwycięstwa", streaks.wins],
+        ["Remisy", streaks.draws],
+        ["Porażki", streaks.losses],
+        ["Bez porażki", streaks.unbeaten]
+      ]
+    }
+  ];
+
+  document.getElementById("advanced-stats").innerHTML = groups.map(group => `
+    <section class="advanced-card">
+      <h3>${escapeHtml(group.title)}</h3>
+      <div class="advanced-rows">
+        ${group.rows.map(([label, value]) => `
+          <div class="advanced-row">
+            <span>${escapeHtml(label)}</span>
+            <strong>${escapeHtml(value)}</strong>
+          </div>
+        `).join("")}
+      </div>
+    </section>
   `).join("");
 }
 
@@ -130,7 +173,6 @@ function renderLeagueLeaders(data) {
     ["Najmniej straconych", joinNames(data.league_leaders.best_defense), value(data.league_leaders.best_defense)],
     ["Najwięcej straconych", joinNames(data.league_leaders.most_goals_conceded), value(data.league_leaders.most_goals_conceded)]
   ];
-
   document.getElementById("league-leaders").innerHTML = cards.map(([label, name, val]) => `
     <div class="leader">
       <div><div class="leader-label">${label}</div><div class="leader-name">${escapeHtml(name)}</div></div>
@@ -150,6 +192,7 @@ async function boot() {
     renderSummary(data);
     renderForm(data);
     renderDeepStats(data);
+    renderAdvanced(data);
     renderUpcoming(data);
     renderStandings(data);
     renderLeagueLeaders(data);
