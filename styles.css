@@ -182,17 +182,7 @@ footer{display:flex;justify-content:space-between;gap:20px;color:var(--muted);fo
 .advanced-row span{font-size:11px;color:var(--muted)}
 .advanced-row strong{font-size:12px;text-align:right}
 @media (max-width:1050px){
-  .topbar{flex-wrap:wrap;gap:14px}
-  .mini-nav{
-    display:flex;
-    order:3;
-    width:100%;
-    overflow-x:auto;
-    justify-content:flex-start;
-    padding:5px;
-    scrollbar-width:none;
-  }
-  .mini-nav::-webkit-scrollbar{display:none}
+  .mini-nav{display:none}
   .advanced-stats{grid-template-columns:1fr}
 }
 
