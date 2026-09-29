@@ -1,0 +1,137 @@
+{
+  "updated_at_utc": "2026-09-29T16:48:43+00:00",
+  "home_away_updated_at_utc": "2026-09-29T16:48:41+00:00",
+  "league_id": 197,
+  "event_id": "5861942",
+  "opponent_id": 1601,
+  "opponent_name": "Ruch Chorzów",
+  "lks_profile": {
+    "id": 8244,
+    "name": "ŁKS Łódź",
+    "short_name": "ŁKS Łódź",
+    "season": "2026/2027",
+    "league_id": 197,
+    "league_name": "I Liga",
+    "logo": "https://images.fotmob.com/image_resources/logo/teamlogo/8244.png",
+    "stadium": "Stadion Miejski im. Władysława Króla",
+    "city": "Łódź",
+    "country": "Poland",
+    "capacity": 18029,
+    "latitude": null,
+    "longitude": null
+  },
+  "opponent_profile": {
+    "id": 1601,
+    "name": "Ruch Chorzów",
+    "short_name": "Ruch Chorzów",
+    "season": "2026/2027",
+    "league_id": 197,
+    "league_name": "I Liga",
+    "logo": "https://images.fotmob.com/image_resources/logo/teamlogo/1601.png",
+    "stadium": "Superauto.pl Stadion Śląski",
+    "city": "Chorzów",
+    "country": "Poland",
+    "capacity": 54378,
+    "latitude": "50.288263034",
+    "longitude": "18.973501333"
+  },
+  "home_standing": {
+    "lks": {
+      "position": 3,
+      "played": 4,
+      "wins": 3,
+      "draws": 0,
+      "losses": 1,
+      "goals": "9-4",
+      "goal_difference": 5,
+      "points": 9
+    },
+    "opponent": {
+      "position": 10,
+      "played": 4,
+      "wins": 2,
+      "draws": 1,
+      "losses": 1,
+      "goals": "7-6",
+      "goal_difference": 1,
+      "points": 7
+    }
+  },
+  "away_standing": {
+    "lks": {
+      "position": 8,
+      "played": 5,
+      "wins": 1,
+      "draws": 3,
+      "losses": 1,
+      "goals": "4-5",
+      "goal_difference": -1,
+      "points": 6
+    },
+    "opponent": {
+      "position": 11,
+      "played": 5,
+      "wins": 1,
+      "draws": 2,
+      "losses": 2,
+      "goals": "2-5",
+      "goal_difference": -3,
+      "points": 5
+    }
+  },
+  "h2h": [
+    {
+      "date": "2026-03-21T13:30:00.000Z",
+      "league_id": "197",
+      "league_name": "I Liga",
+      "home_id": "8244",
+      "home_name": "ŁKS Łódź",
+      "away_id": "1601",
+      "away_name": "Ruch Chorzów",
+      "score": "2 - 2"
+    },
+    {
+      "date": "2025-09-14T13:30:00.000Z",
+      "league_id": "197",
+      "league_name": "I Liga",
+      "home_id": "1601",
+      "home_name": "Ruch Chorzów",
+      "away_id": "8244",
+      "away_name": "ŁKS Łódź",
+      "score": "2 - 1"
+    },
+    {
+      "date": "2025-05-10T17:30:00.000Z",
+      "league_id": "197",
+      "league_name": "I Liga",
+      "home_id": "1601",
+      "home_name": "Ruch Chorzów",
+      "away_id": "8244",
+      "away_name": "ŁKS Łódź",
+      "score": "1 - 3"
+    },
+    {
+      "date": "2024-11-03T13:30:00.000Z",
+      "league_id": "197",
+      "league_name": "I Liga",
+      "home_id": "8244",
+      "home_name": "ŁKS Łódź",
+      "away_id": "1601",
+      "away_name": "Ruch Chorzów",
+      "score": "0 - 1"
+    },
+    {
+      "date": "2023-12-17T11:30:00.000Z",
+      "league_id": "196",
+      "league_name": "Ekstraklasa",
+      "home_id": "8244",
+      "home_name": "ŁKS Łódź",
+      "away_id": "1601",
+      "away_name": "Ruch Chorzów",
+      "score": "1 - 1"
+    }
+  ],
+  "rapidapi_remaining": null,
+  "requests_used_this_run": 0,
+  "source": "seeded_from_existing_probe_results"
+}
