@@ -30,7 +30,7 @@ function renderMatch(targetId, match, isFinished) {
         <div class="score">${score}</div>
         <div class="team-name away">${escapeHtml(match.awayTeamName)}</div>
       </div>
-      <div class="match-meta">I Liga · event ${escapeHtml(match.id)}</div>
+      <div class="match-meta">I Liga</div>
     </div>
   `;
 }
@@ -137,6 +137,52 @@ function renderAdvanced(data) {
   `).join("");
 }
 
+function renderNextOpponent(data) {
+  const o = data.next_opponent;
+  const box = document.getElementById("next-opponent");
+  if (!o) {
+    box.innerHTML = '<p class="loading">Brak danych o najbliższym rywalu.</p>';
+    return;
+  }
+
+  document.getElementById("opponent-title").textContent = o.name;
+  document.getElementById("opponent-venue").textContent =
+    o.venue === "home" ? "mecz u siebie" : "mecz na wyjeździe";
+
+  const gapText = o.points_gap_to_lks === 0
+    ? "tyle samo co ŁKS"
+    : o.points_gap_to_lks > 0
+      ? `+${o.points_gap_to_lks} względem ŁKS`
+      : `${o.points_gap_to_lks} względem ŁKS`;
+
+  box.innerHTML = `
+    <div class="opponent-hero">
+      <div>
+        <span class="opponent-rank">${o.position}.</span>
+        <span class="opponent-rank-label">miejsce</span>
+      </div>
+      <div class="opponent-points">
+        <strong>${o.points}</strong>
+        <span>pkt · ${escapeHtml(gapText)}</span>
+      </div>
+    </div>
+
+    <div class="opponent-grid">
+      <div><span>Bilans</span><strong>${o.wins}-${o.draws}-${o.losses}</strong></div>
+      <div><span>Bramki</span><strong>${o.goals_for}:${o.goals_against}</strong></div>
+      <div><span>Różnica</span><strong>${o.goal_difference > 0 ? "+" : ""}${o.goal_difference}</strong></div>
+      <div><span>Mecze</span><strong>${o.played}</strong></div>
+    </div>
+
+    <div class="opponent-compare">
+      <div class="compare-head"><span>ŁKS</span><span>${escapeHtml(o.name)}</span></div>
+      <div class="compare-row"><span>Punkty</span><b>${data.summary.points}</b><i>${o.points}</i></div>
+      <div class="compare-row"><span>Bramki</span><b>${data.summary.goals_for}:${data.summary.goals_against}</b><i>${o.goals_for}:${o.goals_against}</i></div>
+      <div class="compare-row"><span>Bilans</span><b>${data.summary.wins}-${data.summary.draws}-${data.summary.losses}</b><i>${o.wins}-${o.draws}-${o.losses}</i></div>
+    </div>
+  `;
+}
+
 function renderUpcoming(data) {
   document.getElementById("upcoming").innerHTML = data.upcoming_matches.map(m => {
     const isHome = String(m.homeTeamId) === String(LKS_ID);
@@ -193,6 +239,7 @@ async function boot() {
     renderForm(data);
     renderDeepStats(data);
     renderAdvanced(data);
+    renderNextOpponent(data);
     renderUpcoming(data);
     renderStandings(data);
     renderLeagueLeaders(data);
