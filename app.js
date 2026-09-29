@@ -77,7 +77,11 @@ function renderClubContext(data) {
   }
 
   if (meta && profile) {
-    const parts = [profile.stadium, profile.city].filter(Boolean);
+    const parts = [
+      profile.stadium,
+      profile.capacity ? `${Number(profile.capacity).toLocaleString("pl-PL")} miejsc` : null,
+      profile.city,
+    ].filter(Boolean);
     meta.textContent = parts.join(" · ");
   }
 }
@@ -209,8 +213,8 @@ function renderNextOpponent(data) {
 
   const extraStats = (homeStanding || awayStanding || profile.stadium) ? `
     <div class="opponent-extra">
-      ${homeStanding ? `<div><span>Tabela domowa</span><strong>${homeStanding.position}. · ${homeStanding.points} pkt</strong></div>` : ""}
-      ${awayStanding ? `<div><span>Tabela wyjazdowa</span><strong>${awayStanding.position}. · ${awayStanding.points} pkt</strong></div>` : ""}
+      ${homeStanding ? `<div><span>U siebie</span><strong>${homeStanding.position}. miejsce · ${homeStanding.wins}-${homeStanding.draws}-${homeStanding.losses} · ${escapeHtml(homeStanding.goals)} · ${homeStanding.points} pkt</strong></div>` : ""}
+      ${awayStanding ? `<div><span>Na wyjeździe</span><strong>${awayStanding.position}. miejsce · ${awayStanding.wins}-${awayStanding.draws}-${awayStanding.losses} · ${escapeHtml(awayStanding.goals)} · ${awayStanding.points} pkt</strong></div>` : ""}
       ${profile.stadium ? `<div><span>Stadion</span><strong>${escapeHtml(profile.stadium)}</strong></div>` : ""}
       ${profile.capacity ? `<div><span>Pojemność</span><strong>${Number(profile.capacity).toLocaleString("pl-PL")}</strong></div>` : ""}
     </div>
