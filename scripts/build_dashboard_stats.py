@@ -275,6 +275,8 @@ def main():
                 for row in parsed if row["ga"] == max_ga
             ],
         },
+        "standings_home": context_doc.get("home_table", []),
+        "standings_away": context_doc.get("away_table", []),
         "standings": [
             {
                 "position": row["idx"],
