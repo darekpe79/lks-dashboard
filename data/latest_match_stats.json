@@ -1,0 +1,46 @@
+{
+  "event_id": "5861931",
+  "source_match": {
+    "type": "match",
+    "id": "5861931",
+    "score": -70,
+    "leagueId": 197,
+    "leagueName": "I Liga",
+    "matchDate": "2026-09-19T13:30:00Z",
+    "status": {
+      "utcTime": "2026-09-19T13:30:00Z",
+      "finished": true,
+      "started": true,
+      "cancelled": false,
+      "awarded": false,
+      "scoreStr": "2 - 0",
+      "reason": {
+        "short": "FT",
+        "shortKey": "fulltime_short",
+        "long": "Full-Time",
+        "longKey": "finished"
+      }
+    },
+    "homeTeamId": "585593",
+    "homeTeamName": "Pogoń Grodzisk Mazowiecki",
+    "homeTeamScore": 2,
+    "awayTeamId": "8244",
+    "awayTeamName": "ŁKS Łódź",
+    "awayTeamScore": 0
+  },
+  "rapidapi": {
+    "endpoint": "/football-get-match-all-stats",
+    "params": {
+      "eventid": "5861931"
+    },
+    "status_code": 200,
+    "limit": "100",
+    "remaining": "94",
+    "reset": "2067349",
+    "content_type": "application/json; charset=utf-8"
+  },
+  "payload": {
+    "status": "failed",
+    "message": "Request Failed Please try Again"
+  }
+}
