@@ -20,6 +20,12 @@
           <h1>ŁKS Łódź</h1>
         </div>
       </div>
+      <nav class="mini-nav" aria-label="Sekcje">
+        <a href="#forma">Forma</a>
+        <a href="#statystyki">Statystyki</a>
+        <a href="#tabela">Tabela</a>
+        <a href="#terminarz">Terminarz</a>
+      </nav>
       <div class="league-chip">I Liga</div>
     </header>
 
@@ -40,7 +46,7 @@
 
       <section class="content-grid">
         <div class="stack">
-          <article class="panel">
+          <article class="panel" id="forma">
             <div class="panel-head">
               <div>
                 <p class="eyebrow">Ostatnie 5 spotkań</p>
@@ -55,7 +61,7 @@
             <div class="form-row" id="form-row"></div>
           </article>
 
-          <article class="panel">
+          <article class="panel" id="statystyki">
             <div class="panel-head">
               <div>
                 <p class="eyebrow">Sezon w liczbach</p>
@@ -68,6 +74,16 @@
           <article class="panel">
             <div class="panel-head">
               <div>
+                <p class="eyebrow">Ze starej wersji</p>
+                <h2>Statystyki rozszerzone</h2>
+              </div>
+            </div>
+            <div id="advanced-stats" class="advanced-stats"></div>
+          </article>
+
+          <article class="panel" id="terminarz">
+            <div class="panel-head">
+              <div>
                 <p class="eyebrow">Najbliższe tygodnie</p>
                 <h2>Terminarz</h2>
               </div>
@@ -77,7 +93,7 @@
         </div>
 
         <aside class="stack">
-          <article class="panel table-panel">
+          <article class="panel table-panel" id="tabela">
             <div class="panel-head">
               <div>
                 <p class="eyebrow">I Liga</p>
