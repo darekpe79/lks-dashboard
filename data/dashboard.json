@@ -1,10 +1,13 @@
 {
-  "generated_at_utc": "2026-09-29T13:36:51.643305+00:00",
+  "generated_at_utc": "2026-09-29T16:54:25.285667+00:00",
   "team": {
     "id": 8244,
     "name": "ŁKS Łódź",
     "league": "I Liga",
-    "season": "2026/27"
+    "season": "2026/27",
+    "profile": null,
+    "home_standing": null,
+    "away_standing": null
   },
   "summary": {
     "position": 4,
