@@ -270,12 +270,12 @@ async function boot() {
     renderLeagueLeaders(data);
 
     document.getElementById("updated-at").textContent =
-      "Dashboard: " + new Intl.DateTimeFormat("pl-PL", {
+      "Aktualizacja: " + new Intl.DateTimeFormat("pl-PL", {
         day:"numeric", month:"short", hour:"2-digit", minute:"2-digit"
       }).format(new Date(data.generated_at_utc));
   } catch (error) {
     document.querySelector("main").innerHTML =
-      '<div class="error-box">Nie udało się uruchomić dashboardu. Sprawdź konsolę przeglądarki lub poczekaj na zakończenie wdrożenia GitHub Pages.</div>';
+      '<div class="error-box">Nie udało się wczytać danych. Spróbuj odświeżyć stronę za chwilę.</div>';
     console.error(error);
   }
 }
