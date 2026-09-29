@@ -1,0 +1,1455 @@
+{
+  "generated_at_utc": "2026-09-29T11:42:36.816529+00:00",
+  "source_file": "data/i_liga_matches.json",
+  "source_updated_at_utc": "2026-09-29T11:37:12.379555+00:00",
+  "league_id": 197,
+  "lks_id": 8244,
+  "match_count": 35,
+  "first_match": {
+    "id": "4816770",
+    "pageUrl": "/matches/ks-odz-vs-znicz-pruszkow/26ycj9i#4816770",
+    "opponent": {
+      "id": "8244",
+      "name": "ŁKS Łódź",
+      "score": 1
+    },
+    "home": {
+      "id": "8244",
+      "name": "ŁKS Łódź",
+      "score": 1
+    },
+    "away": {
+      "id": "89469",
+      "name": "Znicz Pruszków",
+      "score": 0
+    },
+    "displayTournament": true,
+    "notStarted": false,
+    "tournament": {
+      "stage": ""
+    },
+    "status": {
+      "utcTime": "2025-07-18T18:30:00Z",
+      "finished": true,
+      "started": true,
+      "cancelled": false,
+      "awarded": false,
+      "scoreStr": "1 - 0",
+      "reason": {
+        "short": "FT",
+        "shortKey": "fulltime_short",
+        "long": "Full-Time",
+        "longKey": "finished"
+      }
+    }
+  },
+  "last_match_in_source": {
+    "id": "5667004",
+    "pageUrl": "/matches/ks-odz-vs-chrobry-gogow/i8il7bl#5667004",
+    "opponent": {
+      "id": "273525",
+      "name": "Chrobry Głogów",
+      "score": 1
+    },
+    "home": {
+      "id": "273525",
+      "name": "Chrobry Głogów",
+      "score": 1
+    },
+    "away": {
+      "id": "8244",
+      "name": "ŁKS Łódź",
+      "score": 1
+    },
+    "displayTournament": true,
+    "notStarted": false,
+    "tournament": {
+      "stage": ""
+    },
+    "status": {
+      "utcTime": "2026-05-28T15:30:00Z",
+      "finished": true,
+      "started": true,
+      "cancelled": false,
+      "awarded": false,
+      "scoreStr": "1 - 1",
+      "reason": {
+        "short": "Pen",
+        "shortKey": "penalties_short",
+        "long": "After penalties",
+        "longKey": "afterpenalties"
+      }
+    }
+  },
+  "previous_match": {
+    "id": "5667004",
+    "pageUrl": "/matches/ks-odz-vs-chrobry-gogow/i8il7bl#5667004",
+    "opponent": {
+      "id": "273525",
+      "name": "Chrobry Głogów",
+      "score": 1
+    },
+    "home": {
+      "id": "273525",
+      "name": "Chrobry Głogów",
+      "score": 1
+    },
+    "away": {
+      "id": "8244",
+      "name": "ŁKS Łódź",
+      "score": 1
+    },
+    "displayTournament": true,
+    "notStarted": false,
+    "tournament": {
+      "stage": ""
+    },
+    "status": {
+      "utcTime": "2026-05-28T15:30:00Z",
+      "finished": true,
+      "started": true,
+      "cancelled": false,
+      "awarded": false,
+      "scoreStr": "1 - 1",
+      "reason": {
+        "short": "Pen",
+        "shortKey": "penalties_short",
+        "long": "After penalties",
+        "longKey": "afterpenalties"
+      }
+    }
+  },
+  "next_match": null,
+  "matches": [
+    {
+      "id": "4816770",
+      "pageUrl": "/matches/ks-odz-vs-znicz-pruszkow/26ycj9i#4816770",
+      "opponent": {
+        "id": "8244",
+        "name": "ŁKS Łódź",
+        "score": 1
+      },
+      "home": {
+        "id": "8244",
+        "name": "ŁKS Łódź",
+        "score": 1
+      },
+      "away": {
+        "id": "89469",
+        "name": "Znicz Pruszków",
+        "score": 0
+      },
+      "displayTournament": true,
+      "notStarted": false,
+      "tournament": {
+        "stage": ""
+      },
+      "status": {
+        "utcTime": "2025-07-18T18:30:00Z",
+        "finished": true,
+        "started": true,
+        "cancelled": false,
+        "awarded": false,
+        "scoreStr": "1 - 0",
+        "reason": {
+          "short": "FT",
+          "shortKey": "fulltime_short",
+          "long": "Full-Time",
+          "longKey": "finished"
+        }
+      }
+    },
+    {
+      "id": "4816784",
+      "pageUrl": "/matches/ks-odz-vs-wisa-krakow/2tzqwf#4816784",
+      "opponent": {
+        "id": "10265",
+        "name": "Wisła Kraków",
+        "score": 5
+      },
+      "home": {
+        "id": "10265",
+        "name": "Wisła Kraków",
+        "score": 5
+      },
+      "away": {
+        "id": "8244",
+        "name": "ŁKS Łódź",
+        "score": 0
+      },
+      "displayTournament": true,
+      "notStarted": false,
+      "tournament": {
+        "stage": ""
+      },
+      "status": {
+        "utcTime": "2025-07-26T13:00:00Z",
+        "finished": true,
+        "started": true,
+        "cancelled": false,
+        "awarded": false,
+        "scoreStr": "5 - 0",
+        "reason": {
+          "short": "FT",
+          "shortKey": "fulltime_short",
+          "long": "Full-Time",
+          "longKey": "finished"
+        }
+      }
+    },
+    {
+      "id": "4816788",
+      "pageUrl": "/matches/polonia-bytom-vs-ks-odz/26uyb6#4816788",
+      "opponent": {
+        "id": "8244",
+        "name": "ŁKS Łódź",
+        "score": 5
+      },
+      "home": {
+        "id": "8244",
+        "name": "ŁKS Łódź",
+        "score": 5
+      },
+      "away": {
+        "id": "8031",
+        "name": "Polonia Bytom",
+        "score": 0
+      },
+      "displayTournament": true,
+      "notStarted": false,
+      "tournament": {
+        "stage": ""
+      },
+      "status": {
+        "utcTime": "2025-08-01T18:30:00Z",
+        "finished": true,
+        "started": true,
+        "cancelled": false,
+        "awarded": false,
+        "scoreStr": "5 - 0",
+        "reason": {
+          "short": "FT",
+          "shortKey": "fulltime_short",
+          "long": "Full-Time",
+          "longKey": "finished"
+        }
+      }
+    },
+    {
+      "id": "4816794",
+      "pageUrl": "/matches/ks-odz-vs-chrobry-gogow/i8il7bl#4816794",
+      "opponent": {
+        "id": "273525",
+        "name": "Chrobry Głogów",
+        "score": 2
+      },
+      "home": {
+        "id": "273525",
+        "name": "Chrobry Głogów",
+        "score": 2
+      },
+      "away": {
+        "id": "8244",
+        "name": "ŁKS Łódź",
+        "score": 1
+      },
+      "displayTournament": true,
+      "notStarted": false,
+      "tournament": {
+        "stage": ""
+      },
+      "status": {
+        "utcTime": "2025-08-09T12:30:00Z",
+        "finished": true,
+        "started": true,
+        "cancelled": false,
+        "awarded": false,
+        "scoreStr": "2 - 1",
+        "reason": {
+          "short": "FT",
+          "shortKey": "fulltime_short",
+          "long": "Full-Time",
+          "longKey": "finished"
+        }
+      }
+    },
+    {
+      "id": "4816806",
+      "pageUrl": "/matches/ks-odz-vs-stal-mielec/1e2dg6ua#4816806",
+      "opponent": {
+        "id": "8244",
+        "name": "ŁKS Łódź",
+        "score": 2
+      },
+      "home": {
+        "id": "8244",
+        "name": "ŁKS Łódź",
+        "score": 2
+      },
+      "away": {
+        "id": "458623",
+        "name": "Stal Mielec",
+        "score": 0
+      },
+      "displayTournament": true,
+      "notStarted": false,
+      "tournament": {
+        "stage": ""
+      },
+      "status": {
+        "utcTime": "2025-08-15T16:00:00Z",
+        "finished": true,
+        "started": true,
+        "cancelled": false,
+        "awarded": false,
+        "scoreStr": "2 - 0",
+        "reason": {
+          "short": "FT",
+          "shortKey": "fulltime_short",
+          "long": "Full-Time",
+          "longKey": "finished"
+        }
+      }
+    },
+    {
+      "id": "4816814",
+      "pageUrl": "/matches/miedz-legnica-vs-ks-odz/270vwu#4816814",
+      "opponent": {
+        "id": "8048",
+        "name": "Miedź Legnica",
+        "score": 2
+      },
+      "home": {
+        "id": "8048",
+        "name": "Miedź Legnica",
+        "score": 2
+      },
+      "away": {
+        "id": "8244",
+        "name": "ŁKS Łódź",
+        "score": 1
+      },
+      "displayTournament": true,
+      "notStarted": false,
+      "tournament": {
+        "stage": ""
+      },
+      "status": {
+        "utcTime": "2025-08-19T14:00:00Z",
+        "finished": true,
+        "started": true,
+        "cancelled": false,
+        "awarded": false,
+        "scoreStr": "2 - 1",
+        "reason": {
+          "short": "FT",
+          "shortKey": "fulltime_short",
+          "long": "Full-Time",
+          "longKey": "finished"
+        }
+      }
+    },
+    {
+      "id": "4816823",
+      "pageUrl": "/matches/polonia-warszawa-vs-ks-odz/wdfq6#4816823",
+      "opponent": {
+        "id": "8244",
+        "name": "ŁKS Łódź",
+        "score": 2
+      },
+      "home": {
+        "id": "8244",
+        "name": "ŁKS Łódź",
+        "score": 2
+      },
+      "away": {
+        "id": "2183",
+        "name": "Polonia Warszawa",
+        "score": 2
+      },
+      "displayTournament": true,
+      "notStarted": false,
+      "tournament": {
+        "stage": ""
+      },
+      "status": {
+        "utcTime": "2025-08-23T17:30:00Z",
+        "finished": true,
+        "started": true,
+        "cancelled": false,
+        "awarded": false,
+        "scoreStr": "2 - 2",
+        "reason": {
+          "short": "FT",
+          "shortKey": "fulltime_short",
+          "long": "Full-Time",
+          "longKey": "finished"
+        }
+      }
+    },
+    {
+      "id": "4816832",
+      "pageUrl": "/matches/odra-opole-vs-ks-odz/270jca#4816832",
+      "opponent": {
+        "id": "8047",
+        "name": "Odra Opole",
+        "score": 1
+      },
+      "home": {
+        "id": "8047",
+        "name": "Odra Opole",
+        "score": 1
+      },
+      "away": {
+        "id": "8244",
+        "name": "ŁKS Łódź",
+        "score": 1
+      },
+      "displayTournament": true,
+      "notStarted": false,
+      "tournament": {
+        "stage": ""
+      },
+      "status": {
+        "utcTime": "2025-08-31T15:30:00Z",
+        "finished": true,
+        "started": true,
+        "cancelled": false,
+        "awarded": false,
+        "scoreStr": "1 - 1",
+        "reason": {
+          "short": "FT",
+          "shortKey": "fulltime_short",
+          "long": "Full-Time",
+          "longKey": "finished"
+        }
+      }
+    },
+    {
+      "id": "4816843",
+      "pageUrl": "/matches/ruch-chorzow-vs-ks-odz/suzor#4816843",
+      "opponent": {
+        "id": "1601",
+        "name": "Ruch Chorzów",
+        "score": 2
+      },
+      "home": {
+        "id": "1601",
+        "name": "Ruch Chorzów",
+        "score": 2
+      },
+      "away": {
+        "id": "8244",
+        "name": "ŁKS Łódź",
+        "score": 1
+      },
+      "displayTournament": true,
+      "notStarted": false,
+      "tournament": {
+        "stage": ""
+      },
+      "status": {
+        "utcTime": "2025-09-14T13:30:00Z",
+        "finished": true,
+        "started": true,
+        "cancelled": false,
+        "awarded": false,
+        "scoreStr": "2 - 1",
+        "reason": {
+          "short": "FT",
+          "shortKey": "fulltime_short",
+          "long": "Full-Time",
+          "longKey": "finished"
+        }
+      }
+    },
+    {
+      "id": "4816849",
+      "pageUrl": "/matches/ks-odz-vs-wieczysta-krakow/apag9c16#4816849",
+      "opponent": {
+        "id": "8244",
+        "name": "ŁKS Łódź",
+        "score": 0
+      },
+      "home": {
+        "id": "8244",
+        "name": "ŁKS Łódź",
+        "score": 0
+      },
+      "away": {
+        "id": "1286895",
+        "name": "Wieczysta Kraków",
+        "score": 0
+      },
+      "displayTournament": true,
+      "notStarted": false,
+      "tournament": {
+        "stage": ""
+      },
+      "status": {
+        "utcTime": "2025-09-21T18:15:00Z",
+        "finished": true,
+        "started": true,
+        "cancelled": false,
+        "awarded": false,
+        "scoreStr": "0 - 0",
+        "reason": {
+          "short": "FT",
+          "shortKey": "fulltime_short",
+          "long": "Full-Time",
+          "longKey": "finished"
+        }
+      }
+    },
+    {
+      "id": "4816858",
+      "pageUrl": "/matches/ks-odz-vs-pogon-grodzisk-mazowiecki/29019ldr#4816858",
+      "opponent": {
+        "id": "585593",
+        "name": "Pogoń Grodzisk Mazowiecki",
+        "score": 3
+      },
+      "home": {
+        "id": "585593",
+        "name": "Pogoń Grodzisk Mazowiecki",
+        "score": 3
+      },
+      "away": {
+        "id": "8244",
+        "name": "ŁKS Łódź",
+        "score": 0
+      },
+      "displayTournament": true,
+      "notStarted": false,
+      "tournament": {
+        "stage": ""
+      },
+      "status": {
+        "utcTime": "2025-09-29T15:00:00Z",
+        "finished": true,
+        "started": true,
+        "cancelled": false,
+        "awarded": false,
+        "scoreStr": "3 - 0",
+        "reason": {
+          "short": "FT",
+          "shortKey": "fulltime_short",
+          "long": "Full-Time",
+          "longKey": "finished"
+        }
+      }
+    },
+    {
+      "id": "4816867",
+      "pageUrl": "/matches/ks-odz-vs-gks-tychy/2u2nfas#4816867",
+      "opponent": {
+        "id": "8244",
+        "name": "ŁKS Łódź",
+        "score": 3
+      },
+      "home": {
+        "id": "8244",
+        "name": "ŁKS Łódź",
+        "score": 3
+      },
+      "away": {
+        "id": "102859",
+        "name": "GKS Tychy",
+        "score": 1
+      },
+      "displayTournament": true,
+      "notStarted": false,
+      "tournament": {
+        "stage": ""
+      },
+      "status": {
+        "utcTime": "2025-10-05T12:30:00Z",
+        "finished": true,
+        "started": true,
+        "cancelled": false,
+        "awarded": false,
+        "scoreStr": "3 - 1",
+        "reason": {
+          "short": "FT",
+          "shortKey": "fulltime_short",
+          "long": "Full-Time",
+          "longKey": "finished"
+        }
+      }
+    },
+    {
+      "id": "4816882",
+      "pageUrl": "/matches/ks-odz-vs-stal-rzeszow/7wv99s9#4816882",
+      "opponent": {
+        "id": "177362",
+        "name": "Stal Rzeszów",
+        "score": 1
+      },
+      "home": {
+        "id": "177362",
+        "name": "Stal Rzeszów",
+        "score": 1
+      },
+      "away": {
+        "id": "8244",
+        "name": "ŁKS Łódź",
+        "score": 4
+      },
+      "displayTournament": true,
+      "notStarted": false,
+      "tournament": {
+        "stage": ""
+      },
+      "status": {
+        "utcTime": "2025-10-18T17:30:00Z",
+        "finished": true,
+        "started": true,
+        "cancelled": false,
+        "awarded": false,
+        "scoreStr": "1 - 4",
+        "reason": {
+          "short": "FT",
+          "shortKey": "fulltime_short",
+          "long": "Full-Time",
+          "longKey": "finished"
+        }
+      }
+    },
+    {
+      "id": "4816886",
+      "pageUrl": "/matches/ks-odz-vs-pogon-siedlce/i9kcl63#4816886",
+      "opponent": {
+        "id": "273750",
+        "name": "Pogoń Siedlce",
+        "score": 3
+      },
+      "home": {
+        "id": "273750",
+        "name": "Pogoń Siedlce",
+        "score": 3
+      },
+      "away": {
+        "id": "8244",
+        "name": "ŁKS Łódź",
+        "score": 1
+      },
+      "displayTournament": true,
+      "notStarted": false,
+      "tournament": {
+        "stage": ""
+      },
+      "status": {
+        "utcTime": "2025-10-25T17:30:00Z",
+        "finished": true,
+        "started": true,
+        "cancelled": false,
+        "awarded": false,
+        "scoreStr": "3 - 1",
+        "reason": {
+          "short": "FT",
+          "shortKey": "fulltime_short",
+          "long": "Full-Time",
+          "longKey": "finished"
+        }
+      }
+    },
+    {
+      "id": "4816897",
+      "pageUrl": "/matches/slask-wrocaw-vs-ks-odz/26suz3#4816897",
+      "opponent": {
+        "id": "8244",
+        "name": "ŁKS Łódź",
+        "score": 2
+      },
+      "home": {
+        "id": "8244",
+        "name": "ŁKS Łódź",
+        "score": 2
+      },
+      "away": {
+        "id": "8025",
+        "name": "Śląsk Wrocław",
+        "score": 1
+      },
+      "displayTournament": true,
+      "notStarted": false,
+      "tournament": {
+        "stage": ""
+      },
+      "status": {
+        "utcTime": "2025-11-03T17:45:00Z",
+        "finished": true,
+        "started": true,
+        "cancelled": false,
+        "awarded": false,
+        "scoreStr": "2 - 1",
+        "reason": {
+          "short": "FT",
+          "shortKey": "fulltime_short",
+          "long": "Full-Time",
+          "longKey": "finished"
+        }
+      }
+    },
+    {
+      "id": "4816904",
+      "pageUrl": "/matches/ks-odz-vs-puszcza-niepoomice/aj3h3xj#4816904",
+      "opponent": {
+        "id": "8244",
+        "name": "ŁKS Łódź",
+        "score": 0
+      },
+      "home": {
+        "id": "8244",
+        "name": "ŁKS Łódź",
+        "score": 0
+      },
+      "away": {
+        "id": "205870",
+        "name": "Puszcza Niepołomice",
+        "score": 3
+      },
+      "displayTournament": true,
+      "notStarted": false,
+      "tournament": {
+        "stage": ""
+      },
+      "status": {
+        "utcTime": "2025-11-08T18:30:00Z",
+        "finished": true,
+        "started": true,
+        "cancelled": false,
+        "awarded": false,
+        "scoreStr": "0 - 3",
+        "reason": {
+          "short": "FT",
+          "shortKey": "fulltime_short",
+          "long": "Full-Time",
+          "longKey": "finished"
+        }
+      }
+    },
+    {
+      "id": "4816913",
+      "pageUrl": "/matches/gornik-eczna-vs-ks-odz/26qro0#4816913",
+      "opponent": {
+        "id": "8019",
+        "name": "Górnik Łęczna",
+        "score": 1
+      },
+      "home": {
+        "id": "8019",
+        "name": "Górnik Łęczna",
+        "score": 1
+      },
+      "away": {
+        "id": "8244",
+        "name": "ŁKS Łódź",
+        "score": 2
+      },
+      "displayTournament": true,
+      "notStarted": false,
+      "tournament": {
+        "stage": ""
+      },
+      "status": {
+        "utcTime": "2025-11-23T16:00:00Z",
+        "finished": true,
+        "started": true,
+        "cancelled": false,
+        "awarded": false,
+        "scoreStr": "1 - 2",
+        "reason": {
+          "short": "FT",
+          "shortKey": "fulltime_short",
+          "long": "Full-Time",
+          "longKey": "finished"
+        }
+      }
+    },
+    {
+      "id": "4816925",
+      "pageUrl": "/matches/ks-odz-vs-znicz-pruszkow/26ycj9i#4816925",
+      "opponent": {
+        "id": "89469",
+        "name": "Znicz Pruszków",
+        "score": 1
+      },
+      "home": {
+        "id": "89469",
+        "name": "Znicz Pruszków",
+        "score": 1
+      },
+      "away": {
+        "id": "8244",
+        "name": "ŁKS Łódź",
+        "score": 1
+      },
+      "displayTournament": true,
+      "notStarted": false,
+      "tournament": {
+        "stage": ""
+      },
+      "status": {
+        "utcTime": "2025-11-30T11:00:00Z",
+        "finished": true,
+        "started": true,
+        "cancelled": false,
+        "awarded": false,
+        "scoreStr": "1 - 1",
+        "reason": {
+          "short": "FT",
+          "shortKey": "fulltime_short",
+          "long": "Full-Time",
+          "longKey": "finished"
+        }
+      }
+    },
+    {
+      "id": "4816932",
+      "pageUrl": "/matches/ks-odz-vs-wisa-krakow/2tzqwf#4816932",
+      "opponent": {
+        "id": "8244",
+        "name": "ŁKS Łódź",
+        "score": 1
+      },
+      "home": {
+        "id": "8244",
+        "name": "ŁKS Łódź",
+        "score": 1
+      },
+      "away": {
+        "id": "10265",
+        "name": "Wisła Kraków",
+        "score": 1
+      },
+      "displayTournament": true,
+      "notStarted": false,
+      "tournament": {
+        "stage": ""
+      },
+      "status": {
+        "utcTime": "2025-12-07T13:30:00Z",
+        "finished": true,
+        "started": true,
+        "cancelled": false,
+        "awarded": false,
+        "scoreStr": "1 - 1",
+        "reason": {
+          "short": "FT",
+          "shortKey": "fulltime_short",
+          "long": "Full-Time",
+          "longKey": "finished"
+        }
+      }
+    },
+    {
+      "id": "4816941",
+      "pageUrl": "/matches/polonia-bytom-vs-ks-odz/26uyb6#4816941",
+      "opponent": {
+        "id": "8031",
+        "name": "Polonia Bytom",
+        "score": 2
+      },
+      "home": {
+        "id": "8031",
+        "name": "Polonia Bytom",
+        "score": 2
+      },
+      "away": {
+        "id": "8244",
+        "name": "ŁKS Łódź",
+        "score": 3
+      },
+      "displayTournament": true,
+      "notStarted": false,
+      "tournament": {
+        "stage": ""
+      },
+      "status": {
+        "utcTime": "2026-02-07T18:30:00Z",
+        "finished": true,
+        "started": true,
+        "cancelled": false,
+        "awarded": false,
+        "scoreStr": "2 - 3",
+        "reason": {
+          "short": "FT",
+          "shortKey": "fulltime_short",
+          "long": "Full-Time",
+          "longKey": "finished"
+        }
+      }
+    },
+    {
+      "id": "4816951",
+      "pageUrl": "/matches/ks-odz-vs-chrobry-gogow/i8il7bl#4816951",
+      "opponent": {
+        "id": "8244",
+        "name": "ŁKS Łódź",
+        "score": 1
+      },
+      "home": {
+        "id": "8244",
+        "name": "ŁKS Łódź",
+        "score": 1
+      },
+      "away": {
+        "id": "273525",
+        "name": "Chrobry Głogów",
+        "score": 3
+      },
+      "displayTournament": true,
+      "notStarted": false,
+      "tournament": {
+        "stage": ""
+      },
+      "status": {
+        "utcTime": "2026-02-14T18:30:00Z",
+        "finished": true,
+        "started": true,
+        "cancelled": false,
+        "awarded": false,
+        "scoreStr": "1 - 3",
+        "reason": {
+          "short": "FT",
+          "shortKey": "fulltime_short",
+          "long": "Full-Time",
+          "longKey": "finished"
+        }
+      }
+    },
+    {
+      "id": "4816963",
+      "pageUrl": "/matches/ks-odz-vs-stal-mielec/1e2dg6ua#4816963",
+      "opponent": {
+        "id": "458623",
+        "name": "Stal Mielec",
+        "score": 1
+      },
+      "home": {
+        "id": "458623",
+        "name": "Stal Mielec",
+        "score": 1
+      },
+      "away": {
+        "id": "8244",
+        "name": "ŁKS Łódź",
+        "score": 2
+      },
+      "displayTournament": true,
+      "notStarted": false,
+      "tournament": {
+        "stage": ""
+      },
+      "status": {
+        "utcTime": "2026-02-23T17:00:00Z",
+        "finished": true,
+        "started": true,
+        "cancelled": false,
+        "awarded": false,
+        "scoreStr": "1 - 2",
+        "reason": {
+          "short": "FT",
+          "shortKey": "fulltime_short",
+          "long": "Full-Time",
+          "longKey": "finished"
+        }
+      }
+    },
+    {
+      "id": "4816967",
+      "pageUrl": "/matches/miedz-legnica-vs-ks-odz/270vwu#4816967",
+      "opponent": {
+        "id": "8244",
+        "name": "ŁKS Łódź",
+        "score": 0
+      },
+      "home": {
+        "id": "8244",
+        "name": "ŁKS Łódź",
+        "score": 0
+      },
+      "away": {
+        "id": "8048",
+        "name": "Miedź Legnica",
+        "score": 0
+      },
+      "displayTournament": true,
+      "notStarted": false,
+      "tournament": {
+        "stage": ""
+      },
+      "status": {
+        "utcTime": "2026-02-28T18:30:00Z",
+        "finished": true,
+        "started": true,
+        "cancelled": false,
+        "awarded": false,
+        "scoreStr": "0 - 0",
+        "reason": {
+          "short": "FT",
+          "shortKey": "fulltime_short",
+          "long": "Full-Time",
+          "longKey": "finished"
+        }
+      }
+    },
+    {
+      "id": "4816978",
+      "pageUrl": "/matches/polonia-warszawa-vs-ks-odz/wdfq6#4816978",
+      "opponent": {
+        "id": "2183",
+        "name": "Polonia Warszawa",
+        "score": 0
+      },
+      "home": {
+        "id": "2183",
+        "name": "Polonia Warszawa",
+        "score": 0
+      },
+      "away": {
+        "id": "8244",
+        "name": "ŁKS Łódź",
+        "score": 1
+      },
+      "displayTournament": true,
+      "notStarted": false,
+      "tournament": {
+        "stage": ""
+      },
+      "status": {
+        "utcTime": "2026-03-09T17:00:00Z",
+        "finished": true,
+        "started": true,
+        "cancelled": false,
+        "awarded": false,
+        "scoreStr": "0 - 1",
+        "reason": {
+          "short": "FT",
+          "shortKey": "fulltime_short",
+          "long": "Full-Time",
+          "longKey": "finished"
+        }
+      }
+    },
+    {
+      "id": "4816986",
+      "pageUrl": "/matches/odra-opole-vs-ks-odz/270jca#4816986",
+      "opponent": {
+        "id": "8244",
+        "name": "ŁKS Łódź",
+        "score": 1
+      },
+      "home": {
+        "id": "8244",
+        "name": "ŁKS Łódź",
+        "score": 1
+      },
+      "away": {
+        "id": "8047",
+        "name": "Odra Opole",
+        "score": 1
+      },
+      "displayTournament": true,
+      "notStarted": false,
+      "tournament": {
+        "stage": ""
+      },
+      "status": {
+        "utcTime": "2026-03-15T16:00:00Z",
+        "finished": true,
+        "started": true,
+        "cancelled": false,
+        "awarded": false,
+        "scoreStr": "1 - 1",
+        "reason": {
+          "short": "FT",
+          "shortKey": "fulltime_short",
+          "long": "Full-Time",
+          "longKey": "finished"
+        }
+      }
+    },
+    {
+      "id": "4816993",
+      "pageUrl": "/matches/ruch-chorzow-vs-ks-odz/suzor#4816993",
+      "opponent": {
+        "id": "8244",
+        "name": "ŁKS Łódź",
+        "score": 2
+      },
+      "home": {
+        "id": "8244",
+        "name": "ŁKS Łódź",
+        "score": 2
+      },
+      "away": {
+        "id": "1601",
+        "name": "Ruch Chorzów",
+        "score": 2
+      },
+      "displayTournament": true,
+      "notStarted": false,
+      "tournament": {
+        "stage": ""
+      },
+      "status": {
+        "utcTime": "2026-03-21T13:30:00Z",
+        "finished": true,
+        "started": true,
+        "cancelled": false,
+        "awarded": false,
+        "scoreStr": "2 - 2",
+        "reason": {
+          "short": "FT",
+          "shortKey": "fulltime_short",
+          "long": "Full-Time",
+          "longKey": "finished"
+        }
+      }
+    },
+    {
+      "id": "4817003",
+      "pageUrl": "/matches/ks-odz-vs-wieczysta-krakow/apag9c16#4817003",
+      "opponent": {
+        "id": "1286895",
+        "name": "Wieczysta Kraków",
+        "score": 0
+      },
+      "home": {
+        "id": "1286895",
+        "name": "Wieczysta Kraków",
+        "score": 0
+      },
+      "away": {
+        "id": "8244",
+        "name": "ŁKS Łódź",
+        "score": 2
+      },
+      "displayTournament": true,
+      "notStarted": false,
+      "tournament": {
+        "stage": ""
+      },
+      "status": {
+        "utcTime": "2026-04-04T17:30:00Z",
+        "finished": true,
+        "started": true,
+        "cancelled": false,
+        "awarded": false,
+        "scoreStr": "0 - 2",
+        "reason": {
+          "short": "FT",
+          "shortKey": "fulltime_short",
+          "long": "Full-Time",
+          "longKey": "finished"
+        }
+      }
+    },
+    {
+      "id": "4817027",
+      "pageUrl": "/matches/ks-odz-vs-gks-tychy/2u2nfas#4817027",
+      "opponent": {
+        "id": "102859",
+        "name": "GKS Tychy",
+        "score": 3
+      },
+      "home": {
+        "id": "102859",
+        "name": "GKS Tychy",
+        "score": 3
+      },
+      "away": {
+        "id": "8244",
+        "name": "ŁKS Łódź",
+        "score": 2
+      },
+      "displayTournament": true,
+      "notStarted": false,
+      "tournament": {
+        "stage": ""
+      },
+      "status": {
+        "utcTime": "2026-04-18T17:30:00Z",
+        "finished": true,
+        "started": true,
+        "cancelled": false,
+        "awarded": false,
+        "scoreStr": "3 - 2",
+        "reason": {
+          "short": "FT",
+          "shortKey": "fulltime_short",
+          "long": "Full-Time",
+          "longKey": "finished"
+        }
+      }
+    },
+    {
+      "id": "4817029",
+      "pageUrl": "/matches/ks-odz-vs-stal-rzeszow/7wv99s9#4817029",
+      "opponent": {
+        "id": "8244",
+        "name": "ŁKS Łódź",
+        "score": 2
+      },
+      "home": {
+        "id": "8244",
+        "name": "ŁKS Łódź",
+        "score": 2
+      },
+      "away": {
+        "id": "177362",
+        "name": "Stal Rzeszów",
+        "score": 1
+      },
+      "displayTournament": true,
+      "notStarted": false,
+      "tournament": {
+        "stage": ""
+      },
+      "status": {
+        "utcTime": "2026-04-25T12:30:00Z",
+        "finished": true,
+        "started": true,
+        "cancelled": false,
+        "awarded": false,
+        "scoreStr": "2 - 1",
+        "reason": {
+          "short": "FT",
+          "shortKey": "fulltime_short",
+          "long": "Full-Time",
+          "longKey": "finished"
+        }
+      }
+    },
+    {
+      "id": "4817041",
+      "pageUrl": "/matches/ks-odz-vs-pogon-siedlce/i9kcl63#4817041",
+      "opponent": {
+        "id": "8244",
+        "name": "ŁKS Łódź",
+        "score": 4
+      },
+      "home": {
+        "id": "8244",
+        "name": "ŁKS Łódź",
+        "score": 4
+      },
+      "away": {
+        "id": "273750",
+        "name": "Pogoń Siedlce",
+        "score": 0
+      },
+      "displayTournament": true,
+      "notStarted": false,
+      "tournament": {
+        "stage": ""
+      },
+      "status": {
+        "utcTime": "2026-05-02T17:30:00Z",
+        "finished": true,
+        "started": true,
+        "cancelled": false,
+        "awarded": false,
+        "scoreStr": "4 - 0",
+        "reason": {
+          "short": "FT",
+          "shortKey": "fulltime_short",
+          "long": "Full-Time",
+          "longKey": "finished"
+        }
+      }
+    },
+    {
+      "id": "4817011",
+      "pageUrl": "/matches/ks-odz-vs-pogon-grodzisk-mazowiecki/29019ldr#4817011",
+      "opponent": {
+        "id": "8244",
+        "name": "ŁKS Łódź",
+        "score": 3
+      },
+      "home": {
+        "id": "8244",
+        "name": "ŁKS Łódź",
+        "score": 3
+      },
+      "away": {
+        "id": "585593",
+        "name": "Pogoń Grodzisk Mazowiecki",
+        "score": 2
+      },
+      "displayTournament": true,
+      "notStarted": false,
+      "tournament": {
+        "stage": ""
+      },
+      "status": {
+        "utcTime": "2026-05-07T16:00:00Z",
+        "finished": true,
+        "started": true,
+        "cancelled": false,
+        "awarded": false,
+        "scoreStr": "3 - 2",
+        "reason": {
+          "short": "FT",
+          "shortKey": "fulltime_short",
+          "long": "Full-Time",
+          "longKey": "finished"
+        }
+      }
+    },
+    {
+      "id": "4817051",
+      "pageUrl": "/matches/slask-wrocaw-vs-ks-odz/26suz3#4817051",
+      "opponent": {
+        "id": "8025",
+        "name": "Śląsk Wrocław",
+        "score": 2
+      },
+      "home": {
+        "id": "8025",
+        "name": "Śląsk Wrocław",
+        "score": 2
+      },
+      "away": {
+        "id": "8244",
+        "name": "ŁKS Łódź",
+        "score": 2
+      },
+      "displayTournament": true,
+      "notStarted": false,
+      "tournament": {
+        "stage": ""
+      },
+      "status": {
+        "utcTime": "2026-05-11T16:30:00Z",
+        "finished": true,
+        "started": true,
+        "cancelled": false,
+        "awarded": false,
+        "scoreStr": "2 - 2",
+        "reason": {
+          "short": "FT",
+          "shortKey": "fulltime_short",
+          "long": "Full-Time",
+          "longKey": "finished"
+        }
+      }
+    },
+    {
+      "id": "4817061",
+      "pageUrl": "/matches/ks-odz-vs-puszcza-niepoomice/aj3h3xj#4817061",
+      "opponent": {
+        "id": "205870",
+        "name": "Puszcza Niepołomice",
+        "score": 1
+      },
+      "home": {
+        "id": "205870",
+        "name": "Puszcza Niepołomice",
+        "score": 1
+      },
+      "away": {
+        "id": "8244",
+        "name": "ŁKS Łódź",
+        "score": 0
+      },
+      "displayTournament": true,
+      "notStarted": false,
+      "tournament": {
+        "stage": ""
+      },
+      "status": {
+        "utcTime": "2026-05-18T16:00:00Z",
+        "finished": true,
+        "started": true,
+        "cancelled": false,
+        "awarded": false,
+        "scoreStr": "1 - 0",
+        "reason": {
+          "short": "FT",
+          "shortKey": "fulltime_short",
+          "long": "Full-Time",
+          "longKey": "finished"
+        }
+      }
+    },
+    {
+      "id": "4817066",
+      "pageUrl": "/matches/gornik-eczna-vs-ks-odz/26qro0#4817066",
+      "opponent": {
+        "id": "8244",
+        "name": "ŁKS Łódź",
+        "score": 3
+      },
+      "home": {
+        "id": "8244",
+        "name": "ŁKS Łódź",
+        "score": 3
+      },
+      "away": {
+        "id": "8019",
+        "name": "Górnik Łęczna",
+        "score": 1
+      },
+      "displayTournament": true,
+      "notStarted": false,
+      "tournament": {
+        "stage": ""
+      },
+      "status": {
+        "utcTime": "2026-05-24T14:30:00Z",
+        "finished": true,
+        "started": true,
+        "cancelled": false,
+        "awarded": false,
+        "scoreStr": "3 - 1",
+        "reason": {
+          "short": "FT",
+          "shortKey": "fulltime_short",
+          "long": "Full-Time",
+          "longKey": "finished"
+        }
+      }
+    },
+    {
+      "id": "5667004",
+      "pageUrl": "/matches/ks-odz-vs-chrobry-gogow/i8il7bl#5667004",
+      "opponent": {
+        "id": "273525",
+        "name": "Chrobry Głogów",
+        "score": 1
+      },
+      "home": {
+        "id": "273525",
+        "name": "Chrobry Głogów",
+        "score": 1
+      },
+      "away": {
+        "id": "8244",
+        "name": "ŁKS Łódź",
+        "score": 1
+      },
+      "displayTournament": true,
+      "notStarted": false,
+      "tournament": {
+        "stage": ""
+      },
+      "status": {
+        "utcTime": "2026-05-28T15:30:00Z",
+        "finished": true,
+        "started": true,
+        "cancelled": false,
+        "awarded": false,
+        "scoreStr": "1 - 1",
+        "reason": {
+          "short": "Pen",
+          "shortKey": "penalties_short",
+          "long": "After penalties",
+          "longKey": "afterpenalties"
+        }
+      }
+    }
+  ]
+}
