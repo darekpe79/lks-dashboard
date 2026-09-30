@@ -2,22 +2,25 @@ name: Refresh ŁKS dashboard data
 
 on:
   schedule:
-    # Tymczasowy test schedulera: dziś/każda środa 13:13 czasu polskiego.
-    # Po potwierdzeniu działania usuniemy ten wpis.
-    - cron: "13 13 * * 3"
-      timezone: "Europe/Warsaw"
-
-    # Wtorek rano: pełny refresh po ewentualnym poniedziałkowym meczu.
+    # Główne poranne odświeżenie.
     - cron: "17 7 * * 2"
       timezone: "Europe/Warsaw"
-
-    # Pozostałe poranki: tylko terminarz / mecze ŁKS.
     - cron: "17 7 * * 0,1,3,4,5,6"
       timezone: "Europe/Warsaw"
 
+    # Zapasowy poranny trigger. Jeśli główny zadziałał, kontrola świeżości
+    # zatrzyma workflow przed RapidAPI, więc nie zużyjemy drugiego requestu.
+    - cron: "13 13 * * 2"
+      timezone: "Europe/Warsaw"
+    - cron: "13 13 * * 0,1,3,4,5,6"
+      timezone: "Europe/Warsaw"
+
     # Po weekendowych dniach meczowych: świeża tabela + terminarz.
-    # Stałe 22:30 czasu polskiego, także po zmianie czasu.
     - cron: "30 22 * * 5,6,0"
+      timezone: "Europe/Warsaw"
+
+    # Awaryjny wieczorny trigger; normalnie kończy się bez requestu.
+    - cron: "37 23 * * 5,6,0"
       timezone: "Europe/Warsaw"
 
   workflow_dispatch:
@@ -59,16 +62,32 @@ jobs:
 
           if [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
             MODE="${{ inputs.mode }}"
-          elif [[ "${{ github.event.schedule }}" == "17 7 * * 2" ]]; then
-            MODE="full"
-          elif [[ "${{ github.event.schedule }}" == "30 22 * * 5,6,0" ]]; then
+          elif [[ "${{ github.event.schedule }}" == "17 7 * * 2" ]] ||                [[ "${{ github.event.schedule }}" == "13 13 * * 2" ]] ||                [[ "${{ github.event.schedule }}" == "30 22 * * 5,6,0" ]] ||                [[ "${{ github.event.schedule }}" == "37 23 * * 5,6,0" ]]; then
             MODE="full"
           fi
 
           echo "mode=$MODE" >> "$GITHUB_OUTPUT"
           echo "Wybrany tryb: $MODE"
 
+      - name: Check whether API refresh is needed
+        id: freshness
+        shell: bash
+        run: |
+          # Ręczne uruchomienie zawsze wykonujemy zgodnie z wyborem użytkownika.
+          if [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
+            echo "run_api=true" >> "$GITHUB_OUTPUT"
+            echo "Uruchomienie ręczne — pomijam kontrolę świeżości."
+            exit 0
+          fi
+
+          if python scripts/check_refresh_freshness.py               --mode "${{ steps.refresh_mode.outputs.mode }}"               --max-age-hours 7; then
+            echo "run_api=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "run_api=false" >> "$GITHUB_OUTPUT"
+          fi
+
       - name: Refresh dashboard and smart opponent context
+        if: steps.freshness.outputs.run_api == 'true'
         env:
           RAPIDAPI_KEY: ${{ secrets.RAPIDAPI_KEY }}
         shell: bash
@@ -79,6 +98,7 @@ jobs:
           python scripts/update_context.py --mode auto
 
       - name: Commit refreshed data
+        if: steps.freshness.outputs.run_api == 'true'
         shell: bash
         run: |
           git config user.name "github-actions[bot]"
