@@ -219,6 +219,7 @@ function renderNextOpponent(data) {
   const homeStanding = o.home_standing;
   const awayStanding = o.away_standing;
   const h2h = (o.h2h || []).slice(0, 3);
+  const opponentForm = (o.form || []).slice(-5);
 
   const extraStats = (homeStanding || awayStanding || profile.stadium) ? `
     <div class="opponent-extra">
@@ -226,6 +227,23 @@ function renderNextOpponent(data) {
       ${awayStanding ? `<div><span>Na wyjeździe</span><strong>${awayStanding.position}. miejsce · ${awayStanding.wins}-${awayStanding.draws}-${awayStanding.losses} · ${escapeHtml(awayStanding.goals)} · ${awayStanding.points} pkt</strong></div>` : ""}
       ${profile.stadium ? `<div><span>Stadion</span><strong>${escapeHtml(profile.stadium)}</strong></div>` : ""}
       ${profile.capacity ? `<div><span>Pojemność</span><strong>${Number(profile.capacity).toLocaleString("pl-PL")}</strong></div>` : ""}
+    </div>
+  ` : "";
+
+  const opponentFormHtml = opponentForm.length ? `
+    <div class="opponent-form-box">
+      <div class="h2h-title">Ostatnia forma ${escapeHtml(o.name)}</div>
+      <div class="opponent-form-list">
+        ${opponentForm.map(item => `
+          <div class="opponent-form-item">
+            <span class="form-badge ${item.result}">${item.result === "W" ? "Z" : item.result === "D" ? "R" : "P"}</span>
+            <div class="opponent-form-copy">
+              <strong>${escapeHtml(item.opponent)}</strong>
+              <span>${escapeHtml(item.score || "—")} · ${fmtDate(item.date, false)}</span>
+            </div>
+          </div>
+        `).join("")}
+      </div>
     </div>
   ` : "";
 
@@ -267,6 +285,7 @@ function renderNextOpponent(data) {
       <div class="compare-row"><span>Bilans</span><b>${data.summary.wins}-${data.summary.draws}-${data.summary.losses}</b><i>${o.wins}-${o.draws}-${o.losses}</i></div>
     </div>
     ${extraStats}
+    ${opponentFormHtml}
     ${h2hHtml}
   `;
 }
