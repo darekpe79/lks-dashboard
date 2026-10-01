@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-09-30T11:09:14.158016+00:00",
+  "generated_at_utc": "2026-10-01T11:36:03.067017+00:00",
   "source_file": "data/lks_match_search.json",
-  "source_updated_at_utc": "2026-09-30T11:09:14.156257+00:00",
+  "source_updated_at_utc": "2026-10-01T11:36:03.065049+00:00",
   "team_id": 8244,
   "league_id": 197,
   "season_start": "2026-07-01T00:00:00Z",
@@ -9,7 +9,7 @@
   "previous_match": {
     "type": "match",
     "id": "5861931",
-    "score": -83,
+    "score": -95,
     "leagueId": 197,
     "leagueName": "I Liga",
     "matchDate": "2026-09-19T13:30:00Z",
@@ -56,7 +56,7 @@
     {
       "type": "match",
       "id": "5861862",
-      "score": -643,
+      "score": -655,
       "leagueId": 197,
       "leagueName": "I Liga",
       "matchDate": "2026-07-25T13:30:00Z",
@@ -84,7 +84,7 @@
     {
       "type": "match",
       "id": "5861872",
-      "score": -583,
+      "score": -595,
       "leagueId": 197,
       "leagueName": "I Liga",
       "matchDate": "2026-07-31T16:00:00Z",
@@ -112,7 +112,7 @@
     {
       "type": "match",
       "id": "5861878",
-      "score": -493,
+      "score": -505,
       "leagueId": 197,
       "leagueName": "I Liga",
       "matchDate": "2026-08-09T12:30:00Z",
@@ -140,7 +140,7 @@
     {
       "type": "match",
       "id": "5861889",
-      "score": -423,
+      "score": -435,
       "leagueId": 197,
       "leagueName": "I Liga",
       "matchDate": "2026-08-16T12:30:00Z",
@@ -168,7 +168,7 @@
     {
       "type": "match",
       "id": "5861897",
-      "score": -353,
+      "score": -365,
       "leagueId": 197,
       "leagueName": "I Liga",
       "matchDate": "2026-08-23T17:00:00Z",
@@ -196,7 +196,7 @@
     {
       "type": "match",
       "id": "5861907",
-      "score": -303,
+      "score": -315,
       "leagueId": 197,
       "leagueName": "I Liga",
       "matchDate": "2026-08-28T18:45:00Z",
@@ -224,7 +224,7 @@
     {
       "type": "match",
       "id": "5861913",
-      "score": -213,
+      "score": -225,
       "leagueId": 197,
       "leagueName": "I Liga",
       "matchDate": "2026-09-06T12:30:00Z",
@@ -252,7 +252,7 @@
     {
       "type": "match",
       "id": "5861926",
-      "score": -163,
+      "score": -175,
       "leagueId": 197,
       "leagueName": "I Liga",
       "matchDate": "2026-09-11T18:45:00Z",
@@ -280,7 +280,7 @@
     {
       "type": "match",
       "id": "5861931",
-      "score": -83,
+      "score": -95,
       "leagueId": 197,
       "leagueName": "I Liga",
       "matchDate": "2026-09-19T13:30:00Z",
@@ -326,7 +326,7 @@
     {
       "type": "match",
       "id": "5861952",
-      "score": -18,
+      "score": -17,
       "leagueId": 197,
       "leagueName": "I Liga",
       "matchDate": "2026-10-18T12:30:00Z",
@@ -344,7 +344,7 @@
     {
       "type": "match",
       "id": "5861966",
-      "score": -38,
+      "score": -37,
       "leagueId": 197,
       "leagueName": "I Liga",
       "matchDate": "2026-10-26T17:00:00Z",
@@ -380,7 +380,7 @@
     {
       "type": "match",
       "id": "5861977",
-      "score": -68,
+      "score": -67,
       "leagueId": 197,
       "leagueName": "I Liga",
       "matchDate": "2026-11-07T16:00:00Z",
@@ -398,7 +398,7 @@
     {
       "type": "match",
       "id": "5861988",
-      "score": -103,
+      "score": -102,
       "leagueId": 197,
       "leagueName": "I Liga",
       "matchDate": "2026-11-21T16:00:00Z",
@@ -434,7 +434,7 @@
     {
       "type": "match",
       "id": "5862013",
-      "score": -138,
+      "score": -137,
       "leagueId": 197,
       "leagueName": "I Liga",
       "matchDate": "2026-12-05T16:00:00Z",
