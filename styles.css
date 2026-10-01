@@ -306,3 +306,36 @@ tbody tr.lks{box-shadow:inset 3px 0 0 var(--red)}
   .table-tabs{width:100%;display:grid;grid-template-columns:repeat(3,1fr)}
   .table-tab{padding:8px 6px}
 }
+
+
+.opponent-form-box{
+  margin-top:14px;
+  border-top:1px solid var(--line);
+  padding-top:14px;
+}
+.opponent-form-list{display:grid;gap:7px}
+.opponent-form-item{
+  display:grid;
+  grid-template-columns:34px 1fr;
+  gap:10px;
+  align-items:center;
+  padding:8px 10px;
+  border:1px solid var(--line);
+  border-radius:12px;
+  background:#fafafa;
+}
+.opponent-form-item .form-badge{margin:0}
+.opponent-form-copy{min-width:0}
+.opponent-form-copy strong{
+  display:block;
+  font-size:11px;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+.opponent-form-copy span{
+  display:block;
+  margin-top:2px;
+  color:var(--muted);
+  font-size:10px;
+}
