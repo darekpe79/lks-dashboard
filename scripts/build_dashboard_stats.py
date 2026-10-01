@@ -208,6 +208,10 @@ def main():
                     context_doc.get("away_standing", {}).get("opponent")
                 )
                 next_opponent["h2h"] = context_doc.get("h2h", [])
+                next_opponent["form"] = context_doc.get("opponent_form", [])
+                next_opponent["form_updated_at_utc"] = (
+                    context_doc.get("opponent_form_updated_at_utc")
+                )
 
     team_context = {
         "id": LKS_ID,
