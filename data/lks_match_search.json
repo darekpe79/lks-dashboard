@@ -1,10 +1,10 @@
 {
-  "updated_at_utc": "2026-10-02T23:58:04.633200+00:00",
+  "updated_at_utc": "2026-10-03T10:23:39.014538+00:00",
   "endpoint": "/football-matches-search",
   "search": "lks",
   "rapidapi_limit": "100",
-  "rapidapi_remaining": "64",
-  "rapidapi_reset": "1764484",
+  "rapidapi_remaining": "63",
+  "rapidapi_reset": "1726950",
   "payload": {
     "status": "success",
     "response": {
@@ -30,7 +30,7 @@
         {
           "type": "match",
           "id": "5861952",
-          "score": -18,
+          "score": -17,
           "leagueId": 197,
           "leagueName": "I Liga",
           "matchDate": "2026-10-18T12:30:00Z",
@@ -48,7 +48,7 @@
         {
           "type": "match",
           "id": "5861966",
-          "score": -38,
+          "score": -37,
           "leagueId": 197,
           "leagueName": "I Liga",
           "matchDate": "2026-10-26T17:00:00Z",
@@ -84,7 +84,7 @@
         {
           "type": "match",
           "id": "5861977",
-          "score": -68,
+          "score": -67,
           "leagueId": 197,
           "leagueName": "I Liga",
           "matchDate": "2026-11-07T16:00:00Z",
@@ -102,7 +102,7 @@
         {
           "type": "match",
           "id": "5861988",
-          "score": -103,
+          "score": -102,
           "leagueId": 197,
           "leagueName": "I Liga",
           "matchDate": "2026-11-21T16:00:00Z",
@@ -119,8 +119,26 @@
         },
         {
           "type": "match",
+          "id": "5862001",
+          "score": -119,
+          "leagueId": 197,
+          "leagueName": "I Liga",
+          "matchDate": "2026-11-28T16:00:00Z",
+          "status": {
+            "utcTime": "2026-11-28T16:00:00Z",
+            "started": false,
+            "cancelled": false,
+            "finished": false
+          },
+          "homeTeamId": "8244",
+          "homeTeamName": "ŁKS Łódź",
+          "awayTeamId": "8030",
+          "awayTeamName": "Lechia Gdańsk"
+        },
+        {
+          "type": "match",
           "id": "5861931",
-          "score": -108,
+          "score": -120,
           "leagueId": 197,
           "leagueName": "I Liga",
           "matchDate": "2026-09-19T13:30:00Z",
@@ -147,26 +165,8 @@
         },
         {
           "type": "match",
-          "id": "5862001",
-          "score": -119,
-          "leagueId": 197,
-          "leagueName": "I Liga",
-          "matchDate": "2026-11-28T16:00:00Z",
-          "status": {
-            "utcTime": "2026-11-28T16:00:00Z",
-            "started": false,
-            "cancelled": false,
-            "finished": false
-          },
-          "homeTeamId": "8244",
-          "homeTeamName": "ŁKS Łódź",
-          "awayTeamId": "8030",
-          "awayTeamName": "Lechia Gdańsk"
-        },
-        {
-          "type": "match",
           "id": "5862013",
-          "score": -138,
+          "score": -137,
           "leagueId": 197,
           "leagueName": "I Liga",
           "matchDate": "2026-12-05T16:00:00Z",
@@ -202,7 +202,7 @@
         {
           "type": "match",
           "id": "5861926",
-          "score": -188,
+          "score": -200,
           "leagueId": 197,
           "leagueName": "I Liga",
           "matchDate": "2026-09-11T18:45:00Z",
@@ -230,7 +230,7 @@
         {
           "type": "match",
           "id": "5861913",
-          "score": -238,
+          "score": -250,
           "leagueId": 197,
           "leagueName": "I Liga",
           "matchDate": "2026-09-06T12:30:00Z",
@@ -257,8 +257,62 @@
         },
         {
           "type": "match",
+          "id": "5862028",
+          "score": -295,
+          "leagueId": 197,
+          "leagueName": "I Liga",
+          "matchDate": "2027-02-06T16:00:00Z",
+          "status": {
+            "utcTime": "2027-02-06T16:00:00Z",
+            "started": false,
+            "cancelled": false,
+            "finished": false
+          },
+          "homeTeamId": "8031",
+          "homeTeamName": "Polonia Bytom",
+          "awayTeamId": "8244",
+          "awayTeamName": "ŁKS Łódź"
+        },
+        {
+          "type": "match",
+          "id": "5862035",
+          "score": -312,
+          "leagueId": 197,
+          "leagueName": "I Liga",
+          "matchDate": "2027-02-13T16:00:00Z",
+          "status": {
+            "utcTime": "2027-02-13T16:00:00Z",
+            "started": false,
+            "cancelled": false,
+            "finished": false
+          },
+          "homeTeamId": "273525",
+          "homeTeamName": "Chrobry Głogów",
+          "awayTeamId": "8244",
+          "awayTeamName": "ŁKS Łódź"
+        },
+        {
+          "type": "match",
+          "id": "5862050",
+          "score": -330,
+          "leagueId": 197,
+          "leagueName": "I Liga",
+          "matchDate": "2027-02-20T16:00:00Z",
+          "status": {
+            "utcTime": "2027-02-20T16:00:00Z",
+            "started": false,
+            "cancelled": false,
+            "finished": false
+          },
+          "homeTeamId": "177361",
+          "homeTeamName": "Termalica Nieciecza",
+          "awayTeamId": "8244",
+          "awayTeamName": "ŁKS Łódź"
+        },
+        {
+          "type": "match",
           "id": "5861907",
-          "score": -328,
+          "score": -340,
           "leagueId": 197,
           "leagueName": "I Liga",
           "matchDate": "2026-08-28T18:45:00Z",
@@ -285,8 +339,62 @@
         },
         {
           "type": "match",
+          "id": "5862060",
+          "score": -347,
+          "leagueId": 197,
+          "leagueName": "I Liga",
+          "matchDate": "2027-02-27T16:00:00Z",
+          "status": {
+            "utcTime": "2027-02-27T16:00:00Z",
+            "started": false,
+            "cancelled": false,
+            "finished": false
+          },
+          "homeTeamId": "458623",
+          "homeTeamName": "Stal Mielec",
+          "awayTeamId": "8244",
+          "awayTeamName": "ŁKS Łódź"
+        },
+        {
+          "type": "match",
+          "id": "5862087",
+          "score": -365,
+          "leagueId": 197,
+          "leagueName": "I Liga",
+          "matchDate": "2027-03-06T16:00:00Z",
+          "status": {
+            "utcTime": "2027-03-06T16:00:00Z",
+            "started": false,
+            "cancelled": false,
+            "finished": false
+          },
+          "homeTeamId": "8244",
+          "homeTeamName": "ŁKS Łódź",
+          "awayTeamId": "8047",
+          "awayTeamName": "Odra Opole"
+        },
+        {
+          "type": "match",
+          "id": "5862096",
+          "score": -382,
+          "leagueId": 197,
+          "leagueName": "I Liga",
+          "matchDate": "2027-03-13T16:00:00Z",
+          "status": {
+            "utcTime": "2027-03-13T16:00:00Z",
+            "started": false,
+            "cancelled": false,
+            "finished": false
+          },
+          "homeTeamId": "8244",
+          "homeTeamName": "ŁKS Łódź",
+          "awayTeamId": "8322",
+          "awayTeamName": "Arka Gdynia"
+        },
+        {
+          "type": "match",
           "id": "5861897",
-          "score": -378,
+          "score": -390,
           "leagueId": 197,
           "leagueName": "I Liga",
           "matchDate": "2026-08-23T17:00:00Z",
@@ -313,8 +421,26 @@
         },
         {
           "type": "match",
+          "id": "5862106",
+          "score": -400,
+          "leagueId": 197,
+          "leagueName": "I Liga",
+          "matchDate": "2027-03-20T16:00:00Z",
+          "status": {
+            "utcTime": "2027-03-20T16:00:00Z",
+            "started": false,
+            "cancelled": false,
+            "finished": false
+          },
+          "homeTeamId": "8244",
+          "homeTeamName": "ŁKS Łódź",
+          "awayTeamId": "205870",
+          "awayTeamName": "Puszcza Niepołomice"
+        },
+        {
+          "type": "match",
           "id": "5861889",
-          "score": -448,
+          "score": -460,
           "leagueId": 197,
           "leagueName": "I Liga",
           "matchDate": "2026-08-16T12:30:00Z",
@@ -342,7 +468,7 @@
         {
           "type": "match",
           "id": "5861878",
-          "score": -518,
+          "score": -530,
           "leagueId": 197,
           "leagueName": "I Liga",
           "matchDate": "2026-08-09T12:30:00Z",
@@ -370,7 +496,7 @@
         {
           "type": "match",
           "id": "5861872",
-          "score": -608,
+          "score": -620,
           "leagueId": 197,
           "leagueName": "I Liga",
           "matchDate": "2026-07-31T16:00:00Z",
@@ -398,7 +524,7 @@
         {
           "type": "match",
           "id": "5861862",
-          "score": -668,
+          "score": -680,
           "leagueId": 197,
           "leagueName": "I Liga",
           "matchDate": "2026-07-25T13:30:00Z",
@@ -426,7 +552,7 @@
         {
           "type": "match",
           "id": "5729588",
-          "score": -1188,
+          "score": -1200,
           "leagueId": 10967,
           "leagueName": "II Liga Qualification",
           "matchDate": "2026-06-03T17:26:00Z",
@@ -454,7 +580,7 @@
         {
           "type": "match",
           "id": "4835572",
-          "score": -1228,
+          "score": -1240,
           "leagueId": 8935,
           "leagueName": "II Liga",
           "matchDate": "2026-05-30T12:30:00Z",
@@ -482,7 +608,7 @@
         {
           "type": "match",
           "id": "5667004",
-          "score": -1248,
+          "score": -1260,
           "leagueId": 197,
           "leagueName": "I Liga Promotion Playoff",
           "matchDate": "2026-05-28T15:30:00Z",
@@ -510,7 +636,7 @@
         {
           "type": "match",
           "id": "4817066",
-          "score": -1288,
+          "score": -1300,
           "leagueId": 197,
           "leagueName": "I Liga",
           "matchDate": "2026-05-24T14:30:00Z",
@@ -538,7 +664,7 @@
         {
           "type": "match",
           "id": "4835565",
-          "score": -1298,
+          "score": -1310,
           "leagueId": 8935,
           "leagueName": "II Liga",
           "matchDate": "2026-05-23T15:00:00Z",
@@ -566,7 +692,7 @@
         {
           "type": "match",
           "id": "4817061",
-          "score": -1348,
+          "score": -1360,
           "leagueId": 197,
           "leagueName": "I Liga",
           "matchDate": "2026-05-18T16:00:00Z",
@@ -594,7 +720,7 @@
         {
           "type": "match",
           "id": "4835554",
-          "score": -1378,
+          "score": -1390,
           "leagueId": 8935,
           "leagueName": "II Liga",
           "matchDate": "2026-05-15T15:00:00Z",
@@ -622,7 +748,7 @@
         {
           "type": "match",
           "id": "4817051",
-          "score": -1417,
+          "score": -1429,
           "leagueId": 197,
           "leagueName": "I Liga",
           "matchDate": "2026-05-11T16:30:00Z",
@@ -650,7 +776,7 @@
         {
           "type": "match",
           "id": "4192853",
-          "score": -10178,
+          "score": -10190,
           "leagueId": 196,
           "leagueName": "Ekstraklasa",
           "matchDate": "2023-12-17T11:30:00Z",
@@ -678,7 +804,7 @@
         {
           "type": "match",
           "id": "4192881",
-          "score": -10243,
+          "score": -10255,
           "leagueId": 196,
           "leagueName": "Ekstraklasa",
           "matchDate": "2023-12-10T14:00:00Z",
@@ -706,7 +832,7 @@
         {
           "type": "match",
           "id": "4202058",
-          "score": -10328,
+          "score": -10340,
           "leagueId": 8935,
           "leagueName": "II Liga",
           "matchDate": "2023-12-02T13:30:00Z",
@@ -734,7 +860,7 @@
         {
           "type": "match",
           "id": "4202057",
-          "score": -10388,
+          "score": -10400,
           "leagueId": 8935,
           "leagueName": "II Liga",
           "matchDate": "2023-11-26T16:30:00Z",
@@ -762,7 +888,7 @@
         {
           "type": "match",
           "id": "4192839",
-          "score": -10408,
+          "score": -10420,
           "leagueId": 196,
           "leagueName": "Ekstraklasa",
           "matchDate": "2023-11-24T17:00:00Z",
@@ -790,7 +916,7 @@
         {
           "type": "match",
           "id": "4202016",
-          "score": -10448,
+          "score": -10460,
           "leagueId": 8935,
           "leagueName": "II Liga",
           "matchDate": "2023-11-20T15:00:00Z",
@@ -818,7 +944,7 @@
         {
           "type": "match",
           "id": "4202018",
-          "score": -10528,
+          "score": -10540,
           "leagueId": 8935,
           "leagueName": "II Liga",
           "matchDate": "2023-11-12T11:30:00Z",
@@ -846,7 +972,7 @@
         {
           "type": "match",
           "id": "4192810",
-          "score": -10538,
+          "score": -10550,
           "leagueId": 196,
           "leagueName": "Ekstraklasa",
           "matchDate": "2023-11-11T14:00:00Z",
@@ -874,7 +1000,7 @@
         {
           "type": "match",
           "id": "4201991",
-          "score": -10588,
+          "score": -10600,
           "leagueId": 8935,
           "leagueName": "II Liga",
           "matchDate": "2023-11-06T17:15:00Z",
@@ -902,7 +1028,7 @@
         {
           "type": "match",
           "id": "4192799",
-          "score": -10597,
+          "score": -10609,
           "leagueId": 196,
           "leagueName": "Ekstraklasa",
           "matchDate": "2023-11-05T11:30:00Z",
@@ -930,7 +1056,7 @@
         {
           "type": "match",
           "id": "4339470",
-          "score": -10626,
+          "score": -10638,
           "leagueId": 198,
           "leagueName": "FA Cup",
           "matchDate": "2023-11-02T17:00:00Z",
@@ -958,7 +1084,7 @@
         {
           "type": "match",
           "id": "2542132",
-          "score": -32298,
+          "score": -32310,
           "leagueId": 8935,
           "leagueName": "II Liga",
           "matchDate": "2017-11-26T12:00:00Z",
@@ -986,7 +1112,7 @@
         {
           "type": "match",
           "id": "2542127",
-          "score": -32378,
+          "score": -32390,
           "leagueId": 8935,
           "leagueName": "II Liga",
           "matchDate": "2017-11-18T16:00:00Z",
@@ -1014,7 +1140,7 @@
         {
           "type": "match",
           "id": "2542118",
-          "score": -32438,
+          "score": -32450,
           "leagueId": 8935,
           "leagueName": "II Liga",
           "matchDate": "2017-11-12T11:00:00Z",
@@ -1042,7 +1168,7 @@
         {
           "type": "match",
           "id": "2542110",
-          "score": -32518,
+          "score": -32530,
           "leagueId": 8935,
           "leagueName": "II Liga",
           "matchDate": "2017-11-04T13:00:00Z",
@@ -1070,7 +1196,7 @@
         {
           "type": "match",
           "id": "2542099",
-          "score": -32588,
+          "score": -32600,
           "leagueId": 8935,
           "leagueName": "II Liga",
           "matchDate": "2017-10-28T12:00:00Z",
@@ -1098,7 +1224,7 @@
         {
           "type": "match",
           "id": "2542093",
-          "score": -32658,
+          "score": -32670,
           "leagueId": 8935,
           "leagueName": "II Liga",
           "matchDate": "2017-10-21T13:00:00Z",
@@ -1122,174 +1248,6 @@
           "awayTeamId": "2387",
           "awayTeamName": "Garbarnia",
           "awayTeamScore": 0
-        },
-        {
-          "type": "match",
-          "id": "2542080",
-          "score": -32728,
-          "leagueId": 8935,
-          "leagueName": "II Liga",
-          "matchDate": "2017-10-14T13:30:00Z",
-          "status": {
-            "utcTime": "2017-10-14T13:30:00Z",
-            "finished": true,
-            "started": true,
-            "cancelled": false,
-            "awarded": false,
-            "scoreStr": "1 - 1",
-            "reason": {
-              "short": "FT",
-              "shortKey": "fulltime_short",
-              "long": "Full-Time",
-              "longKey": "finished"
-            }
-          },
-          "homeTeamId": "5769",
-          "homeTeamName": "Radomiak Radom",
-          "homeTeamScore": 1,
-          "awayTeamId": "8244",
-          "awayTeamName": "ŁKS Łódź",
-          "awayTeamScore": 1
-        },
-        {
-          "type": "match",
-          "id": "2542076",
-          "score": -32798,
-          "leagueId": 8935,
-          "leagueName": "II Liga",
-          "matchDate": "2017-10-07T13:00:00Z",
-          "status": {
-            "utcTime": "2017-10-07T13:00:00Z",
-            "finished": true,
-            "started": true,
-            "cancelled": false,
-            "awarded": false,
-            "scoreStr": "1 - 0",
-            "reason": {
-              "short": "FT",
-              "shortKey": "fulltime_short",
-              "long": "Full-Time",
-              "longKey": "finished"
-            }
-          },
-          "homeTeamId": "8244",
-          "homeTeamName": "ŁKS Łódź",
-          "homeTeamScore": 1,
-          "awayTeamId": "273751",
-          "awayTeamName": "Wisla Pulawy",
-          "awayTeamScore": 0
-        },
-        {
-          "type": "match",
-          "id": "2542061",
-          "score": -32868,
-          "leagueId": 8935,
-          "leagueName": "II Liga",
-          "matchDate": "2017-09-30T14:00:00Z",
-          "status": {
-            "utcTime": "2017-09-30T14:00:00Z",
-            "finished": true,
-            "started": true,
-            "cancelled": false,
-            "awarded": false,
-            "scoreStr": "0 - 0",
-            "reason": {
-              "short": "FT",
-              "shortKey": "fulltime_short",
-              "long": "Full-Time",
-              "longKey": "finished"
-            }
-          },
-          "homeTeamId": "89467",
-          "homeTeamName": "Warta Poznań",
-          "homeTeamScore": 0,
-          "awayTeamId": "8244",
-          "awayTeamName": "ŁKS Łódź",
-          "awayTeamScore": 0
-        },
-        {
-          "type": "match",
-          "id": "2542059",
-          "score": -32938,
-          "leagueId": 8935,
-          "leagueName": "II Liga",
-          "matchDate": "2017-09-23T14:00:00Z",
-          "status": {
-            "utcTime": "2017-09-23T14:00:00Z",
-            "finished": true,
-            "started": true,
-            "cancelled": false,
-            "awarded": false,
-            "scoreStr": "1 - 2",
-            "reason": {
-              "short": "FT",
-              "shortKey": "fulltime_short",
-              "long": "Full-Time",
-              "longKey": "finished"
-            }
-          },
-          "homeTeamId": "8244",
-          "homeTeamName": "ŁKS Łódź",
-          "homeTeamScore": 1,
-          "awayTeamId": "2415",
-          "awayTeamName": "Olimpia Elblag",
-          "awayTeamScore": 2
-        },
-        {
-          "type": "match",
-          "id": "2542042",
-          "score": -32998,
-          "leagueId": 8935,
-          "leagueName": "II Liga",
-          "matchDate": "2017-09-17T14:30:00Z",
-          "status": {
-            "utcTime": "2017-09-17T14:30:00Z",
-            "finished": true,
-            "started": true,
-            "cancelled": false,
-            "awarded": false,
-            "scoreStr": "1 - 1",
-            "reason": {
-              "short": "FT",
-              "shortKey": "fulltime_short",
-              "long": "Full-Time",
-              "longKey": "finished"
-            }
-          },
-          "homeTeamId": "8244",
-          "homeTeamName": "ŁKS Łódź",
-          "homeTeamScore": 1,
-          "awayTeamId": "8569",
-          "awayTeamName": "GKS Belchatow",
-          "awayTeamScore": 1
-        },
-        {
-          "type": "match",
-          "id": "2542041",
-          "score": -33088,
-          "leagueId": 8935,
-          "leagueName": "II Liga",
-          "matchDate": "2017-09-08T17:05:00Z",
-          "status": {
-            "utcTime": "2017-09-08T17:05:00Z",
-            "finished": true,
-            "started": true,
-            "cancelled": false,
-            "awarded": false,
-            "scoreStr": "1 - 2",
-            "reason": {
-              "short": "FT",
-              "shortKey": "fulltime_short",
-              "long": "Full-Time",
-              "longKey": "finished"
-            }
-          },
-          "homeTeamId": "89469",
-          "homeTeamName": "Znicz Pruszków",
-          "homeTeamScore": 1,
-          "awayTeamId": "8244",
-          "awayTeamName": "ŁKS Łódź",
-          "awayTeamScore": 2
         }
       ]
     }
