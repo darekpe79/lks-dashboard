@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-10-03T10:23:39.015653+00:00",
+  "generated_at_utc": "2026-10-03T23:16:36.287993+00:00",
   "source_file": "data/lks_match_search.json",
-  "source_updated_at_utc": "2026-10-03T10:23:39.014538+00:00",
+  "source_updated_at_utc": "2026-10-03T23:16:36.286187+00:00",
   "team_id": 8244,
   "league_id": 197,
   "season_start": "2026-07-01T00:00:00Z",
-  "match_count": 25,
+  "match_count": 22,
   "previous_match": {
     "type": "match",
     "id": "5861931",
@@ -107,62 +107,6 @@
       "homeTeamScore": 2,
       "awayTeamId": "8031",
       "awayTeamName": "Polonia Bytom",
-      "awayTeamScore": 1
-    },
-    {
-      "type": "match",
-      "id": "5861878",
-      "score": -530,
-      "leagueId": 197,
-      "leagueName": "I Liga",
-      "matchDate": "2026-08-09T12:30:00Z",
-      "status": {
-        "utcTime": "2026-08-09T12:30:00Z",
-        "finished": true,
-        "started": true,
-        "cancelled": false,
-        "awarded": false,
-        "scoreStr": "1 - 2",
-        "reason": {
-          "short": "FT",
-          "shortKey": "fulltime_short",
-          "long": "Full-Time",
-          "longKey": "finished"
-        }
-      },
-      "homeTeamId": "8244",
-      "homeTeamName": "ŁKS Łódź",
-      "homeTeamScore": 1,
-      "awayTeamId": "273525",
-      "awayTeamName": "Chrobry Głogów",
-      "awayTeamScore": 2
-    },
-    {
-      "type": "match",
-      "id": "5861889",
-      "score": -460,
-      "leagueId": 197,
-      "leagueName": "I Liga",
-      "matchDate": "2026-08-16T12:30:00Z",
-      "status": {
-        "utcTime": "2026-08-16T12:30:00Z",
-        "finished": true,
-        "started": true,
-        "cancelled": false,
-        "awarded": false,
-        "scoreStr": "2 - 1",
-        "reason": {
-          "short": "FT",
-          "shortKey": "fulltime_short",
-          "long": "Full-Time",
-          "longKey": "finished"
-        }
-      },
-      "homeTeamId": "8244",
-      "homeTeamName": "ŁKS Łódź",
-      "homeTeamScore": 2,
-      "awayTeamId": "177361",
-      "awayTeamName": "Termalica Nieciecza",
       "awayTeamScore": 1
     },
     {
@@ -574,24 +518,6 @@
       "homeTeamName": "ŁKS Łódź",
       "awayTeamId": "8322",
       "awayTeamName": "Arka Gdynia"
-    },
-    {
-      "type": "match",
-      "id": "5862106",
-      "score": -400,
-      "leagueId": 197,
-      "leagueName": "I Liga",
-      "matchDate": "2027-03-20T16:00:00Z",
-      "status": {
-        "utcTime": "2027-03-20T16:00:00Z",
-        "started": false,
-        "cancelled": false,
-        "finished": false
-      },
-      "homeTeamId": "8244",
-      "homeTeamName": "ŁKS Łódź",
-      "awayTeamId": "205870",
-      "awayTeamName": "Puszcza Niepołomice"
     }
   ]
 }

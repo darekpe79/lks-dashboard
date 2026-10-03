@@ -1,10 +1,10 @@
 {
-  "updated_at_utc": "2026-10-03T10:23:39.014538+00:00",
+  "updated_at_utc": "2026-10-03T23:16:36.286187+00:00",
   "endpoint": "/football-matches-search",
   "search": "lks",
   "rapidapi_limit": "100",
-  "rapidapi_remaining": "63",
-  "rapidapi_reset": "1726950",
+  "rapidapi_remaining": "61",
+  "rapidapi_reset": "1680572",
   "payload": {
     "status": "success",
     "response": {
@@ -418,80 +418,6 @@
           "awayTeamId": "458623",
           "awayTeamName": "Stal Mielec",
           "awayTeamScore": 0
-        },
-        {
-          "type": "match",
-          "id": "5862106",
-          "score": -400,
-          "leagueId": 197,
-          "leagueName": "I Liga",
-          "matchDate": "2027-03-20T16:00:00Z",
-          "status": {
-            "utcTime": "2027-03-20T16:00:00Z",
-            "started": false,
-            "cancelled": false,
-            "finished": false
-          },
-          "homeTeamId": "8244",
-          "homeTeamName": "ŁKS Łódź",
-          "awayTeamId": "205870",
-          "awayTeamName": "Puszcza Niepołomice"
-        },
-        {
-          "type": "match",
-          "id": "5861889",
-          "score": -460,
-          "leagueId": 197,
-          "leagueName": "I Liga",
-          "matchDate": "2026-08-16T12:30:00Z",
-          "status": {
-            "utcTime": "2026-08-16T12:30:00Z",
-            "finished": true,
-            "started": true,
-            "cancelled": false,
-            "awarded": false,
-            "scoreStr": "2 - 1",
-            "reason": {
-              "short": "FT",
-              "shortKey": "fulltime_short",
-              "long": "Full-Time",
-              "longKey": "finished"
-            }
-          },
-          "homeTeamId": "8244",
-          "homeTeamName": "ŁKS Łódź",
-          "homeTeamScore": 2,
-          "awayTeamId": "177361",
-          "awayTeamName": "Termalica Nieciecza",
-          "awayTeamScore": 1
-        },
-        {
-          "type": "match",
-          "id": "5861878",
-          "score": -530,
-          "leagueId": 197,
-          "leagueName": "I Liga",
-          "matchDate": "2026-08-09T12:30:00Z",
-          "status": {
-            "utcTime": "2026-08-09T12:30:00Z",
-            "finished": true,
-            "started": true,
-            "cancelled": false,
-            "awarded": false,
-            "scoreStr": "1 - 2",
-            "reason": {
-              "short": "FT",
-              "shortKey": "fulltime_short",
-              "long": "Full-Time",
-              "longKey": "finished"
-            }
-          },
-          "homeTeamId": "8244",
-          "homeTeamName": "ŁKS Łódź",
-          "homeTeamScore": 1,
-          "awayTeamId": "273525",
-          "awayTeamName": "Chrobry Głogów",
-          "awayTeamScore": 2
         },
         {
           "type": "match",
@@ -1247,6 +1173,90 @@
           "homeTeamScore": 1,
           "awayTeamId": "2387",
           "awayTeamName": "Garbarnia",
+          "awayTeamScore": 0
+        },
+        {
+          "type": "match",
+          "id": "2542080",
+          "score": -32740,
+          "leagueId": 8935,
+          "leagueName": "II Liga",
+          "matchDate": "2017-10-14T13:30:00Z",
+          "status": {
+            "utcTime": "2017-10-14T13:30:00Z",
+            "finished": true,
+            "started": true,
+            "cancelled": false,
+            "awarded": false,
+            "scoreStr": "1 - 1",
+            "reason": {
+              "short": "FT",
+              "shortKey": "fulltime_short",
+              "long": "Full-Time",
+              "longKey": "finished"
+            }
+          },
+          "homeTeamId": "5769",
+          "homeTeamName": "Radomiak Radom",
+          "homeTeamScore": 1,
+          "awayTeamId": "8244",
+          "awayTeamName": "ŁKS Łódź",
+          "awayTeamScore": 1
+        },
+        {
+          "type": "match",
+          "id": "2542076",
+          "score": -32810,
+          "leagueId": 8935,
+          "leagueName": "II Liga",
+          "matchDate": "2017-10-07T13:00:00Z",
+          "status": {
+            "utcTime": "2017-10-07T13:00:00Z",
+            "finished": true,
+            "started": true,
+            "cancelled": false,
+            "awarded": false,
+            "scoreStr": "1 - 0",
+            "reason": {
+              "short": "FT",
+              "shortKey": "fulltime_short",
+              "long": "Full-Time",
+              "longKey": "finished"
+            }
+          },
+          "homeTeamId": "8244",
+          "homeTeamName": "ŁKS Łódź",
+          "homeTeamScore": 1,
+          "awayTeamId": "273751",
+          "awayTeamName": "Wisla Pulawy",
+          "awayTeamScore": 0
+        },
+        {
+          "type": "match",
+          "id": "2542061",
+          "score": -32880,
+          "leagueId": 8935,
+          "leagueName": "II Liga",
+          "matchDate": "2017-09-30T14:00:00Z",
+          "status": {
+            "utcTime": "2017-09-30T14:00:00Z",
+            "finished": true,
+            "started": true,
+            "cancelled": false,
+            "awarded": false,
+            "scoreStr": "0 - 0",
+            "reason": {
+              "short": "FT",
+              "shortKey": "fulltime_short",
+              "long": "Full-Time",
+              "longKey": "finished"
+            }
+          },
+          "homeTeamId": "89467",
+          "homeTeamName": "Warta Poznań",
+          "homeTeamScore": 0,
+          "awayTeamId": "8244",
+          "awayTeamName": "ŁKS Łódź",
           "awayTeamScore": 0
         }
       ]
