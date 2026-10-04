@@ -1,10 +1,10 @@
 {
-  "updated_at_utc": "2026-10-03T23:16:35.349097+00:00",
+  "updated_at_utc": "2026-10-04T23:30:46.371528+00:00",
   "endpoint": "/football-get-standing-all",
   "league_id": 197,
   "rapidapi_limit": "100",
-  "rapidapi_remaining": "62",
-  "rapidapi_reset": "1680573",
+  "rapidapi_remaining": "58",
+  "rapidapi_reset": "1593322",
   "lks_found": true,
   "lks": {
     "name": "ŁKS Łódź",
