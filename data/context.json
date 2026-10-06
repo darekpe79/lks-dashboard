@@ -1,6 +1,6 @@
 {
-  "updated_at_utc": "2026-10-04T11:05:34.512814+00:00",
-  "home_away_updated_at_utc": "2026-09-29T16:48:41+00:00",
+  "updated_at_utc": "2026-10-06T12:14:15.367718+00:00",
+  "home_away_updated_at_utc": "2026-10-06T12:14:15.367699+00:00",
   "league_id": 197,
   "event_id": "5861942",
   "opponent_id": 1601,
@@ -38,45 +38,57 @@
   "home_standing": {
     "lks": {
       "position": 3,
+      "id": 8244,
+      "name": "ŁKS Łódź",
       "played": 4,
       "wins": 3,
       "draws": 0,
       "losses": 1,
       "goals": "9-4",
       "goal_difference": 5,
-      "points": 9
+      "points": 9,
+      "qualColor": "#FFD908"
     },
     "opponent": {
       "position": 10,
+      "id": 1601,
+      "name": "Ruch Chorzów",
       "played": 4,
       "wins": 2,
       "draws": 1,
       "losses": 1,
       "goals": "7-6",
       "goal_difference": 1,
-      "points": 7
+      "points": 7,
+      "qualColor": null
     }
   },
   "away_standing": {
     "lks": {
       "position": 8,
+      "id": 8244,
+      "name": "ŁKS Łódź",
       "played": 5,
       "wins": 1,
       "draws": 3,
       "losses": 1,
       "goals": "4-5",
       "goal_difference": -1,
-      "points": 6
+      "points": 6,
+      "qualColor": null
     },
     "opponent": {
       "position": 11,
+      "id": 1601,
+      "name": "Ruch Chorzów",
       "played": 5,
       "wins": 1,
       "draws": 2,
       "losses": 2,
       "goals": "2-5",
       "goal_difference": -3,
-      "points": 5
+      "points": 5,
+      "qualColor": null
     }
   },
   "home_table": [
@@ -662,6 +674,6 @@
   ],
   "opponent_form_updated_at_utc": "2026-10-04T11:05:34.512798+00:00",
   "opponent_form_search": "Ruch Chorzów",
-  "rapidapi_remaining": "59",
-  "requests_used_this_run": 1
+  "rapidapi_remaining": "51",
+  "requests_used_this_run": 2
 }
