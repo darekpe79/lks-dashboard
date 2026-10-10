@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-10T11:09:26.547638+00:00",
+  "generated_at_utc": "2026-10-10T23:46:48.506239+00:00",
   "team": {
     "id": 8244,
     "name": "ŁKS Łódź",
@@ -48,7 +48,7 @@
     }
   },
   "summary": {
-    "position": 4,
+    "position": 5,
     "points": 15,
     "played": 9,
     "wins": 4,
@@ -223,7 +223,7 @@
     "goals_against": 11,
     "goal_difference": -2,
     "points_gap_to_lks": -3,
-    "position_gap_to_lks": 7,
+    "position_gap_to_lks": 6,
     "venue": "home",
     "profile": {
       "id": 1601,
@@ -375,7 +375,7 @@
         "score": "0:0"
       }
     ],
-    "form_updated_at_utc": "2026-10-07T11:45:49.035383+00:00"
+    "form_updated_at_utc": "2026-10-10T23:46:48.504683+00:00"
   },
   "upcoming_matches": [
     {
@@ -490,21 +490,13 @@
   "league_leaders": {
     "best_attack": [
       {
-        "name": "Warta Poznań",
-        "value": 17
-      },
-      {
-        "name": "Lechia Gdańsk",
-        "value": 17
+        "name": "Pogoń Grodzisk Mazowiecki",
+        "value": 19
       }
     ],
     "best_defense": [
       {
         "name": "Pogoń Grodzisk Mazowiecki",
-        "value": 8
-      },
-      {
-        "name": "Chrobry Głogów",
         "value": 8
       },
       {
@@ -996,30 +988,43 @@
       "position": 1,
       "id": 585593,
       "name": "Pogoń Grodzisk Mazowiecki",
-      "played": 9,
-      "wins": 5,
+      "played": 10,
+      "wins": 6,
       "draws": 3,
       "losses": 1,
-      "goals": "15-8",
-      "goal_difference": 7,
-      "points": 18,
+      "goals": "19-8",
+      "goal_difference": 11,
+      "points": 21,
       "qualColor": "#2AD572"
     },
     {
       "position": 2,
-      "id": 177361,
-      "name": "Termalica Nieciecza",
-      "played": 9,
+      "id": 2183,
+      "name": "Polonia Warszawa",
+      "played": 10,
       "wins": 5,
-      "draws": 1,
+      "draws": 2,
       "losses": 3,
-      "goals": "14-12",
-      "goal_difference": 2,
-      "points": 16,
+      "goals": "17-13",
+      "goal_difference": 4,
+      "points": 17,
       "qualColor": "#2AD572"
     },
     {
       "position": 3,
+      "id": 177361,
+      "name": "Termalica Nieciecza",
+      "played": 10,
+      "wins": 5,
+      "draws": 2,
+      "losses": 3,
+      "goals": "16-14",
+      "goal_difference": 2,
+      "points": 17,
+      "qualColor": "#FFD908"
+    },
+    {
+      "position": 4,
       "id": 89467,
       "name": "Warta Poznań",
       "played": 9,
@@ -1032,7 +1037,7 @@
       "qualColor": "#FFD908"
     },
     {
-      "position": 4,
+      "position": 5,
       "id": 8244,
       "name": "ŁKS Łódź",
       "played": 9,
@@ -1045,7 +1050,7 @@
       "qualColor": "#FFD908"
     },
     {
-      "position": 5,
+      "position": 6,
       "id": 8048,
       "name": "Miedź Legnica",
       "played": 9,
@@ -1054,19 +1059,6 @@
       "losses": 3,
       "goals": "14-9",
       "goal_difference": 5,
-      "points": 14,
-      "qualColor": "#FFD908"
-    },
-    {
-      "position": 6,
-      "id": 2183,
-      "name": "Polonia Warszawa",
-      "played": 9,
-      "wins": 4,
-      "draws": 2,
-      "losses": 3,
-      "goals": "15-12",
-      "goal_difference": 3,
       "points": 14,
       "qualColor": "#FFD908"
     },
@@ -1098,19 +1090,6 @@
     },
     {
       "position": 9,
-      "id": 273525,
-      "name": "Chrobry Głogów",
-      "played": 9,
-      "wins": 3,
-      "draws": 3,
-      "losses": 3,
-      "goals": "11-8",
-      "goal_difference": 3,
-      "points": 12,
-      "qualColor": null
-    },
-    {
-      "position": 10,
       "id": 273750,
       "name": "Pogoń Siedlce",
       "played": 9,
@@ -1119,6 +1098,19 @@
       "losses": 3,
       "goals": "9-8",
       "goal_difference": 1,
+      "points": 12,
+      "qualColor": null
+    },
+    {
+      "position": 10,
+      "id": 273525,
+      "name": "Chrobry Głogów",
+      "played": 10,
+      "wins": 3,
+      "draws": 3,
+      "losses": 4,
+      "goals": "11-12",
+      "goal_difference": -1,
       "points": 12,
       "qualColor": null
     },
@@ -1137,19 +1129,6 @@
     },
     {
       "position": 12,
-      "id": 8322,
-      "name": "Arka Gdynia",
-      "played": 9,
-      "wins": 3,
-      "draws": 2,
-      "losses": 4,
-      "goals": "11-11",
-      "goal_difference": 0,
-      "points": 11,
-      "qualColor": null
-    },
-    {
-      "position": 13,
       "id": 8033,
       "name": "TS Podbeskidzie Bielsko-Biała",
       "played": 10,
@@ -1162,16 +1141,29 @@
       "qualColor": null
     },
     {
+      "position": 13,
+      "id": 8322,
+      "name": "Arka Gdynia",
+      "played": 10,
+      "wins": 3,
+      "draws": 2,
+      "losses": 5,
+      "goals": "12-13",
+      "goal_difference": -1,
+      "points": 11,
+      "qualColor": null
+    },
+    {
       "position": 14,
       "id": 2417,
       "name": "Skierniewice",
-      "played": 9,
+      "played": 10,
       "wins": 3,
-      "draws": 1,
+      "draws": 2,
       "losses": 5,
-      "goals": "10-15",
+      "goals": "12-17",
       "goal_difference": -5,
-      "points": 10,
+      "points": 11,
       "qualColor": null
     },
     {
