@@ -1,10 +1,10 @@
 {
-  "updated_at_utc": "2026-10-06T12:04:29.282136+00:00",
+  "updated_at_utc": "2026-10-10T00:16:21.331552+00:00",
   "endpoint": "/football-get-standing-all",
   "league_id": 197,
   "rapidapi_limit": "100",
-  "rapidapi_remaining": "54",
-  "rapidapi_reset": "1461699",
+  "rapidapi_remaining": "46",
+  "rapidapi_reset": "1158587",
   "lks_found": true,
   "lks": {
     "name": "ŁKS Łódź",
@@ -187,12 +187,12 @@
           "pageUrl": "/teams/273750/overview/pogon-siedlce",
           "deduction": null,
           "ongoing": null,
-          "played": 8,
+          "played": 9,
           "wins": 3,
           "draws": 3,
-          "losses": 2,
-          "scoresStr": "9-7",
-          "goalConDiff": 2,
+          "losses": 3,
+          "scoresStr": "9-8",
+          "goalConDiff": 1,
           "pts": 12,
           "idx": 10,
           "qualColor": null
@@ -232,6 +232,23 @@
           "qualColor": null
         },
         {
+          "name": "TS Podbeskidzie Bielsko-Biała",
+          "shortName": "TS Podbeskidzie Bielsko-Biała",
+          "id": 8033,
+          "pageUrl": "/teams/8033/overview/ts-podbeskidzie-bielsko-biaa",
+          "deduction": null,
+          "ongoing": null,
+          "played": 10,
+          "wins": 1,
+          "draws": 8,
+          "losses": 1,
+          "scoresStr": "13-14",
+          "goalConDiff": -1,
+          "pts": 11,
+          "idx": 13,
+          "qualColor": null
+        },
+        {
           "name": "Skierniewice",
           "shortName": "Skierniewice",
           "id": 2417,
@@ -245,7 +262,7 @@
           "scoresStr": "10-15",
           "goalConDiff": -5,
           "pts": 10,
-          "idx": 13,
+          "idx": 14,
           "qualColor": null
         },
         {
@@ -262,7 +279,7 @@
           "scoresStr": "7-9",
           "goalConDiff": -2,
           "pts": 9,
-          "idx": 14,
+          "idx": 15,
           "qualColor": null
         },
         {
@@ -279,8 +296,8 @@
           "scoresStr": "14-17",
           "goalConDiff": -3,
           "pts": 9,
-          "idx": 15,
-          "qualColor": null
+          "idx": 16,
+          "qualColor": "#FF4646"
         },
         {
           "name": "Stal Mielec",
@@ -296,23 +313,6 @@
           "scoresStr": "14-23",
           "goalConDiff": -9,
           "pts": 9,
-          "idx": 16,
-          "qualColor": "#FF4646"
-        },
-        {
-          "name": "TS Podbeskidzie Bielsko-Biała",
-          "shortName": "TS Podbeskidzie Bielsko-Biała",
-          "id": 8033,
-          "pageUrl": "/teams/8033/overview/ts-podbeskidzie-bielsko-biaa",
-          "deduction": null,
-          "ongoing": null,
-          "played": 9,
-          "wins": 0,
-          "draws": 8,
-          "losses": 1,
-          "scoresStr": "12-14",
-          "goalConDiff": -2,
-          "pts": 8,
           "idx": 17,
           "qualColor": "#FF4646"
         },

@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-09T11:52:35.159335+00:00",
+  "generated_at_utc": "2026-10-10T00:16:22.262496+00:00",
   "team": {
     "id": 8244,
     "name": "ŁKS Łódź",
@@ -500,8 +500,16 @@
     ],
     "best_defense": [
       {
+        "name": "Pogoń Grodzisk Mazowiecki",
+        "value": 8
+      },
+      {
+        "name": "Chrobry Głogów",
+        "value": 8
+      },
+      {
         "name": "Pogoń Siedlce",
-        "value": 7
+        "value": 8
       }
     ],
     "most_goals_conceded": [
@@ -1105,12 +1113,12 @@
       "position": 10,
       "id": 273750,
       "name": "Pogoń Siedlce",
-      "played": 8,
+      "played": 9,
       "wins": 3,
       "draws": 3,
-      "losses": 2,
-      "goals": "9-7",
-      "goal_difference": 2,
+      "losses": 3,
+      "goals": "9-8",
+      "goal_difference": 1,
       "points": 12,
       "qualColor": null
     },
@@ -1142,6 +1150,19 @@
     },
     {
       "position": 13,
+      "id": 8033,
+      "name": "TS Podbeskidzie Bielsko-Biała",
+      "played": 10,
+      "wins": 1,
+      "draws": 8,
+      "losses": 1,
+      "goals": "13-14",
+      "goal_difference": -1,
+      "points": 11,
+      "qualColor": null
+    },
+    {
+      "position": 14,
       "id": 2417,
       "name": "Skierniewice",
       "played": 9,
@@ -1154,7 +1175,7 @@
       "qualColor": null
     },
     {
-      "position": 14,
+      "position": 15,
       "id": 8047,
       "name": "Odra Opole",
       "played": 9,
@@ -1167,7 +1188,7 @@
       "qualColor": null
     },
     {
-      "position": 15,
+      "position": 16,
       "id": 8031,
       "name": "Polonia Bytom",
       "played": 9,
@@ -1177,10 +1198,10 @@
       "goals": "14-17",
       "goal_difference": -3,
       "points": 9,
-      "qualColor": null
+      "qualColor": "#FF4646"
     },
     {
-      "position": 16,
+      "position": 17,
       "id": 458623,
       "name": "Stal Mielec",
       "played": 9,
@@ -1190,19 +1211,6 @@
       "goals": "14-23",
       "goal_difference": -9,
       "points": 9,
-      "qualColor": "#FF4646"
-    },
-    {
-      "position": 17,
-      "id": 8033,
-      "name": "TS Podbeskidzie Bielsko-Biała",
-      "played": 9,
-      "wins": 0,
-      "draws": 8,
-      "losses": 1,
-      "goals": "12-14",
-      "goal_difference": -2,
-      "points": 8,
       "qualColor": "#FF4646"
     },
     {
