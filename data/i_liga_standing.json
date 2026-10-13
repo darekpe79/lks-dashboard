@@ -1,10 +1,10 @@
 {
-  "updated_at_utc": "2026-10-11T23:53:14.137943+00:00",
+  "updated_at_utc": "2026-10-13T12:45:49.428951+00:00",
   "endpoint": "/football-get-standing-all",
   "league_id": 197,
   "rapidapi_limit": "100",
-  "rapidapi_remaining": "39",
-  "rapidapi_reset": "987174",
+  "rapidapi_remaining": "30",
+  "rapidapi_reset": "854419",
   "lks_found": true,
   "lks": {
     "name": "ŁKS Łódź",
@@ -20,7 +20,7 @@
     "scoresStr": "13-11",
     "goalConDiff": 2,
     "pts": 15,
-    "idx": 5,
+    "idx": 6,
     "qualColor": "#FFD908"
   },
   "payload": {
@@ -79,6 +79,23 @@
           "qualColor": "#FFD908"
         },
         {
+          "name": "Lechia Gdańsk",
+          "shortName": "Lechia Gdańsk",
+          "id": 8030,
+          "pageUrl": "/teams/8030/overview/lechia-gdansk",
+          "deduction": null,
+          "ongoing": null,
+          "played": 10,
+          "wins": 5,
+          "draws": 1,
+          "losses": 4,
+          "scoresStr": "19-16",
+          "goalConDiff": 3,
+          "pts": 16,
+          "idx": 4,
+          "qualColor": "#FFD908"
+        },
+        {
           "name": "Warta Poznań",
           "shortName": "Warta Poznań",
           "id": 89467,
@@ -92,7 +109,7 @@
           "scoresStr": "18-15",
           "goalConDiff": 3,
           "pts": 15,
-          "idx": 4,
+          "idx": 5,
           "qualColor": "#FFD908"
         },
         {
@@ -109,7 +126,7 @@
           "scoresStr": "13-11",
           "goalConDiff": 2,
           "pts": 15,
-          "idx": 5,
+          "idx": 6,
           "qualColor": "#FFD908"
         },
         {
@@ -126,8 +143,8 @@
           "scoresStr": "11-11",
           "goalConDiff": 0,
           "pts": 15,
-          "idx": 6,
-          "qualColor": "#FFD908"
+          "idx": 7,
+          "qualColor": null
         },
         {
           "name": "Miedź Legnica",
@@ -143,7 +160,7 @@
           "scoresStr": "14-10",
           "goalConDiff": 4,
           "pts": 14,
-          "idx": 7,
+          "idx": 8,
           "qualColor": null
         },
         {
@@ -153,30 +170,13 @@
           "pageUrl": "/teams/177362/overview/stal-rzeszow",
           "deduction": null,
           "ongoing": null,
-          "played": 9,
+          "played": 10,
           "wins": 4,
           "draws": 2,
-          "losses": 3,
-          "scoresStr": "10-15",
-          "goalConDiff": -5,
-          "pts": 14,
-          "idx": 8,
-          "qualColor": null
-        },
-        {
-          "name": "Lechia Gdańsk",
-          "shortName": "Lechia Gdańsk",
-          "id": 8030,
-          "pageUrl": "/teams/8030/overview/lechia-gdansk",
-          "deduction": null,
-          "ongoing": null,
-          "played": 9,
-          "wins": 4,
-          "draws": 1,
           "losses": 4,
-          "scoresStr": "17-15",
-          "goalConDiff": 2,
-          "pts": 13,
+          "scoresStr": "11-17",
+          "goalConDiff": -6,
+          "pts": 14,
           "idx": 9,
           "qualColor": null
         },
