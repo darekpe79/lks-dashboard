@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-10-11T23:53:18.538654+00:00",
+  "updated_at_utc": "2026-10-15T09:52:09.201327+00:00",
   "home_away_updated_at_utc": "2026-10-11T23:53:16.245308+00:00",
   "league_id": 197,
   "event_id": "5861952",
@@ -672,8 +672,8 @@
       "score": "1:0"
     }
   ],
-  "opponent_form_updated_at_utc": "2026-10-11T23:53:18.538638+00:00",
+  "opponent_form_updated_at_utc": "2026-10-15T09:52:09.201307+00:00",
   "opponent_form_search": "TS Podbeskidzie Bielsko-Biała",
-  "rapidapi_remaining": "33",
-  "requests_used_this_run": 5
+  "rapidapi_remaining": "26",
+  "requests_used_this_run": 1
 }
