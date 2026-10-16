@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-16T09:45:41.816673+00:00",
+  "generated_at_utc": "2026-10-16T22:58:21.119451+00:00",
   "team": {
     "id": 8244,
     "name": "ŁKS Łódź",
@@ -48,7 +48,7 @@
     }
   },
   "summary": {
-    "position": 6,
+    "position": 7,
     "points": 15,
     "played": 10,
     "wins": 4,
@@ -223,7 +223,7 @@
     "goals_against": 14,
     "goal_difference": -1,
     "points_gap_to_lks": -4,
-    "position_gap_to_lks": 9,
+    "position_gap_to_lks": 8,
     "venue": "home",
     "profile": {
       "id": 8033,
@@ -494,6 +494,10 @@
         "value": 19
       },
       {
+        "name": "Warta Poznań",
+        "value": 19
+      },
+      {
         "name": "Lechia Gdańsk",
         "value": 19
       }
@@ -501,10 +505,6 @@
     "best_defense": [
       {
         "name": "Pogoń Grodzisk Mazowiecki",
-        "value": 8
-      },
-      {
-        "name": "Pogoń Siedlce",
         "value": 8
       }
     ],
@@ -1003,6 +1003,32 @@
     },
     {
       "position": 2,
+      "id": 89467,
+      "name": "Warta Poznań",
+      "played": 11,
+      "wins": 6,
+      "draws": 0,
+      "losses": 5,
+      "goals": "19-15",
+      "goal_difference": 4,
+      "points": 18,
+      "qualColor": "#2AD572"
+    },
+    {
+      "position": 3,
+      "id": 1601,
+      "name": "Ruch Chorzów",
+      "played": 11,
+      "wins": 5,
+      "draws": 3,
+      "losses": 3,
+      "goals": "14-11",
+      "goal_difference": 3,
+      "points": 18,
+      "qualColor": "#FFD908"
+    },
+    {
+      "position": 4,
       "id": 2183,
       "name": "Polonia Warszawa",
       "played": 10,
@@ -1012,10 +1038,10 @@
       "goals": "17-13",
       "goal_difference": 4,
       "points": 17,
-      "qualColor": "#2AD572"
+      "qualColor": "#FFD908"
     },
     {
-      "position": 3,
+      "position": 5,
       "id": 177361,
       "name": "Termalica Nieciecza",
       "played": 10,
@@ -1028,7 +1054,7 @@
       "qualColor": "#FFD908"
     },
     {
-      "position": 4,
+      "position": 6,
       "id": 8030,
       "name": "Lechia Gdańsk",
       "played": 10,
@@ -1041,20 +1067,7 @@
       "qualColor": "#FFD908"
     },
     {
-      "position": 5,
-      "id": 89467,
-      "name": "Warta Poznań",
-      "played": 10,
-      "wins": 5,
-      "draws": 0,
-      "losses": 5,
-      "goals": "18-15",
-      "goal_difference": 3,
-      "points": 15,
-      "qualColor": "#FFD908"
-    },
-    {
-      "position": 6,
+      "position": 7,
       "id": 8244,
       "name": "ŁKS Łódź",
       "played": 10,
@@ -1063,19 +1076,6 @@
       "losses": 3,
       "goals": "13-11",
       "goal_difference": 2,
-      "points": 15,
-      "qualColor": "#FFD908"
-    },
-    {
-      "position": 7,
-      "id": 1601,
-      "name": "Ruch Chorzów",
-      "played": 10,
-      "wins": 4,
-      "draws": 3,
-      "losses": 3,
-      "goals": "11-11",
-      "goal_difference": 0,
       "points": 15,
       "qualColor": null
     },
@@ -1107,19 +1107,6 @@
     },
     {
       "position": 10,
-      "id": 273750,
-      "name": "Pogoń Siedlce",
-      "played": 9,
-      "wins": 3,
-      "draws": 3,
-      "losses": 3,
-      "goals": "9-8",
-      "goal_difference": 1,
-      "points": 12,
-      "qualColor": null
-    },
-    {
-      "position": 11,
       "id": 273525,
       "name": "Chrobry Głogów",
       "played": 10,
@@ -1132,20 +1119,20 @@
       "qualColor": null
     },
     {
-      "position": 12,
-      "id": 8047,
-      "name": "Odra Opole",
+      "position": 11,
+      "id": 273750,
+      "name": "Pogoń Siedlce",
       "played": 10,
       "wins": 3,
       "draws": 3,
       "losses": 4,
-      "goals": "8-9",
+      "goals": "10-11",
       "goal_difference": -1,
       "points": 12,
       "qualColor": null
     },
     {
-      "position": 13,
+      "position": 12,
       "id": 8031,
       "name": "Polonia Bytom",
       "played": 10,
@@ -1154,6 +1141,19 @@
       "losses": 2,
       "goals": "15-17",
       "goal_difference": -2,
+      "points": 12,
+      "qualColor": null
+    },
+    {
+      "position": 13,
+      "id": 8047,
+      "name": "Odra Opole",
+      "played": 11,
+      "wins": 3,
+      "draws": 3,
+      "losses": 5,
+      "goals": "8-12",
+      "goal_difference": -4,
       "points": 12,
       "qualColor": null
     },
@@ -1200,12 +1200,12 @@
       "position": 17,
       "id": 2417,
       "name": "Skierniewice",
-      "played": 10,
+      "played": 11,
       "wins": 3,
       "draws": 2,
-      "losses": 5,
-      "goals": "12-17",
-      "goal_difference": -5,
+      "losses": 6,
+      "goals": "12-18",
+      "goal_difference": -6,
       "points": 11,
       "qualColor": "#FF4646"
     },
@@ -1213,13 +1213,13 @@
       "position": 18,
       "id": 205870,
       "name": "Puszcza Niepołomice",
-      "played": 9,
-      "wins": 2,
+      "played": 10,
+      "wins": 3,
       "draws": 0,
       "losses": 7,
-      "goals": "8-13",
-      "goal_difference": -5,
-      "points": 6,
+      "goals": "11-14",
+      "goal_difference": -3,
+      "points": 9,
       "qualColor": "#FF4646"
     }
   ]
