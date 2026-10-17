@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-17T09:18:48.593447+00:00",
+  "generated_at_utc": "2026-10-17T22:34:42.721038+00:00",
   "team": {
     "id": 8244,
     "name": "ŁKS Łódź",
@@ -48,7 +48,7 @@
     }
   },
   "summary": {
-    "position": 7,
+    "position": 8,
     "points": 15,
     "played": 10,
     "wins": 4,
@@ -223,7 +223,7 @@
     "goals_against": 14,
     "goal_difference": -1,
     "points_gap_to_lks": -4,
-    "position_gap_to_lks": 8,
+    "position_gap_to_lks": 7,
     "venue": "home",
     "profile": {
       "id": 8033,
@@ -505,13 +505,13 @@
     "best_defense": [
       {
         "name": "Pogoń Grodzisk Mazowiecki",
-        "value": 8
+        "value": 9
       }
     ],
     "most_goals_conceded": [
       {
         "name": "Stal Mielec",
-        "value": 24
+        "value": 27
       }
     ]
   },
@@ -992,17 +992,30 @@
       "position": 1,
       "id": 585593,
       "name": "Pogoń Grodzisk Mazowiecki",
-      "played": 10,
+      "played": 11,
       "wins": 6,
       "draws": 3,
-      "losses": 1,
-      "goals": "19-8",
-      "goal_difference": 11,
+      "losses": 2,
+      "goals": "19-9",
+      "goal_difference": 10,
       "points": 21,
       "qualColor": "#2AD572"
     },
     {
       "position": 2,
+      "id": 2183,
+      "name": "Polonia Warszawa",
+      "played": 11,
+      "wins": 6,
+      "draws": 2,
+      "losses": 3,
+      "goals": "18-13",
+      "goal_difference": 5,
+      "points": 20,
+      "qualColor": "#2AD572"
+    },
+    {
+      "position": 3,
       "id": 89467,
       "name": "Warta Poznań",
       "played": 11,
@@ -1012,10 +1025,10 @@
       "goals": "19-15",
       "goal_difference": 4,
       "points": 18,
-      "qualColor": "#2AD572"
+      "qualColor": "#FFD908"
     },
     {
-      "position": 3,
+      "position": 4,
       "id": 1601,
       "name": "Ruch Chorzów",
       "played": 11,
@@ -1028,20 +1041,20 @@
       "qualColor": "#FFD908"
     },
     {
-      "position": 4,
-      "id": 2183,
-      "name": "Polonia Warszawa",
-      "played": 10,
+      "position": 5,
+      "id": 8048,
+      "name": "Miedź Legnica",
+      "played": 11,
       "wins": 5,
       "draws": 2,
-      "losses": 3,
-      "goals": "17-13",
-      "goal_difference": 4,
+      "losses": 4,
+      "goals": "17-10",
+      "goal_difference": 7,
       "points": 17,
       "qualColor": "#FFD908"
     },
     {
-      "position": 5,
+      "position": 6,
       "id": 177361,
       "name": "Termalica Nieciecza",
       "played": 10,
@@ -1054,7 +1067,7 @@
       "qualColor": "#FFD908"
     },
     {
-      "position": 6,
+      "position": 7,
       "id": 8030,
       "name": "Lechia Gdańsk",
       "played": 10,
@@ -1064,10 +1077,10 @@
       "goals": "19-16",
       "goal_difference": 3,
       "points": 16,
-      "qualColor": "#FFD908"
+      "qualColor": null
     },
     {
-      "position": 7,
+      "position": 8,
       "id": 8244,
       "name": "ŁKS Łódź",
       "played": 10,
@@ -1080,20 +1093,20 @@
       "qualColor": null
     },
     {
-      "position": 8,
-      "id": 8048,
-      "name": "Miedź Legnica",
-      "played": 10,
-      "wins": 4,
-      "draws": 2,
-      "losses": 4,
-      "goals": "14-10",
-      "goal_difference": 4,
-      "points": 14,
+      "position": 9,
+      "id": 8031,
+      "name": "Polonia Bytom",
+      "played": 11,
+      "wins": 3,
+      "draws": 6,
+      "losses": 2,
+      "goals": "18-19",
+      "goal_difference": -1,
+      "points": 15,
       "qualColor": null
     },
     {
-      "position": 9,
+      "position": 10,
       "id": 177362,
       "name": "Stal Rzeszów",
       "played": 10,
@@ -1103,19 +1116,6 @@
       "goals": "11-17",
       "goal_difference": -6,
       "points": 14,
-      "qualColor": null
-    },
-    {
-      "position": 10,
-      "id": 273525,
-      "name": "Chrobry Głogów",
-      "played": 10,
-      "wins": 3,
-      "draws": 3,
-      "losses": 4,
-      "goals": "11-12",
-      "goal_difference": -1,
-      "points": 12,
       "qualColor": null
     },
     {
@@ -1133,13 +1133,13 @@
     },
     {
       "position": 12,
-      "id": 8031,
-      "name": "Polonia Bytom",
-      "played": 10,
-      "wins": 2,
-      "draws": 6,
-      "losses": 2,
-      "goals": "15-17",
+      "id": 273525,
+      "name": "Chrobry Głogów",
+      "played": 11,
+      "wins": 3,
+      "draws": 3,
+      "losses": 5,
+      "goals": "13-15",
       "goal_difference": -2,
       "points": 12,
       "qualColor": null
@@ -1161,12 +1161,12 @@
       "position": 14,
       "id": 458623,
       "name": "Stal Mielec",
-      "played": 10,
+      "played": 11,
       "wins": 3,
       "draws": 3,
-      "losses": 4,
-      "goals": "16-24",
-      "goal_difference": -8,
+      "losses": 5,
+      "goals": "16-27",
+      "goal_difference": -11,
       "points": 12,
       "qualColor": null
     },
