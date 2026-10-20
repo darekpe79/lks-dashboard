@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-19T10:43:21.009358+00:00",
+  "generated_at_utc": "2026-10-20T10:08:25.658953+00:00",
   "team": {
     "id": 8244,
     "name": "ŁKS Łódź",
@@ -48,7 +48,7 @@
     }
   },
   "summary": {
-    "position": 5,
+    "position": 6,
     "points": 18,
     "played": 11,
     "wins": 5,
@@ -167,7 +167,7 @@
   "previous_match": {
     "type": "match",
     "id": "5861952",
-    "score": 0,
+    "score": -5,
     "leagueId": 197,
     "leagueName": "I Liga",
     "matchDate": "2026-10-18T12:30:00Z",
@@ -195,7 +195,7 @@
   "next_match": {
     "type": "match",
     "id": "5861966",
-    "score": -7,
+    "score": 0,
     "leagueId": 197,
     "leagueName": "I Liga",
     "matchDate": "2026-10-26T17:00:00Z",
@@ -213,7 +213,7 @@
   "next_opponent": {
     "id": 89467,
     "name": "Warta Poznań",
-    "position": 4,
+    "position": 5,
     "points": 18,
     "played": 11,
     "wins": 6,
@@ -381,7 +381,7 @@
     {
       "type": "match",
       "id": "5861966",
-      "score": -7,
+      "score": 0,
       "leagueId": 197,
       "leagueName": "I Liga",
       "matchDate": "2026-10-26T17:00:00Z",
@@ -399,7 +399,7 @@
     {
       "type": "match",
       "id": "5861971",
-      "score": -25,
+      "score": -17,
       "leagueId": 197,
       "leagueName": "I Liga",
       "matchDate": "2026-11-02T19:30:00Z",
@@ -417,7 +417,7 @@
     {
       "type": "match",
       "id": "5861977",
-      "score": -40,
+      "score": -32,
       "leagueId": 197,
       "leagueName": "I Liga",
       "matchDate": "2026-11-08T13:30:00Z",
@@ -435,7 +435,7 @@
     {
       "type": "match",
       "id": "5861988",
-      "score": -72,
+      "score": -65,
       "leagueId": 197,
       "leagueName": "I Liga",
       "matchDate": "2026-11-21T16:00:00Z",
@@ -453,7 +453,7 @@
     {
       "type": "match",
       "id": "5862001",
-      "score": -89,
+      "score": -81,
       "leagueId": 197,
       "leagueName": "I Liga",
       "matchDate": "2026-11-28T16:00:00Z",
@@ -471,7 +471,7 @@
     {
       "type": "match",
       "id": "5862013",
-      "score": -107,
+      "score": -100,
       "leagueId": 197,
       "leagueName": "I Liga",
       "matchDate": "2026-12-05T16:00:00Z",
@@ -1008,6 +1008,19 @@
     },
     {
       "position": 3,
+      "id": 177361,
+      "name": "Termalica Nieciecza",
+      "played": 11,
+      "wins": 6,
+      "draws": 2,
+      "losses": 3,
+      "goals": "18-14",
+      "goal_difference": 4,
+      "points": 20,
+      "qualColor": "#FFD908"
+    },
+    {
+      "position": 4,
       "id": 8030,
       "name": "Lechia Gdańsk",
       "played": 11,
@@ -1020,7 +1033,7 @@
       "qualColor": "#FFD908"
     },
     {
-      "position": 4,
+      "position": 5,
       "id": 89467,
       "name": "Warta Poznań",
       "played": 11,
@@ -1033,7 +1046,7 @@
       "qualColor": "#FFD908"
     },
     {
-      "position": 5,
+      "position": 6,
       "id": 8244,
       "name": "ŁKS Łódź",
       "played": 11,
@@ -1046,7 +1059,7 @@
       "qualColor": "#FFD908"
     },
     {
-      "position": 6,
+      "position": 7,
       "id": 1601,
       "name": "Ruch Chorzów",
       "played": 11,
@@ -1056,10 +1069,10 @@
       "goals": "14-11",
       "goal_difference": 3,
       "points": 18,
-      "qualColor": "#FFD908"
+      "qualColor": null
     },
     {
-      "position": 7,
+      "position": 8,
       "id": 8048,
       "name": "Miedź Legnica",
       "played": 11,
@@ -1068,19 +1081,6 @@
       "losses": 4,
       "goals": "17-10",
       "goal_difference": 7,
-      "points": 17,
-      "qualColor": null
-    },
-    {
-      "position": 8,
-      "id": 177361,
-      "name": "Termalica Nieciecza",
-      "played": 10,
-      "wins": 5,
-      "draws": 2,
-      "losses": 3,
-      "goals": "16-14",
-      "goal_difference": 2,
       "points": 17,
       "qualColor": null
     },
@@ -1205,12 +1205,12 @@
       "position": 18,
       "id": 205870,
       "name": "Puszcza Niepołomice",
-      "played": 10,
+      "played": 11,
       "wins": 3,
       "draws": 0,
-      "losses": 7,
-      "goals": "11-14",
-      "goal_difference": -3,
+      "losses": 8,
+      "goals": "11-16",
+      "goal_difference": -5,
       "points": 9,
       "qualColor": "#FF4646"
     }

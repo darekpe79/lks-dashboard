@@ -1,10 +1,10 @@
 {
-  "updated_at_utc": "2026-10-18T22:32:40.597337+00:00",
+  "updated_at_utc": "2026-10-20T10:08:25.329696+00:00",
   "endpoint": "/football-get-standing-all",
   "league_id": 197,
   "rapidapi_limit": "100",
-  "rapidapi_remaining": "18",
-  "rapidapi_reset": "387208",
+  "rapidapi_remaining": "10",
+  "rapidapi_reset": "259063",
   "lks_found": true,
   "lks": {
     "name": "ŁKS Łódź",
@@ -20,7 +20,7 @@
     "scoresStr": "14-11",
     "goalConDiff": 3,
     "pts": 18,
-    "idx": 5,
+    "idx": 6,
     "qualColor": "#FFD908"
   },
   "payload": {
@@ -62,6 +62,23 @@
           "qualColor": "#2AD572"
         },
         {
+          "name": "Termalica Nieciecza",
+          "shortName": "Termalica Nieciecza",
+          "id": 177361,
+          "pageUrl": "/teams/177361/overview/termalica-nieciecza",
+          "deduction": null,
+          "ongoing": null,
+          "played": 11,
+          "wins": 6,
+          "draws": 2,
+          "losses": 3,
+          "scoresStr": "18-14",
+          "goalConDiff": 4,
+          "pts": 20,
+          "idx": 3,
+          "qualColor": "#FFD908"
+        },
+        {
           "name": "Lechia Gdańsk",
           "shortName": "Lechia Gdańsk",
           "id": 8030,
@@ -75,7 +92,7 @@
           "scoresStr": "21-17",
           "goalConDiff": 4,
           "pts": 19,
-          "idx": 3,
+          "idx": 4,
           "qualColor": "#FFD908"
         },
         {
@@ -92,7 +109,7 @@
           "scoresStr": "19-15",
           "goalConDiff": 4,
           "pts": 18,
-          "idx": 4,
+          "idx": 5,
           "qualColor": "#FFD908"
         },
         {
@@ -109,7 +126,7 @@
           "scoresStr": "14-11",
           "goalConDiff": 3,
           "pts": 18,
-          "idx": 5,
+          "idx": 6,
           "qualColor": "#FFD908"
         },
         {
@@ -126,8 +143,8 @@
           "scoresStr": "14-11",
           "goalConDiff": 3,
           "pts": 18,
-          "idx": 6,
-          "qualColor": "#FFD908"
+          "idx": 7,
+          "qualColor": null
         },
         {
           "name": "Miedź Legnica",
@@ -142,23 +159,6 @@
           "losses": 4,
           "scoresStr": "17-10",
           "goalConDiff": 7,
-          "pts": 17,
-          "idx": 7,
-          "qualColor": null
-        },
-        {
-          "name": "Termalica Nieciecza",
-          "shortName": "Termalica Nieciecza",
-          "id": 177361,
-          "pageUrl": "/teams/177361/overview/termalica-nieciecza",
-          "deduction": null,
-          "ongoing": null,
-          "played": 10,
-          "wins": 5,
-          "draws": 2,
-          "losses": 3,
-          "scoresStr": "16-14",
-          "goalConDiff": 2,
           "pts": 17,
           "idx": 8,
           "qualColor": null
@@ -323,12 +323,12 @@
           "pageUrl": "/teams/205870/overview/puszcza-niepoomice",
           "deduction": null,
           "ongoing": null,
-          "played": 10,
+          "played": 11,
           "wins": 3,
           "draws": 0,
-          "losses": 7,
-          "scoresStr": "11-14",
-          "goalConDiff": -3,
+          "losses": 8,
+          "scoresStr": "11-16",
+          "goalConDiff": -5,
           "pts": 9,
           "idx": 18,
           "qualColor": "#FF4646"
