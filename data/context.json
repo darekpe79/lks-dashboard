@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-10-18T22:32:44.799435+00:00",
+  "updated_at_utc": "2026-10-22T10:08:25.190309+00:00",
   "home_away_updated_at_utc": "2026-10-18T22:32:42.604090+00:00",
   "league_id": 197,
   "event_id": "5861966",
@@ -672,8 +672,8 @@
       "score": "1:0"
     }
   ],
-  "opponent_form_updated_at_utc": "2026-10-18T22:32:44.799422+00:00",
+  "opponent_form_updated_at_utc": "2026-10-22T10:08:25.190293+00:00",
   "opponent_form_search": "Warta Poznań",
-  "rapidapi_remaining": "12",
-  "requests_used_this_run": 5
+  "rapidapi_remaining": "6",
+  "requests_used_this_run": 1
 }
