@@ -1,10 +1,10 @@
 {
-  "updated_at_utc": "2026-10-20T10:08:25.329696+00:00",
+  "updated_at_utc": "2026-10-23T23:23:33.551737+00:00",
   "endpoint": "/football-get-standing-all",
   "league_id": 197,
   "rapidapi_limit": "100",
-  "rapidapi_remaining": "10",
-  "rapidapi_reset": "259063",
+  "rapidapi_remaining": "99",
+  "rapidapi_reset": "2630555",
   "lks_found": true,
   "lks": {
     "name": "ŁKS Łódź",
@@ -20,8 +20,8 @@
     "scoresStr": "14-11",
     "goalConDiff": 3,
     "pts": 18,
-    "idx": 6,
-    "qualColor": "#FFD908"
+    "idx": 7,
+    "qualColor": null
   },
   "payload": {
     "status": "success",
@@ -51,13 +51,13 @@
           "pageUrl": "/teams/2183/overview/polonia-warszawa",
           "deduction": null,
           "ongoing": null,
-          "played": 11,
+          "played": 12,
           "wins": 6,
-          "draws": 2,
+          "draws": 3,
           "losses": 3,
-          "scoresStr": "18-13",
+          "scoresStr": "19-14",
           "goalConDiff": 5,
-          "pts": 20,
+          "pts": 21,
           "idx": 2,
           "qualColor": "#2AD572"
         },
@@ -96,6 +96,23 @@
           "qualColor": "#FFD908"
         },
         {
+          "name": "Miedź Legnica",
+          "shortName": "Miedź Legnica",
+          "id": 8048,
+          "pageUrl": "/teams/8048/overview/miedz-legnica",
+          "deduction": null,
+          "ongoing": null,
+          "played": 12,
+          "wins": 5,
+          "draws": 3,
+          "losses": 4,
+          "scoresStr": "18-11",
+          "goalConDiff": 7,
+          "pts": 18,
+          "idx": 5,
+          "qualColor": "#FFD908"
+        },
+        {
           "name": "Warta Poznań",
           "shortName": "Warta Poznań",
           "id": 89467,
@@ -109,7 +126,7 @@
           "scoresStr": "19-15",
           "goalConDiff": 4,
           "pts": 18,
-          "idx": 5,
+          "idx": 6,
           "qualColor": "#FFD908"
         },
         {
@@ -126,8 +143,8 @@
           "scoresStr": "14-11",
           "goalConDiff": 3,
           "pts": 18,
-          "idx": 6,
-          "qualColor": "#FFD908"
+          "idx": 7,
+          "qualColor": null
         },
         {
           "name": "Ruch Chorzów",
@@ -143,23 +160,6 @@
           "scoresStr": "14-11",
           "goalConDiff": 3,
           "pts": 18,
-          "idx": 7,
-          "qualColor": null
-        },
-        {
-          "name": "Miedź Legnica",
-          "shortName": "Miedź Legnica",
-          "id": 8048,
-          "pageUrl": "/teams/8048/overview/miedz-legnica",
-          "deduction": null,
-          "ongoing": null,
-          "played": 11,
-          "wins": 5,
-          "draws": 2,
-          "losses": 4,
-          "scoresStr": "17-10",
-          "goalConDiff": 7,
-          "pts": 17,
           "idx": 8,
           "qualColor": null
         },
