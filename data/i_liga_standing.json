@@ -1,10 +1,10 @@
 {
-  "updated_at_utc": "2026-10-24T22:41:14.251001+00:00",
+  "updated_at_utc": "2026-10-25T23:29:36.382441+00:00",
   "endpoint": "/football-get-standing-all",
   "league_id": 197,
   "rapidapi_limit": "100",
-  "rapidapi_remaining": "96",
-  "rapidapi_reset": "2546694",
+  "rapidapi_remaining": "92",
+  "rapidapi_reset": "2457392",
   "lks_found": true,
   "lks": {
     "name": "ŁKS Łódź",
@@ -20,7 +20,7 @@
     "scoresStr": "14-11",
     "goalConDiff": 3,
     "pts": 18,
-    "idx": 7,
+    "idx": 8,
     "qualColor": null
   },
   "payload": {
@@ -34,12 +34,12 @@
           "pageUrl": "/teams/585593/overview/pogon-grodzisk-mazowiecki",
           "deduction": null,
           "ongoing": null,
-          "played": 11,
+          "played": 12,
           "wins": 6,
           "draws": 3,
-          "losses": 2,
-          "scoresStr": "19-9",
-          "goalConDiff": 10,
+          "losses": 3,
+          "scoresStr": "19-11",
+          "goalConDiff": 8,
           "pts": 21,
           "idx": 1,
           "qualColor": "#2AD572"
@@ -62,6 +62,23 @@
           "qualColor": "#2AD572"
         },
         {
+          "name": "Ruch Chorzów",
+          "shortName": "Ruch Chorzów",
+          "id": 1601,
+          "pageUrl": "/teams/1601/overview/ruch-chorzow",
+          "deduction": null,
+          "ongoing": null,
+          "played": 12,
+          "wins": 6,
+          "draws": 3,
+          "losses": 3,
+          "scoresStr": "16-11",
+          "goalConDiff": 5,
+          "pts": 21,
+          "idx": 3,
+          "qualColor": "#FFD908"
+        },
+        {
           "name": "Termalica Nieciecza",
           "shortName": "Termalica Nieciecza",
           "id": 177361,
@@ -75,7 +92,7 @@
           "scoresStr": "19-17",
           "goalConDiff": 2,
           "pts": 20,
-          "idx": 3,
+          "idx": 4,
           "qualColor": "#FFD908"
         },
         {
@@ -92,7 +109,7 @@
           "scoresStr": "22-19",
           "goalConDiff": 3,
           "pts": 19,
-          "idx": 4,
+          "idx": 5,
           "qualColor": "#FFD908"
         },
         {
@@ -109,7 +126,7 @@
           "scoresStr": "18-11",
           "goalConDiff": 7,
           "pts": 18,
-          "idx": 5,
+          "idx": 6,
           "qualColor": "#FFD908"
         },
         {
@@ -126,31 +143,14 @@
           "scoresStr": "19-15",
           "goalConDiff": 4,
           "pts": 18,
-          "idx": 6,
-          "qualColor": "#FFD908"
+          "idx": 7,
+          "qualColor": null
         },
         {
           "name": "ŁKS Łódź",
           "shortName": "ŁKS Łódź",
           "id": 8244,
           "pageUrl": "/teams/8244/overview/ks-odz",
-          "deduction": null,
-          "ongoing": null,
-          "played": 11,
-          "wins": 5,
-          "draws": 3,
-          "losses": 3,
-          "scoresStr": "14-11",
-          "goalConDiff": 3,
-          "pts": 18,
-          "idx": 7,
-          "qualColor": null
-        },
-        {
-          "name": "Ruch Chorzów",
-          "shortName": "Ruch Chorzów",
-          "id": 1601,
-          "pageUrl": "/teams/1601/overview/ruch-chorzow",
           "deduction": null,
           "ongoing": null,
           "played": 11,
@@ -187,14 +187,31 @@
           "pageUrl": "/teams/177362/overview/stal-rzeszow",
           "deduction": null,
           "ongoing": null,
-          "played": 11,
+          "played": 12,
           "wins": 5,
           "draws": 2,
-          "losses": 4,
-          "scoresStr": "15-20",
-          "goalConDiff": -5,
+          "losses": 5,
+          "scoresStr": "16-22",
+          "goalConDiff": -6,
           "pts": 17,
           "idx": 10,
+          "qualColor": null
+        },
+        {
+          "name": "Pogoń Siedlce",
+          "shortName": "Pogoń Siedlce",
+          "id": 273750,
+          "pageUrl": "/teams/273750/overview/pogon-siedlce",
+          "deduction": null,
+          "ongoing": null,
+          "played": 12,
+          "wins": 4,
+          "draws": 3,
+          "losses": 5,
+          "scoresStr": "14-15",
+          "goalConDiff": -1,
+          "pts": 15,
+          "idx": 11,
           "qualColor": null
         },
         {
@@ -211,7 +228,24 @@
           "scoresStr": "16-16",
           "goalConDiff": 0,
           "pts": 14,
-          "idx": 11,
+          "idx": 12,
+          "qualColor": null
+        },
+        {
+          "name": "TS Podbeskidzie Bielsko-Biała",
+          "shortName": "TS Podbeskidzie Bielsko-Biała",
+          "id": 8033,
+          "pageUrl": "/teams/8033/overview/ts-podbeskidzie-bielsko-biaa",
+          "deduction": null,
+          "ongoing": null,
+          "played": 12,
+          "wins": 2,
+          "draws": 8,
+          "losses": 2,
+          "scoresStr": "15-16",
+          "goalConDiff": -1,
+          "pts": 14,
+          "idx": 13,
           "qualColor": null
         },
         {
@@ -228,7 +262,7 @@
           "scoresStr": "13-15",
           "goalConDiff": -2,
           "pts": 13,
-          "idx": 12,
+          "idx": 14,
           "qualColor": null
         },
         {
@@ -245,24 +279,7 @@
           "scoresStr": "16-27",
           "goalConDiff": -11,
           "pts": 13,
-          "idx": 13,
-          "qualColor": null
-        },
-        {
-          "name": "Pogoń Siedlce",
-          "shortName": "Pogoń Siedlce",
-          "id": 273750,
-          "pageUrl": "/teams/273750/overview/pogon-siedlce",
-          "deduction": null,
-          "ongoing": null,
-          "played": 11,
-          "wins": 3,
-          "draws": 3,
-          "losses": 5,
-          "scoresStr": "13-15",
-          "goalConDiff": -2,
-          "pts": 12,
-          "idx": 14,
+          "idx": 15,
           "qualColor": null
         },
         {
@@ -279,8 +296,8 @@
           "scoresStr": "13-17",
           "goalConDiff": -4,
           "pts": 12,
-          "idx": 15,
-          "qualColor": null
+          "idx": 16,
+          "qualColor": "#FF4646"
         },
         {
           "name": "Odra Opole",
@@ -289,30 +306,13 @@
           "pageUrl": "/teams/8047/overview/odra-opole",
           "deduction": null,
           "ongoing": null,
-          "played": 11,
+          "played": 12,
           "wins": 3,
           "draws": 3,
-          "losses": 5,
-          "scoresStr": "8-12",
-          "goalConDiff": -4,
+          "losses": 6,
+          "scoresStr": "8-13",
+          "goalConDiff": -5,
           "pts": 12,
-          "idx": 16,
-          "qualColor": "#FF4646"
-        },
-        {
-          "name": "TS Podbeskidzie Bielsko-Biała",
-          "shortName": "TS Podbeskidzie Bielsko-Biała",
-          "id": 8033,
-          "pageUrl": "/teams/8033/overview/ts-podbeskidzie-bielsko-biaa",
-          "deduction": null,
-          "ongoing": null,
-          "played": 11,
-          "wins": 1,
-          "draws": 8,
-          "losses": 2,
-          "scoresStr": "13-15",
-          "goalConDiff": -2,
-          "pts": 11,
           "idx": 17,
           "qualColor": "#FF4646"
         },

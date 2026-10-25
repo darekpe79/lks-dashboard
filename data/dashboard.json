@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-25T11:20:50.234344+00:00",
+  "generated_at_utc": "2026-10-25T23:29:37.156887+00:00",
   "team": {
     "id": 8244,
     "name": "ŁKS Łódź",
@@ -48,40 +48,34 @@
     }
   },
   "summary": {
-    "position": 7,
+    "position": 8,
     "points": 18,
     "played": 11,
     "wins": 5,
     "draws": 3,
     "losses": 3,
-    "goals_for": 14,
-    "goals_against": 11,
-    "goal_difference": 3,
+    "goals_for": 4,
+    "goals_against": 4,
+    "goal_difference": 0,
     "points_per_match": 1.64,
-    "goals_for_per_match": 1.27,
+    "goals_for_per_match": 1.0,
     "goals_against_per_match": 1.0,
-    "clean_sheets": 3,
-    "matches_scored_in": 8,
-    "failed_to_score": 3
+    "clean_sheets": 1,
+    "matches_scored_in": 3,
+    "failed_to_score": 1
   },
   "form": [
     {
       "result": "D",
-      "opponent": "Arka Gdynia",
+      "opponent": "Pogoń Siedlce",
       "score": "1 - 1",
-      "date": "2026-09-06T12:30:00Z"
+      "date": "2026-07-25T13:30:00Z"
     },
     {
       "result": "W",
-      "opponent": "Puszcza Niepołomice",
-      "score": "1 - 2",
-      "date": "2026-09-11T18:45:00Z"
-    },
-    {
-      "result": "L",
-      "opponent": "Pogoń Grodzisk Mazowiecki",
-      "score": "2 - 0",
-      "date": "2026-09-19T13:30:00Z"
+      "opponent": "Polonia Bytom",
+      "score": "2 - 1",
+      "date": "2026-07-31T16:00:00Z"
     },
     {
       "result": "L",
@@ -98,69 +92,69 @@
   ],
   "splits": {
     "home": {
-      "played": 6,
-      "wins": 4,
+      "played": 3,
+      "wins": 2,
       "draws": 0,
-      "losses": 2,
-      "gf": 10,
-      "ga": 6,
-      "clean_sheets": 2,
-      "failed_to_score": 1,
-      "max_gf": 4,
-      "max_ga": 2,
-      "biggest_win_margin": 4,
-      "biggest_loss_margin": 2,
-      "gf_avg": 1.67,
-      "ga_avg": 1.0
-    },
-    "away": {
-      "played": 5,
-      "wins": 1,
-      "draws": 3,
       "losses": 1,
-      "gf": 4,
-      "ga": 5,
+      "gf": 3,
+      "ga": 3,
       "clean_sheets": 1,
-      "failed_to_score": 2,
+      "failed_to_score": 1,
       "max_gf": 2,
       "max_ga": 2,
       "biggest_win_margin": 1,
       "biggest_loss_margin": 2,
-      "gf_avg": 0.8,
+      "gf_avg": 1.0,
+      "ga_avg": 1.0
+    },
+    "away": {
+      "played": 1,
+      "wins": 0,
+      "draws": 1,
+      "losses": 0,
+      "gf": 1,
+      "ga": 1,
+      "clean_sheets": 0,
+      "failed_to_score": 0,
+      "max_gf": 1,
+      "max_ga": 1,
+      "biggest_win_margin": 0,
+      "biggest_loss_margin": 0,
+      "gf_avg": 1.0,
       "ga_avg": 1.0
     }
   },
   "records": {
     "best_win": {
-      "id": "5861897",
-      "date": "2026-08-23T17:00:00Z",
+      "id": "5861872",
+      "date": "2026-07-31T16:00:00Z",
       "homeTeamName": "ŁKS Łódź",
-      "awayTeamName": "Stal Mielec",
-      "score": "4 - 0",
-      "goalDiff": 4
+      "awayTeamName": "Polonia Bytom",
+      "score": "2 - 1",
+      "goalDiff": 1
     },
     "worst_loss": {
-      "id": "5861931",
-      "date": "2026-09-19T13:30:00Z",
-      "homeTeamName": "Pogoń Grodzisk Mazowiecki",
-      "awayTeamName": "ŁKS Łódź",
-      "score": "2 - 0",
+      "id": "5861942",
+      "date": "2026-10-11T12:30:00Z",
+      "homeTeamName": "ŁKS Łódź",
+      "awayTeamName": "Ruch Chorzów",
+      "score": "0 - 2",
       "goalDiff": -2
     },
     "streaks": {
-      "wins": 2,
-      "draws": 2,
-      "losses": 2,
-      "unbeaten": 5
+      "wins": 1,
+      "draws": 1,
+      "losses": 1,
+      "unbeaten": 2
     },
     "biggest_goals": {
       "for": {
-        "home": 4,
-        "away": 2
+        "home": 2,
+        "away": 1
       },
       "against": {
         "home": 2,
-        "away": 2
+        "away": 1
       }
     }
   },
@@ -213,7 +207,7 @@
   "next_opponent": {
     "id": 89467,
     "name": "Warta Poznań",
-    "position": 6,
+    "position": 7,
     "points": 18,
     "played": 11,
     "wins": 6,
@@ -497,7 +491,19 @@
     "best_defense": [
       {
         "name": "Pogoń Grodzisk Mazowiecki",
-        "value": 9
+        "value": 11
+      },
+      {
+        "name": "Ruch Chorzów",
+        "value": 11
+      },
+      {
+        "name": "Miedź Legnica",
+        "value": 11
+      },
+      {
+        "name": "ŁKS Łódź",
+        "value": 11
       }
     ],
     "most_goals_conceded": [
@@ -984,12 +990,12 @@
       "position": 1,
       "id": 585593,
       "name": "Pogoń Grodzisk Mazowiecki",
-      "played": 11,
+      "played": 12,
       "wins": 6,
       "draws": 3,
-      "losses": 2,
-      "goals": "19-9",
-      "goal_difference": 10,
+      "losses": 3,
+      "goals": "19-11",
+      "goal_difference": 8,
       "points": 21,
       "qualColor": "#2AD572"
     },
@@ -1008,6 +1014,19 @@
     },
     {
       "position": 3,
+      "id": 1601,
+      "name": "Ruch Chorzów",
+      "played": 12,
+      "wins": 6,
+      "draws": 3,
+      "losses": 3,
+      "goals": "16-11",
+      "goal_difference": 5,
+      "points": 21,
+      "qualColor": "#FFD908"
+    },
+    {
+      "position": 4,
       "id": 177361,
       "name": "Termalica Nieciecza",
       "played": 12,
@@ -1020,7 +1039,7 @@
       "qualColor": "#FFD908"
     },
     {
-      "position": 4,
+      "position": 5,
       "id": 8030,
       "name": "Lechia Gdańsk",
       "played": 12,
@@ -1033,7 +1052,7 @@
       "qualColor": "#FFD908"
     },
     {
-      "position": 5,
+      "position": 6,
       "id": 8048,
       "name": "Miedź Legnica",
       "played": 12,
@@ -1046,7 +1065,7 @@
       "qualColor": "#FFD908"
     },
     {
-      "position": 6,
+      "position": 7,
       "id": 89467,
       "name": "Warta Poznań",
       "played": 11,
@@ -1056,25 +1075,12 @@
       "goals": "19-15",
       "goal_difference": 4,
       "points": 18,
-      "qualColor": "#FFD908"
-    },
-    {
-      "position": 7,
-      "id": 8244,
-      "name": "ŁKS Łódź",
-      "played": 11,
-      "wins": 5,
-      "draws": 3,
-      "losses": 3,
-      "goals": "14-11",
-      "goal_difference": 3,
-      "points": 18,
       "qualColor": null
     },
     {
       "position": 8,
-      "id": 1601,
-      "name": "Ruch Chorzów",
+      "id": 8244,
+      "name": "ŁKS Łódź",
       "played": 11,
       "wins": 5,
       "draws": 3,
@@ -1101,17 +1107,30 @@
       "position": 10,
       "id": 177362,
       "name": "Stal Rzeszów",
-      "played": 11,
+      "played": 12,
       "wins": 5,
       "draws": 2,
-      "losses": 4,
-      "goals": "15-20",
-      "goal_difference": -5,
+      "losses": 5,
+      "goals": "16-22",
+      "goal_difference": -6,
       "points": 17,
       "qualColor": null
     },
     {
       "position": 11,
+      "id": 273750,
+      "name": "Pogoń Siedlce",
+      "played": 12,
+      "wins": 4,
+      "draws": 3,
+      "losses": 5,
+      "goals": "14-15",
+      "goal_difference": -1,
+      "points": 15,
+      "qualColor": null
+    },
+    {
+      "position": 12,
       "id": 8322,
       "name": "Arka Gdynia",
       "played": 12,
@@ -1124,7 +1143,20 @@
       "qualColor": null
     },
     {
-      "position": 12,
+      "position": 13,
+      "id": 8033,
+      "name": "TS Podbeskidzie Bielsko-Biała",
+      "played": 12,
+      "wins": 2,
+      "draws": 8,
+      "losses": 2,
+      "goals": "15-16",
+      "goal_difference": -1,
+      "points": 14,
+      "qualColor": null
+    },
+    {
+      "position": 14,
       "id": 273525,
       "name": "Chrobry Głogów",
       "played": 12,
@@ -1137,7 +1169,7 @@
       "qualColor": null
     },
     {
-      "position": 13,
+      "position": 15,
       "id": 458623,
       "name": "Stal Mielec",
       "played": 12,
@@ -1150,20 +1182,7 @@
       "qualColor": null
     },
     {
-      "position": 14,
-      "id": 273750,
-      "name": "Pogoń Siedlce",
-      "played": 11,
-      "wins": 3,
-      "draws": 3,
-      "losses": 5,
-      "goals": "13-15",
-      "goal_difference": -2,
-      "points": 12,
-      "qualColor": null
-    },
-    {
-      "position": 15,
+      "position": 16,
       "id": 205870,
       "name": "Puszcza Niepołomice",
       "played": 12,
@@ -1173,32 +1192,19 @@
       "goals": "13-17",
       "goal_difference": -4,
       "points": 12,
-      "qualColor": null
-    },
-    {
-      "position": 16,
-      "id": 8047,
-      "name": "Odra Opole",
-      "played": 11,
-      "wins": 3,
-      "draws": 3,
-      "losses": 5,
-      "goals": "8-12",
-      "goal_difference": -4,
-      "points": 12,
       "qualColor": "#FF4646"
     },
     {
       "position": 17,
-      "id": 8033,
-      "name": "TS Podbeskidzie Bielsko-Biała",
-      "played": 11,
-      "wins": 1,
-      "draws": 8,
-      "losses": 2,
-      "goals": "13-15",
-      "goal_difference": -2,
-      "points": 11,
+      "id": 8047,
+      "name": "Odra Opole",
+      "played": 12,
+      "wins": 3,
+      "draws": 3,
+      "losses": 6,
+      "goals": "8-13",
+      "goal_difference": -5,
+      "points": 12,
       "qualColor": "#FF4646"
     },
     {
