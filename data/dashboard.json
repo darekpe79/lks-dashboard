@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-25T23:29:37.156887+00:00",
+  "generated_at_utc": "2026-10-26T12:54:44.179663+00:00",
   "team": {
     "id": 8244,
     "name": "ŁKS Łódź",
@@ -54,28 +54,34 @@
     "wins": 5,
     "draws": 3,
     "losses": 3,
-    "goals_for": 4,
-    "goals_against": 4,
-    "goal_difference": 0,
+    "goals_for": 14,
+    "goals_against": 11,
+    "goal_difference": 3,
     "points_per_match": 1.64,
-    "goals_for_per_match": 1.0,
+    "goals_for_per_match": 1.27,
     "goals_against_per_match": 1.0,
-    "clean_sheets": 1,
-    "matches_scored_in": 3,
-    "failed_to_score": 1
+    "clean_sheets": 3,
+    "matches_scored_in": 8,
+    "failed_to_score": 3
   },
   "form": [
     {
       "result": "D",
-      "opponent": "Pogoń Siedlce",
+      "opponent": "Arka Gdynia",
       "score": "1 - 1",
-      "date": "2026-07-25T13:30:00Z"
+      "date": "2026-09-06T12:30:00Z"
     },
     {
       "result": "W",
-      "opponent": "Polonia Bytom",
-      "score": "2 - 1",
-      "date": "2026-07-31T16:00:00Z"
+      "opponent": "Puszcza Niepołomice",
+      "score": "1 - 2",
+      "date": "2026-09-11T18:45:00Z"
+    },
+    {
+      "result": "L",
+      "opponent": "Pogoń Grodzisk Mazowiecki",
+      "score": "2 - 0",
+      "date": "2026-09-19T13:30:00Z"
     },
     {
       "result": "L",
@@ -92,76 +98,76 @@
   ],
   "splits": {
     "home": {
-      "played": 3,
-      "wins": 2,
+      "played": 6,
+      "wins": 4,
       "draws": 0,
-      "losses": 1,
-      "gf": 3,
-      "ga": 3,
-      "clean_sheets": 1,
+      "losses": 2,
+      "gf": 10,
+      "ga": 6,
+      "clean_sheets": 2,
       "failed_to_score": 1,
+      "max_gf": 4,
+      "max_ga": 2,
+      "biggest_win_margin": 4,
+      "biggest_loss_margin": 2,
+      "gf_avg": 1.67,
+      "ga_avg": 1.0
+    },
+    "away": {
+      "played": 5,
+      "wins": 1,
+      "draws": 3,
+      "losses": 1,
+      "gf": 4,
+      "ga": 5,
+      "clean_sheets": 1,
+      "failed_to_score": 2,
       "max_gf": 2,
       "max_ga": 2,
       "biggest_win_margin": 1,
       "biggest_loss_margin": 2,
-      "gf_avg": 1.0,
-      "ga_avg": 1.0
-    },
-    "away": {
-      "played": 1,
-      "wins": 0,
-      "draws": 1,
-      "losses": 0,
-      "gf": 1,
-      "ga": 1,
-      "clean_sheets": 0,
-      "failed_to_score": 0,
-      "max_gf": 1,
-      "max_ga": 1,
-      "biggest_win_margin": 0,
-      "biggest_loss_margin": 0,
-      "gf_avg": 1.0,
+      "gf_avg": 0.8,
       "ga_avg": 1.0
     }
   },
   "records": {
     "best_win": {
-      "id": "5861872",
-      "date": "2026-07-31T16:00:00Z",
+      "id": "5861897",
+      "date": "2026-08-23T17:00:00Z",
       "homeTeamName": "ŁKS Łódź",
-      "awayTeamName": "Polonia Bytom",
-      "score": "2 - 1",
-      "goalDiff": 1
+      "awayTeamName": "Stal Mielec",
+      "score": "4 - 0",
+      "goalDiff": 4
     },
     "worst_loss": {
-      "id": "5861942",
-      "date": "2026-10-11T12:30:00Z",
-      "homeTeamName": "ŁKS Łódź",
-      "awayTeamName": "Ruch Chorzów",
-      "score": "0 - 2",
+      "id": "5861931",
+      "date": "2026-09-19T13:30:00Z",
+      "homeTeamName": "Pogoń Grodzisk Mazowiecki",
+      "awayTeamName": "ŁKS Łódź",
+      "score": "2 - 0",
       "goalDiff": -2
     },
     "streaks": {
-      "wins": 1,
-      "draws": 1,
-      "losses": 1,
-      "unbeaten": 2
+      "wins": 2,
+      "draws": 2,
+      "losses": 2,
+      "unbeaten": 5
     },
     "biggest_goals": {
       "for": {
-        "home": 2,
-        "away": 1
+        "home": 4,
+        "away": 2
       },
       "against": {
         "home": 2,
-        "away": 1
+        "away": 2
       }
     }
   },
   "previous_match": {
     "type": "match",
     "id": "5861952",
-    "score": -68,
+    "score": -80,
     "leagueId": 197,
     "leagueName": "I Liga",
     "matchDate": "2026-10-18T12:30:00Z",
@@ -393,7 +399,7 @@
     {
       "type": "match",
       "id": "5861971",
-      "score": -18,
+      "score": -17,
       "leagueId": 197,
       "leagueName": "I Liga",
       "matchDate": "2026-11-02T19:30:00Z",
@@ -411,7 +417,7 @@
     {
       "type": "match",
       "id": "5861977",
-      "score": -33,
+      "score": -32,
       "leagueId": 197,
       "leagueName": "I Liga",
       "matchDate": "2026-11-08T13:30:00Z",
@@ -429,7 +435,7 @@
     {
       "type": "match",
       "id": "5861988",
-      "score": -63,
+      "score": -62,
       "leagueId": 197,
       "leagueName": "I Liga",
       "matchDate": "2026-11-20T19:30:00Z",
@@ -447,7 +453,7 @@
     {
       "type": "match",
       "id": "5862001",
-      "score": -82,
+      "score": -81,
       "leagueId": 197,
       "leagueName": "I Liga",
       "matchDate": "2026-11-28T16:00:00Z",
