@@ -1,10 +1,10 @@
 {
-  "updated_at_utc": "2026-10-25T23:29:36.382441+00:00",
+  "updated_at_utc": "2026-10-26T19:48:21.531956+00:00",
   "endpoint": "/football-get-standing-all",
   "league_id": 197,
   "rapidapi_limit": "100",
-  "rapidapi_remaining": "92",
-  "rapidapi_reset": "2457392",
+  "rapidapi_remaining": "89",
+  "rapidapi_reset": "2384267",
   "lks_found": true,
   "lks": {
     "name": "ŁKS Łódź",
@@ -13,15 +13,15 @@
     "pageUrl": "/teams/8244/overview/ks-odz",
     "deduction": null,
     "ongoing": null,
-    "played": 11,
-    "wins": 5,
+    "played": 12,
+    "wins": 6,
     "draws": 3,
     "losses": 3,
-    "scoresStr": "14-11",
-    "goalConDiff": 3,
-    "pts": 18,
-    "idx": 8,
-    "qualColor": null
+    "scoresStr": "15-11",
+    "goalConDiff": 4,
+    "pts": 21,
+    "idx": 4,
+    "qualColor": "#FFD908"
   },
   "payload": {
     "status": "success",
@@ -79,6 +79,23 @@
           "qualColor": "#FFD908"
         },
         {
+          "name": "ŁKS Łódź",
+          "shortName": "ŁKS Łódź",
+          "id": 8244,
+          "pageUrl": "/teams/8244/overview/ks-odz",
+          "deduction": null,
+          "ongoing": null,
+          "played": 12,
+          "wins": 6,
+          "draws": 3,
+          "losses": 3,
+          "scoresStr": "15-11",
+          "goalConDiff": 4,
+          "pts": 21,
+          "idx": 4,
+          "qualColor": "#FFD908"
+        },
+        {
           "name": "Termalica Nieciecza",
           "shortName": "Termalica Nieciecza",
           "id": 177361,
@@ -92,7 +109,7 @@
           "scoresStr": "19-17",
           "goalConDiff": 2,
           "pts": 20,
-          "idx": 4,
+          "idx": 5,
           "qualColor": "#FFD908"
         },
         {
@@ -109,7 +126,7 @@
           "scoresStr": "22-19",
           "goalConDiff": 3,
           "pts": 19,
-          "idx": 5,
+          "idx": 6,
           "qualColor": "#FFD908"
         },
         {
@@ -126,8 +143,8 @@
           "scoresStr": "18-11",
           "goalConDiff": 7,
           "pts": 18,
-          "idx": 6,
-          "qualColor": "#FFD908"
+          "idx": 7,
+          "qualColor": null
         },
         {
           "name": "Warta Poznań",
@@ -136,28 +153,11 @@
           "pageUrl": "/teams/89467/overview/warta-poznan",
           "deduction": null,
           "ongoing": null,
-          "played": 11,
+          "played": 12,
           "wins": 6,
           "draws": 0,
-          "losses": 5,
-          "scoresStr": "19-15",
-          "goalConDiff": 4,
-          "pts": 18,
-          "idx": 7,
-          "qualColor": null
-        },
-        {
-          "name": "ŁKS Łódź",
-          "shortName": "ŁKS Łódź",
-          "id": 8244,
-          "pageUrl": "/teams/8244/overview/ks-odz",
-          "deduction": null,
-          "ongoing": null,
-          "played": 11,
-          "wins": 5,
-          "draws": 3,
-          "losses": 3,
-          "scoresStr": "14-11",
+          "losses": 6,
+          "scoresStr": "19-16",
           "goalConDiff": 3,
           "pts": 18,
           "idx": 8,
