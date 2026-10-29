@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-28T12:46:56.944857+00:00",
+  "generated_at_utc": "2026-10-29T12:55:42.461925+00:00",
   "team": {
     "id": 8244,
     "name": "ŁKS Łódź",
@@ -167,7 +167,7 @@
   "previous_match": {
     "type": "match",
     "id": "5861966",
-    "score": -8,
+    "score": -20,
     "leagueId": 197,
     "leagueName": "I Liga",
     "matchDate": "2026-10-26T17:00:00Z",
@@ -453,7 +453,7 @@
     {
       "type": "match",
       "id": "5862013",
-      "score": -83,
+      "score": -82,
       "leagueId": 197,
       "leagueName": "I Liga",
       "matchDate": "2026-12-05T16:00:00Z",
