@@ -1,10 +1,10 @@
 {
-  "updated_at_utc": "2026-10-27T12:21:28.340021+00:00",
+  "updated_at_utc": "2026-10-31T00:58:59.559158+00:00",
   "endpoint": "/football-get-standing-all",
   "league_id": 197,
   "rapidapi_limit": "100",
-  "rapidapi_remaining": "82",
-  "rapidapi_reset": "2324680",
+  "rapidapi_remaining": "76",
+  "rapidapi_reset": "2020029",
   "lks_found": true,
   "lks": {
     "name": "ŁKS Łódź",
@@ -34,12 +34,12 @@
           "pageUrl": "/teams/585593/overview/pogon-grodzisk-mazowiecki",
           "deduction": null,
           "ongoing": null,
-          "played": 12,
+          "played": 13,
           "wins": 6,
           "draws": 3,
-          "losses": 3,
-          "scoresStr": "19-11",
-          "goalConDiff": 8,
+          "losses": 4,
+          "scoresStr": "19-12",
+          "goalConDiff": 7,
           "pts": 21,
           "idx": 1,
           "qualColor": "#2AD572"
@@ -198,6 +198,23 @@
           "qualColor": null
         },
         {
+          "name": "Stal Mielec",
+          "shortName": "Stal Mielec",
+          "id": 458623,
+          "pageUrl": "/teams/458623/overview/stal-mielec",
+          "deduction": null,
+          "ongoing": null,
+          "played": 13,
+          "wins": 4,
+          "draws": 4,
+          "losses": 5,
+          "scoresStr": "17-27",
+          "goalConDiff": -10,
+          "pts": 16,
+          "idx": 11,
+          "qualColor": null
+        },
+        {
           "name": "Pogoń Siedlce",
           "shortName": "Pogoń Siedlce",
           "id": 273750,
@@ -211,7 +228,7 @@
           "scoresStr": "14-15",
           "goalConDiff": -1,
           "pts": 15,
-          "idx": 11,
+          "idx": 12,
           "qualColor": null
         },
         {
@@ -228,7 +245,7 @@
           "scoresStr": "16-16",
           "goalConDiff": 0,
           "pts": 14,
-          "idx": 12,
+          "idx": 13,
           "qualColor": null
         },
         {
@@ -245,7 +262,7 @@
           "scoresStr": "15-16",
           "goalConDiff": -1,
           "pts": 14,
-          "idx": 13,
+          "idx": 14,
           "qualColor": null
         },
         {
@@ -261,23 +278,6 @@
           "losses": 5,
           "scoresStr": "13-15",
           "goalConDiff": -2,
-          "pts": 13,
-          "idx": 14,
-          "qualColor": null
-        },
-        {
-          "name": "Stal Mielec",
-          "shortName": "Stal Mielec",
-          "id": 458623,
-          "pageUrl": "/teams/458623/overview/stal-mielec",
-          "deduction": null,
-          "ongoing": null,
-          "played": 12,
-          "wins": 3,
-          "draws": 4,
-          "losses": 5,
-          "scoresStr": "16-27",
-          "goalConDiff": -11,
           "pts": 13,
           "idx": 15,
           "qualColor": null
