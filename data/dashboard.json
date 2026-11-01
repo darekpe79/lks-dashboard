@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-31T12:20:03.498322+00:00",
+  "generated_at_utc": "2026-11-01T00:21:46.602651+00:00",
   "team": {
     "id": 8244,
     "name": "ŁKS Łódź",
@@ -48,34 +48,34 @@
     }
   },
   "summary": {
-    "position": 4,
+    "position": 5,
     "points": 21,
     "played": 12,
     "wins": 6,
     "draws": 3,
     "losses": 3,
-    "goals_for": 15,
-    "goals_against": 11,
-    "goal_difference": 4,
+    "goals_for": 5,
+    "goals_against": 4,
+    "goal_difference": 1,
     "points_per_match": 1.75,
-    "goals_for_per_match": 1.25,
-    "goals_against_per_match": 0.92,
-    "clean_sheets": 4,
-    "matches_scored_in": 9,
-    "failed_to_score": 3
+    "goals_for_per_match": 1.0,
+    "goals_against_per_match": 0.8,
+    "clean_sheets": 2,
+    "matches_scored_in": 4,
+    "failed_to_score": 1
   },
   "form": [
     {
-      "result": "W",
-      "opponent": "Puszcza Niepołomice",
-      "score": "1 - 2",
-      "date": "2026-09-11T18:45:00Z"
+      "result": "D",
+      "opponent": "Pogoń Siedlce",
+      "score": "1 - 1",
+      "date": "2026-07-25T13:30:00Z"
     },
     {
-      "result": "L",
-      "opponent": "Pogoń Grodzisk Mazowiecki",
-      "score": "2 - 0",
-      "date": "2026-09-19T13:30:00Z"
+      "result": "W",
+      "opponent": "Polonia Bytom",
+      "score": "2 - 1",
+      "date": "2026-07-31T16:00:00Z"
     },
     {
       "result": "L",
@@ -98,69 +98,69 @@
   ],
   "splits": {
     "home": {
-      "played": 6,
-      "wins": 4,
-      "draws": 0,
-      "losses": 2,
-      "gf": 10,
-      "ga": 6,
-      "clean_sheets": 2,
-      "failed_to_score": 1,
-      "max_gf": 4,
-      "max_ga": 2,
-      "biggest_win_margin": 4,
-      "biggest_loss_margin": 2,
-      "gf_avg": 1.67,
-      "ga_avg": 1.0
-    },
-    "away": {
-      "played": 6,
+      "played": 3,
       "wins": 2,
-      "draws": 3,
+      "draws": 0,
       "losses": 1,
-      "gf": 5,
-      "ga": 5,
-      "clean_sheets": 2,
-      "failed_to_score": 2,
+      "gf": 3,
+      "ga": 3,
+      "clean_sheets": 1,
+      "failed_to_score": 1,
       "max_gf": 2,
       "max_ga": 2,
       "biggest_win_margin": 1,
       "biggest_loss_margin": 2,
-      "gf_avg": 0.83,
-      "ga_avg": 0.83
+      "gf_avg": 1.0,
+      "ga_avg": 1.0
+    },
+    "away": {
+      "played": 2,
+      "wins": 1,
+      "draws": 1,
+      "losses": 0,
+      "gf": 2,
+      "ga": 1,
+      "clean_sheets": 1,
+      "failed_to_score": 0,
+      "max_gf": 1,
+      "max_ga": 1,
+      "biggest_win_margin": 1,
+      "biggest_loss_margin": 0,
+      "gf_avg": 1.0,
+      "ga_avg": 0.5
     }
   },
   "records": {
     "best_win": {
-      "id": "5861897",
-      "date": "2026-08-23T17:00:00Z",
+      "id": "5861872",
+      "date": "2026-07-31T16:00:00Z",
       "homeTeamName": "ŁKS Łódź",
-      "awayTeamName": "Stal Mielec",
-      "score": "4 - 0",
-      "goalDiff": 4
+      "awayTeamName": "Polonia Bytom",
+      "score": "2 - 1",
+      "goalDiff": 1
     },
     "worst_loss": {
-      "id": "5861931",
-      "date": "2026-09-19T13:30:00Z",
-      "homeTeamName": "Pogoń Grodzisk Mazowiecki",
-      "awayTeamName": "ŁKS Łódź",
-      "score": "2 - 0",
+      "id": "5861942",
+      "date": "2026-10-11T12:30:00Z",
+      "homeTeamName": "ŁKS Łódź",
+      "awayTeamName": "Ruch Chorzów",
+      "score": "0 - 2",
       "goalDiff": -2
     },
     "streaks": {
       "wins": 2,
-      "draws": 2,
-      "losses": 2,
-      "unbeaten": 5
+      "draws": 1,
+      "losses": 1,
+      "unbeaten": 2
     },
     "biggest_goals": {
       "for": {
-        "home": 4,
-        "away": 2
+        "home": 2,
+        "away": 1
       },
       "against": {
         "home": 2,
-        "away": 2
+        "away": 1
       }
     }
   },
@@ -213,7 +213,7 @@
   "next_opponent": {
     "id": 2183,
     "name": "Polonia Warszawa",
-    "position": 2,
+    "position": 3,
     "points": 21,
     "played": 12,
     "wins": 6,
@@ -491,7 +491,7 @@
     "best_attack": [
       {
         "name": "Lechia Gdańsk",
-        "value": 22
+        "value": 25
       }
     ],
     "best_defense": [
@@ -501,10 +501,6 @@
       },
       {
         "name": "ŁKS Łódź",
-        "value": 11
-      },
-      {
-        "name": "Miedź Legnica",
         "value": 11
       }
     ],
@@ -990,6 +986,19 @@
   "standings": [
     {
       "position": 1,
+      "id": 8030,
+      "name": "Lechia Gdańsk",
+      "played": 13,
+      "wins": 7,
+      "draws": 1,
+      "losses": 5,
+      "goals": "25-21",
+      "goal_difference": 4,
+      "points": 22,
+      "qualColor": "#2AD572"
+    },
+    {
+      "position": 2,
       "id": 585593,
       "name": "Pogoń Grodzisk Mazowiecki",
       "played": 13,
@@ -1002,7 +1011,7 @@
       "qualColor": "#2AD572"
     },
     {
-      "position": 2,
+      "position": 3,
       "id": 2183,
       "name": "Polonia Warszawa",
       "played": 12,
@@ -1012,10 +1021,10 @@
       "goals": "19-14",
       "goal_difference": 5,
       "points": 21,
-      "qualColor": "#2AD572"
+      "qualColor": "#FFD908"
     },
     {
-      "position": 3,
+      "position": 4,
       "id": 1601,
       "name": "Ruch Chorzów",
       "played": 12,
@@ -1028,7 +1037,7 @@
       "qualColor": "#FFD908"
     },
     {
-      "position": 4,
+      "position": 5,
       "id": 8244,
       "name": "ŁKS Łódź",
       "played": 12,
@@ -1041,55 +1050,42 @@
       "qualColor": "#FFD908"
     },
     {
-      "position": 5,
+      "position": 6,
       "id": 177361,
       "name": "Termalica Nieciecza",
-      "played": 12,
+      "played": 13,
       "wins": 6,
-      "draws": 2,
+      "draws": 3,
       "losses": 4,
-      "goals": "19-17",
+      "goals": "20-18",
       "goal_difference": 2,
-      "points": 20,
-      "qualColor": "#FFD908"
-    },
-    {
-      "position": 6,
-      "id": 8030,
-      "name": "Lechia Gdańsk",
-      "played": 12,
-      "wins": 6,
-      "draws": 1,
-      "losses": 5,
-      "goals": "22-19",
-      "goal_difference": 3,
-      "points": 19,
+      "points": 21,
       "qualColor": "#FFD908"
     },
     {
       "position": 7,
       "id": 8048,
       "name": "Miedź Legnica",
-      "played": 12,
+      "played": 13,
       "wins": 5,
-      "draws": 3,
+      "draws": 4,
       "losses": 4,
-      "goals": "18-11",
+      "goals": "19-12",
       "goal_difference": 7,
-      "points": 18,
+      "points": 19,
       "qualColor": null
     },
     {
       "position": 8,
       "id": 89467,
       "name": "Warta Poznań",
-      "played": 12,
+      "played": 13,
       "wins": 6,
-      "draws": 0,
+      "draws": 1,
       "losses": 6,
-      "goals": "19-16",
+      "goals": "20-17",
       "goal_difference": 3,
-      "points": 18,
+      "points": 19,
       "qualColor": null
     },
     {
@@ -1133,6 +1129,19 @@
     },
     {
       "position": 12,
+      "id": 8033,
+      "name": "TS Podbeskidzie Bielsko-Biała",
+      "played": 13,
+      "wins": 2,
+      "draws": 9,
+      "losses": 2,
+      "goals": "16-17",
+      "goal_difference": -1,
+      "points": 15,
+      "qualColor": null
+    },
+    {
+      "position": 13,
       "id": 273750,
       "name": "Pogoń Siedlce",
       "played": 12,
@@ -1145,7 +1154,7 @@
       "qualColor": null
     },
     {
-      "position": 13,
+      "position": 14,
       "id": 8322,
       "name": "Arka Gdynia",
       "played": 12,
@@ -1154,19 +1163,6 @@
       "losses": 6,
       "goals": "16-16",
       "goal_difference": 0,
-      "points": 14,
-      "qualColor": null
-    },
-    {
-      "position": 14,
-      "id": 8033,
-      "name": "TS Podbeskidzie Bielsko-Biała",
-      "played": 12,
-      "wins": 2,
-      "draws": 8,
-      "losses": 2,
-      "goals": "15-16",
-      "goal_difference": -1,
       "points": 14,
       "qualColor": null
     },
@@ -1213,12 +1209,12 @@
       "position": 18,
       "id": 2417,
       "name": "Skierniewice",
-      "played": 12,
+      "played": 13,
       "wins": 3,
       "draws": 2,
-      "losses": 7,
-      "goals": "13-20",
-      "goal_difference": -7,
+      "losses": 8,
+      "goals": "15-23",
+      "goal_difference": -8,
       "points": 11,
       "qualColor": "#FF4646"
     }
