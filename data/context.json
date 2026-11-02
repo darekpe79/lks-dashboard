@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-10-30T12:48:48.863999+00:00",
+  "updated_at_utc": "2026-11-02T15:42:19.016925+00:00",
   "home_away_updated_at_utc": "2026-10-26T19:48:22.655318+00:00",
   "league_id": 197,
   "event_id": "5861971",
@@ -672,8 +672,8 @@
       "score": "1:1"
     }
   ],
-  "opponent_form_updated_at_utc": "2026-10-30T12:48:48.863981+00:00",
+  "opponent_form_updated_at_utc": "2026-11-02T15:42:19.016907+00:00",
   "opponent_form_search": "Polonia Warszawa",
-  "rapidapi_remaining": "77",
+  "rapidapi_remaining": "67",
   "requests_used_this_run": 1
 }
