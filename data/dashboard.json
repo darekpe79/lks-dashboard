@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-11-03T14:25:29.114618+00:00",
+  "generated_at_utc": "2026-11-04T14:27:25.120194+00:00",
   "team": {
     "id": 8244,
     "name": "ŁKS Łódź",
@@ -167,7 +167,7 @@
   "previous_match": {
     "type": "match",
     "id": "5861971",
-    "score": 0,
+    "score": -10,
     "leagueId": 197,
     "leagueName": "I Liga",
     "matchDate": "2026-11-02T19:30:00Z",
@@ -195,7 +195,7 @@
   "next_match": {
     "type": "match",
     "id": "5861977",
-    "score": -2,
+    "score": 0,
     "leagueId": 197,
     "leagueName": "I Liga",
     "matchDate": "2026-11-08T13:30:00Z",
@@ -381,7 +381,7 @@
     {
       "type": "match",
       "id": "5861977",
-      "score": -2,
+      "score": 0,
       "leagueId": 197,
       "leagueName": "I Liga",
       "matchDate": "2026-11-08T13:30:00Z",
@@ -399,7 +399,7 @@
     {
       "type": "match",
       "id": "5861988",
-      "score": -32,
+      "score": -30,
       "leagueId": 197,
       "leagueName": "I Liga",
       "matchDate": "2026-11-20T19:30:00Z",
@@ -417,7 +417,7 @@
     {
       "type": "match",
       "id": "5862001",
-      "score": -51,
+      "score": -49,
       "leagueId": 197,
       "leagueName": "I Liga",
       "matchDate": "2026-11-28T16:00:00Z",
@@ -435,7 +435,7 @@
     {
       "type": "match",
       "id": "5862013",
-      "score": -70,
+      "score": -67,
       "leagueId": 197,
       "leagueName": "I Liga",
       "matchDate": "2026-12-05T16:00:00Z",
@@ -453,7 +453,7 @@
     {
       "type": "match",
       "id": "5862019",
-      "score": -87,
+      "score": -85,
       "leagueId": 197,
       "leagueName": "I Liga",
       "matchDate": "2026-12-12T16:00:00Z",
@@ -471,7 +471,7 @@
     {
       "type": "match",
       "id": "5862028",
-      "score": -227,
+      "score": -225,
       "leagueId": 197,
       "leagueName": "I Liga",
       "matchDate": "2027-02-06T16:00:00Z",
