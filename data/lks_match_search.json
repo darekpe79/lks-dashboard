@@ -1,10 +1,10 @@
 {
-  "updated_at_utc": "2026-11-08T13:17:23.078870+00:00",
+  "updated_at_utc": "2026-11-09T01:09:36.464819+00:00",
   "endpoint": "/football-matches-search",
   "search": "lks",
   "rapidapi_limit": "100",
-  "rapidapi_remaining": "50",
-  "rapidapi_reset": "1284525",
+  "rapidapi_remaining": "48",
+  "rapidapi_reset": "1241792",
   "payload": {
     "status": "success",
     "response": {
@@ -18,14 +18,24 @@
           "matchDate": "2026-11-08T13:30:00Z",
           "status": {
             "utcTime": "2026-11-08T13:30:00Z",
-            "started": false,
+            "finished": true,
+            "started": true,
             "cancelled": false,
-            "finished": false
+            "awarded": false,
+            "scoreStr": "1 - 0",
+            "reason": {
+              "short": "FT",
+              "shortKey": "fulltime_short",
+              "long": "Full-Time",
+              "longKey": "finished"
+            }
           },
           "homeTeamId": "8244",
           "homeTeamName": "ŁKS Łódź",
+          "homeTeamScore": 1,
           "awayTeamId": "177362",
-          "awayTeamName": "Stal Rzeszów"
+          "awayTeamName": "Stal Rzeszów",
+          "awayTeamScore": 0
         },
         {
           "type": "match",
@@ -300,6 +310,42 @@
           "homeTeamName": "ŁKS Łódź",
           "awayTeamId": "8047",
           "awayTeamName": "Odra Opole"
+        },
+        {
+          "type": "match",
+          "id": "5862096",
+          "score": -312,
+          "leagueId": 197,
+          "leagueName": "I Liga",
+          "matchDate": "2027-03-13T16:00:00Z",
+          "status": {
+            "utcTime": "2027-03-13T16:00:00Z",
+            "started": false,
+            "cancelled": false,
+            "finished": false
+          },
+          "homeTeamId": "8244",
+          "homeTeamName": "ŁKS Łódź",
+          "awayTeamId": "8322",
+          "awayTeamName": "Arka Gdynia"
+        },
+        {
+          "type": "match",
+          "id": "5862106",
+          "score": -330,
+          "leagueId": 197,
+          "leagueName": "I Liga",
+          "matchDate": "2027-03-20T16:00:00Z",
+          "status": {
+            "utcTime": "2027-03-20T16:00:00Z",
+            "started": false,
+            "cancelled": false,
+            "finished": false
+          },
+          "homeTeamId": "8244",
+          "homeTeamName": "ŁKS Łódź",
+          "awayTeamId": "205870",
+          "awayTeamName": "Puszcza Niepołomice"
         },
         {
           "type": "match",
