@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-11-13T14:30:23.486956+00:00",
+  "generated_at_utc": "2026-11-14T01:39:42.270205+00:00",
   "source_file": "data/lks_match_search.json",
-  "source_updated_at_utc": "2026-11-13T14:30:23.485001+00:00",
+  "source_updated_at_utc": "2026-11-14T01:39:42.268806+00:00",
   "team_id": 8244,
   "league_id": 197,
   "season_start": "2026-07-01T00:00:00Z",
-  "match_count": 22,
+  "match_count": 23,
   "previous_match": {
     "type": "match",
     "id": "5861977",
@@ -108,6 +108,34 @@
       "awayTeamId": "8031",
       "awayTeamName": "Polonia Bytom",
       "awayTeamScore": 1
+    },
+    {
+      "type": "match",
+      "id": "5861878",
+      "score": -943,
+      "leagueId": 197,
+      "leagueName": "I Liga",
+      "matchDate": "2026-08-09T12:30:00Z",
+      "status": {
+        "utcTime": "2026-08-09T12:30:00Z",
+        "finished": true,
+        "started": true,
+        "cancelled": false,
+        "awarded": false,
+        "scoreStr": "1 - 2",
+        "reason": {
+          "short": "FT",
+          "shortKey": "fulltime_short",
+          "long": "Full-Time",
+          "longKey": "finished"
+        }
+      },
+      "homeTeamId": "8244",
+      "homeTeamName": "ŁKS Łódź",
+      "homeTeamScore": 1,
+      "awayTeamId": "273525",
+      "awayTeamName": "Chrobry Głogów",
+      "awayTeamScore": 2
     },
     {
       "type": "match",
