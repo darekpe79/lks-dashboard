@@ -1,10 +1,10 @@
 {
-  "updated_at_utc": "2026-11-15T13:52:54.255629+00:00",
+  "updated_at_utc": "2026-11-16T01:20:34.895648+00:00",
   "endpoint": "/football-matches-search",
   "search": "lks",
   "rapidapi_limit": "100",
-  "rapidapi_remaining": "30",
-  "rapidapi_reset": "677594",
+  "rapidapi_remaining": "28",
+  "rapidapi_reset": "636334",
   "payload": {
     "status": "success",
     "response": {
