@@ -1,6 +1,6 @@
 {
-  "updated_at_utc": "2026-11-16T01:20:35.390261+00:00",
-  "home_away_updated_at_utc": "2026-11-09T01:09:37.493627+00:00",
+  "updated_at_utc": "2026-11-17T16:29:56.037389+00:00",
+  "home_away_updated_at_utc": "2026-11-17T16:29:56.037371+00:00",
   "league_id": 197,
   "event_id": "5861988",
   "opponent_id": 8048,
@@ -674,6 +674,6 @@
   ],
   "opponent_form_updated_at_utc": "2026-11-16T01:20:35.390242+00:00",
   "opponent_form_search": "Miedź Legnica",
-  "rapidapi_remaining": "27",
-  "requests_used_this_run": 1
+  "rapidapi_remaining": "22",
+  "requests_used_this_run": 2
 }
