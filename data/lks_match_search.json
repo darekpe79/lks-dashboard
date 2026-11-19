@@ -1,10 +1,10 @@
 {
-  "updated_at_utc": "2026-11-18T15:35:01.145826+00:00",
+  "updated_at_utc": "2026-11-19T15:40:39.260001+00:00",
   "endpoint": "/football-matches-search",
   "search": "lks",
   "rapidapi_limit": "100",
-  "rapidapi_remaining": "21",
-  "rapidapi_reset": "412267",
+  "rapidapi_remaining": "20",
+  "rapidapi_reset": "325529",
   "payload": {
     "status": "success",
     "response": {
@@ -30,7 +30,7 @@
         {
           "type": "match",
           "id": "5862001",
-          "score": -21,
+          "score": -22,
           "leagueId": 197,
           "leagueName": "I Liga",
           "matchDate": "2026-11-29T13:30:00Z",
@@ -48,7 +48,7 @@
         {
           "type": "match",
           "id": "5862013",
-          "score": -37,
+          "score": -38,
           "leagueId": 197,
           "leagueName": "I Liga",
           "matchDate": "2026-12-05T14:30:00Z",
@@ -84,7 +84,7 @@
         {
           "type": "match",
           "id": "5861977",
-          "score": -95,
+          "score": -108,
           "leagueId": 197,
           "leagueName": "I Liga",
           "matchDate": "2026-11-08T13:30:00Z",
@@ -112,7 +112,7 @@
         {
           "type": "match",
           "id": "5861971",
-          "score": -155,
+          "score": -168,
           "leagueId": 197,
           "leagueName": "I Liga",
           "matchDate": "2026-11-02T19:30:00Z",
@@ -158,7 +158,7 @@
         {
           "type": "match",
           "id": "5862035",
-          "score": -212,
+          "score": -213,
           "leagueId": 197,
           "leagueName": "I Liga",
           "matchDate": "2027-02-13T16:00:00Z",
@@ -175,8 +175,26 @@
         },
         {
           "type": "match",
+          "id": "5862050",
+          "score": -230,
+          "leagueId": 197,
+          "leagueName": "I Liga",
+          "matchDate": "2027-02-20T16:00:00Z",
+          "status": {
+            "utcTime": "2027-02-20T16:00:00Z",
+            "started": false,
+            "cancelled": false,
+            "finished": false
+          },
+          "homeTeamId": "177361",
+          "homeTeamName": "Termalica Nieciecza",
+          "awayTeamId": "8244",
+          "awayTeamName": "ŁKS Łódź"
+        },
+        {
+          "type": "match",
           "id": "5861966",
-          "score": -225,
+          "score": -238,
           "leagueId": 197,
           "leagueName": "I Liga",
           "matchDate": "2026-10-26T17:00:00Z",
@@ -203,26 +221,8 @@
         },
         {
           "type": "match",
-          "id": "5862050",
-          "score": -230,
-          "leagueId": 197,
-          "leagueName": "I Liga",
-          "matchDate": "2027-02-20T16:00:00Z",
-          "status": {
-            "utcTime": "2027-02-20T16:00:00Z",
-            "started": false,
-            "cancelled": false,
-            "finished": false
-          },
-          "homeTeamId": "177361",
-          "homeTeamName": "Termalica Nieciecza",
-          "awayTeamId": "8244",
-          "awayTeamName": "ŁKS Łódź"
-        },
-        {
-          "type": "match",
           "id": "5862060",
-          "score": -247,
+          "score": -248,
           "leagueId": 197,
           "leagueName": "I Liga",
           "matchDate": "2027-02-27T16:00:00Z",
@@ -258,7 +258,7 @@
         {
           "type": "match",
           "id": "5862096",
-          "score": -282,
+          "score": -283,
           "leagueId": 197,
           "leagueName": "I Liga",
           "matchDate": "2027-03-13T16:00:00Z",
@@ -294,7 +294,7 @@
         {
           "type": "match",
           "id": "5861952",
-          "score": -305,
+          "score": -318,
           "leagueId": 197,
           "leagueName": "I Liga",
           "matchDate": "2026-10-18T12:30:00Z",
@@ -322,7 +322,7 @@
         {
           "type": "match",
           "id": "5861942",
-          "score": -375,
+          "score": -388,
           "leagueId": 197,
           "leagueName": "I Liga",
           "matchDate": "2026-10-11T12:30:00Z",
@@ -350,7 +350,7 @@
         {
           "type": "match",
           "id": "5861931",
-          "score": -595,
+          "score": -608,
           "leagueId": 197,
           "leagueName": "I Liga",
           "matchDate": "2026-09-19T13:30:00Z",
@@ -378,7 +378,7 @@
         {
           "type": "match",
           "id": "5861926",
-          "score": -675,
+          "score": -688,
           "leagueId": 197,
           "leagueName": "I Liga",
           "matchDate": "2026-09-11T18:45:00Z",
@@ -406,7 +406,7 @@
         {
           "type": "match",
           "id": "5861913",
-          "score": -725,
+          "score": -738,
           "leagueId": 197,
           "leagueName": "I Liga",
           "matchDate": "2026-09-06T12:30:00Z",
@@ -434,7 +434,7 @@
         {
           "type": "match",
           "id": "5861907",
-          "score": -815,
+          "score": -828,
           "leagueId": 197,
           "leagueName": "I Liga",
           "matchDate": "2026-08-28T18:45:00Z",
@@ -462,7 +462,7 @@
         {
           "type": "match",
           "id": "5861897",
-          "score": -865,
+          "score": -878,
           "leagueId": 197,
           "leagueName": "I Liga",
           "matchDate": "2026-08-23T17:00:00Z",
@@ -490,7 +490,7 @@
         {
           "type": "match",
           "id": "5861889",
-          "score": -935,
+          "score": -948,
           "leagueId": 197,
           "leagueName": "I Liga",
           "matchDate": "2026-08-16T12:30:00Z",
@@ -518,7 +518,7 @@
         {
           "type": "match",
           "id": "5861878",
-          "score": -1005,
+          "score": -1018,
           "leagueId": 197,
           "leagueName": "I Liga",
           "matchDate": "2026-08-09T12:30:00Z",
@@ -546,7 +546,7 @@
         {
           "type": "match",
           "id": "5861872",
-          "score": -1095,
+          "score": -1108,
           "leagueId": 197,
           "leagueName": "I Liga",
           "matchDate": "2026-07-31T16:00:00Z",
@@ -574,7 +574,7 @@
         {
           "type": "match",
           "id": "5861862",
-          "score": -1155,
+          "score": -1168,
           "leagueId": 197,
           "leagueName": "I Liga",
           "matchDate": "2026-07-25T13:30:00Z",
@@ -602,7 +602,7 @@
         {
           "type": "match",
           "id": "5729588",
-          "score": -1675,
+          "score": -1688,
           "leagueId": 10967,
           "leagueName": "II Liga Qualification",
           "matchDate": "2026-06-03T17:26:00Z",
@@ -630,7 +630,7 @@
         {
           "type": "match",
           "id": "4835572",
-          "score": -1715,
+          "score": -1728,
           "leagueId": 8935,
           "leagueName": "II Liga",
           "matchDate": "2026-05-30T12:30:00Z",
@@ -658,7 +658,7 @@
         {
           "type": "match",
           "id": "5667004",
-          "score": -1735,
+          "score": -1748,
           "leagueId": 197,
           "leagueName": "I Liga Promotion Playoff",
           "matchDate": "2026-05-28T15:30:00Z",
