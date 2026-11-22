@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-11-21T14:35:26.561382+00:00",
+  "generated_at_utc": "2026-11-22T01:30:47.008924+00:00",
   "team": {
     "id": 8244,
     "name": "ŁKS Łódź",
@@ -48,7 +48,7 @@
     }
   },
   "summary": {
-    "position": 1,
+    "position": 2,
     "points": 26,
     "played": 15,
     "wins": 7,
@@ -216,7 +216,7 @@
     "goals_against": 22,
     "goal_difference": 3,
     "points_gap_to_lks": -4,
-    "position_gap_to_lks": 3,
+    "position_gap_to_lks": 2,
     "venue": "home",
     "profile": {
       "id": 8030,
@@ -496,7 +496,7 @@
     "most_goals_conceded": [
       {
         "name": "Stal Mielec",
-        "value": 27
+        "value": 28
       }
     ]
   },
@@ -975,6 +975,19 @@
   "standings": [
     {
       "position": 1,
+      "id": 2183,
+      "name": "Polonia Warszawa",
+      "played": 15,
+      "wins": 7,
+      "draws": 5,
+      "losses": 3,
+      "goals": "24-16",
+      "goal_difference": 8,
+      "points": 26,
+      "qualColor": "#2AD572"
+    },
+    {
+      "position": 2,
       "id": 8244,
       "name": "ŁKS Łódź",
       "played": 15,
@@ -984,19 +997,6 @@
       "goals": "18-13",
       "goal_difference": 5,
       "points": 26,
-      "qualColor": "#2AD572"
-    },
-    {
-      "position": 2,
-      "id": 2183,
-      "name": "Polonia Warszawa",
-      "played": 14,
-      "wins": 7,
-      "draws": 4,
-      "losses": 3,
-      "goals": "23-15",
-      "goal_difference": 8,
-      "points": 25,
       "qualColor": "#2AD572"
     },
     {
@@ -1027,19 +1027,6 @@
     },
     {
       "position": 5,
-      "id": 1601,
-      "name": "Ruch Chorzów",
-      "played": 14,
-      "wins": 6,
-      "draws": 4,
-      "losses": 4,
-      "goals": "17-14",
-      "goal_difference": 3,
-      "points": 22,
-      "qualColor": "#FFD908"
-    },
-    {
-      "position": 6,
       "id": 177361,
       "name": "Termalica Nieciecza",
       "played": 14,
@@ -1052,7 +1039,33 @@
       "qualColor": "#FFD908"
     },
     {
+      "position": 6,
+      "id": 1601,
+      "name": "Ruch Chorzów",
+      "played": 15,
+      "wins": 6,
+      "draws": 4,
+      "losses": 5,
+      "goals": "18-16",
+      "goal_difference": 2,
+      "points": 22,
+      "qualColor": "#FFD908"
+    },
+    {
       "position": 7,
+      "id": 89467,
+      "name": "Warta Poznań",
+      "played": 15,
+      "wins": 7,
+      "draws": 1,
+      "losses": 7,
+      "goals": "22-21",
+      "goal_difference": 1,
+      "points": 22,
+      "qualColor": null
+    },
+    {
+      "position": 8,
       "id": 8048,
       "name": "Miedź Legnica",
       "played": 15,
@@ -1065,33 +1078,46 @@
       "qualColor": null
     },
     {
-      "position": 8,
+      "position": 9,
       "id": 585593,
       "name": "Pogoń Grodzisk Mazowiecki",
-      "played": 14,
+      "played": 15,
       "wins": 6,
       "draws": 3,
-      "losses": 5,
-      "goals": "20-14",
-      "goal_difference": 6,
+      "losses": 6,
+      "goals": "22-17",
+      "goal_difference": 5,
       "points": 21,
       "qualColor": null
     },
     {
-      "position": 9,
-      "id": 89467,
-      "name": "Warta Poznań",
-      "played": 14,
+      "position": 10,
+      "id": 8322,
+      "name": "Arka Gdynia",
+      "played": 15,
       "wins": 6,
-      "draws": 1,
-      "losses": 7,
-      "goals": "20-20",
-      "goal_difference": 0,
-      "points": 19,
+      "draws": 3,
+      "losses": 6,
+      "goals": "22-19",
+      "goal_difference": 3,
+      "points": 21,
       "qualColor": null
     },
     {
-      "position": 10,
+      "position": 11,
+      "id": 458623,
+      "name": "Stal Mielec",
+      "played": 15,
+      "wins": 5,
+      "draws": 5,
+      "losses": 5,
+      "goals": "20-28",
+      "goal_difference": -8,
+      "points": 20,
+      "qualColor": null
+    },
+    {
+      "position": 12,
       "id": 273750,
       "name": "Pogoń Siedlce",
       "played": 14,
@@ -1101,32 +1127,6 @@
       "goals": "17-17",
       "goal_difference": 0,
       "points": 19,
-      "qualColor": null
-    },
-    {
-      "position": 11,
-      "id": 458623,
-      "name": "Stal Mielec",
-      "played": 14,
-      "wins": 5,
-      "draws": 4,
-      "losses": 5,
-      "goals": "19-27",
-      "goal_difference": -8,
-      "points": 19,
-      "qualColor": null
-    },
-    {
-      "position": 12,
-      "id": 8322,
-      "name": "Arka Gdynia",
-      "played": 14,
-      "wins": 5,
-      "draws": 3,
-      "losses": 6,
-      "goals": "19-17",
-      "goal_difference": 2,
-      "points": 18,
       "qualColor": null
     },
     {
