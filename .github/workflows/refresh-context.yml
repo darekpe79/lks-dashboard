@@ -12,6 +12,7 @@ on:
 
 permissions:
   contents: write
+  actions: write
 
 concurrency:
   group: lks-repo-writes
@@ -36,6 +37,7 @@ jobs:
         run: python scripts/update_context.py --mode weekly
 
       - name: Commit context data
+        id: commit_data
         shell: bash
         run: |
           git config user.name "github-actions[bot]"
@@ -53,6 +55,7 @@ jobs:
           for attempt in 1 2 3; do
             git pull --rebase origin main
             if git push; then
+              echo "pushed=true" >> "$GITHUB_OUTPUT"
               exit 0
             fi
             echo "Push nie udał się (próba $attempt/3); ponawiam bez odpytywania API."
@@ -60,3 +63,11 @@ jobs:
           done
 
           exit 1
+
+      # GITHUB_TOKEN nie uruchamia workflow przez push. Dispatch jest wyjątkiem.
+      # Publikujemy tylko po faktycznym, udanym wypchnięciu zmian.
+      - name: Publish updated dashboard
+        if: steps.commit_data.outputs.pushed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run pages.yml --ref main
