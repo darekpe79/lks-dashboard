@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-11-24T17:53:25.928109+00:00",
+  "updated_at_utc": "2026-11-28T03:28:12.992044+00:00",
   "home_away_updated_at_utc": "2026-11-21T02:43:40.470768+00:00",
   "league_id": 197,
   "event_id": "5862001",
@@ -617,15 +617,15 @@
   ],
   "opponent_form": [
     {
-      "event_id": "5861871",
-      "date": "2026-07-31T18:30:00Z",
-      "result": "L",
-      "opponent_id": "89467",
-      "opponent": "Warta Poznań",
+      "event_id": "5861950",
+      "date": "2026-10-18T18:30:00Z",
+      "result": "W",
+      "opponent_id": "8322",
+      "opponent": "Arka Gdynia",
       "venue": "home",
-      "score_for": 0,
-      "score_against": 3,
-      "score": "0:3"
+      "score_for": 2,
+      "score_against": 1,
+      "score": "2:1"
     },
     {
       "event_id": "5861962",
@@ -672,8 +672,8 @@
       "score": "2:1"
     }
   ],
-  "opponent_form_updated_at_utc": "2026-11-24T17:53:25.928090+00:00",
+  "opponent_form_updated_at_utc": "2026-11-28T03:28:12.992025+00:00",
   "opponent_form_search": "Lechia Gdańsk",
-  "rapidapi_remaining": "96",
+  "rapidapi_remaining": "90",
   "requests_used_this_run": 1
 }
